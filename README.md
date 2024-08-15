@@ -2,7 +2,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/siansiansu/ebird-taxonomy-taiwan) [![hackmd-github-sync-badge](https://hackmd.io/y-UCJ5IgTeuykCe2PqW08A/badge)](https://hackmd.io/y-UCJ5IgTeuykCe2PqW08A)
 
-資料來源為 eBird，含外來種。
+資料來源為 eBird 的 [Species List for a Region](https://documenter.getpostman.com/view/664302/S1ENwy59#55bd1b26-6951-4a88-943a-d3a8aa1157dd) API，regionCode 為 `TW`。
 
 | 中文俗名 | 英文俗名 | comNameCodes | sciNameCodes | 學名 | speciesCode  |
 |-|-|-|-|-|-|
