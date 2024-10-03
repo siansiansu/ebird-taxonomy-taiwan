@@ -1,4 +1,4 @@
-# 台灣鳥名縮寫代碼對照表
+# eBird 台灣鳥名縮寫代碼
 
 [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/siansiansu/ebird-taxonomy-taiwan) [![hackmd-github-sync-badge](https://hackmd.io/y-UCJ5IgTeuykCe2PqW08A/badge)](https://hackmd.io/y-UCJ5IgTeuykCe2PqW08A)
 
