@@ -2,7 +2,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/siansiansu/ebird-taxonomy-taiwan) [![hackmd-github-sync-badge](https://hackmd.io/y-UCJ5IgTeuykCe2PqW08A/badge)](https://hackmd.io/y-UCJ5IgTeuykCe2PqW08A)
 
-資料來源為 eBird 網站，CSV 檔案[點此](https://siansiansu.github.io/ebird-taxonomy-taiwan/output.json)下載。
+資料來源為 eBird 網站，CSV 檔案[點此](https://siansiansu.github.io/ebird-taxonomy-taiwan/output.csv)下載。
 
 | 中文俗名                                      | 英文俗名                                      | 學名                                          | comNameCodes                  | sciNameCodes | bandingCodes | familySciName     |
 | --------------------------------------------- | --------------------------------------------- | --------------------------------------------- | ----------------------------- | ------------ | ------------ | ----------------- |
