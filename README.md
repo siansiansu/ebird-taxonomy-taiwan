@@ -2,767 +2,768 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/siansiansu/ebird-taxonomy-taiwan) [![hackmd-github-sync-badge](https://hackmd.io/y-UCJ5IgTeuykCe2PqW08A/badge)](https://hackmd.io/y-UCJ5IgTeuykCe2PqW08A)
 
-資料來源為 eBird 的 [Species List for a Region](https://documenter.getpostman.com/view/664302/S1ENwy59#55bd1b26-6951-4a88-943a-d3a8aa1157dd) API，regionCode 為 `TW`。
+資料來源為 eBird 網站。
 
-| 中文俗名 | 英文俗名 | comNameCodes | sciNameCodes | 學名 | speciesCode  |
-|-|-|-|-|-|-|
-| 棕面鶯 | Rufous-faced Warbler | RFWA | ABAL | Abroscopus albogularis | rufwar1  |
-| 普通朱頂雀 | Common Redpoll | REDP | ACFL | Acanthis flammea | comred  |
-| 蒼鷹 | Eurasian Goshawk | NOGO | ACGE | Accipiter gentilis | norgos1  |
-| 日本松雀鷹 | Japanese Sparrowhawk | JASP | ACGU | Accipiter gularis | japspa1  |
-| 北雀鷹 | Eurasian Sparrowhawk | EUSP | ACNI | Accipiter nisus | eurspa1  |
-| 赤腹鷹 | Chinese Sparrowhawk | CHSP | ACSO | Accipiter soloensis | grfhaw1  |
-| 鳳頭蒼鷹 | Crested Goshawk | CRGO | ACTR | Accipiter trivirgatus | cregos1  |
-| 松雀鷹 | Besra | BESR | ACVI | Accipiter virgatus | besra1  |
-| 八哥(冠八哥) | Crested Myna | CRMY | ACCR | Acridotheres cristatellus | cremyn  |
-| 林八哥 | Jungle Myna | JUMY | ACFU | Acridotheres fuscus | junmyn1  |
-| 岸八哥 | Bank Myna | BAMY | ACGI | Acridotheres ginginianus | banmyn1  |
-| 大八哥(叢八哥) | Great Myna | GRMY | ACGR | Acridotheres grandis | whvmyn1  |
-| 白尾八哥 | Javan Myna | JAMY | ACJA | Acridotheres javanicus | whvmyn  |
-| 葡萄胸椋鳥 | Vinous-breasted Myna | VBMY | ACLE | Acridotheres leucocephalus | vibsta4  |
-| Black-winged Myna | Black-winged Myna | BWMY | ACME | Acridotheres melanopterus | bkwsta1  |
-| 家八哥 | Common Myna |  | ACTR | Acridotheres tristis | commyn  |
-| 雙眉葦鶯 | Black-browed Reed Warbler | BBRW | ACBI | Acrocephalus bistrigiceps | bbrwar1  |
-| 鈍翅葦鶯 | Blunt-winged Warbler | BWWA | ACCO | Acrocephalus concinens | blwwar1  |
-| 布氏葦鶯 | Blyth's Reed Warbler | BLRW;BRWA | ACDU | Acrocephalus dumetorum | blrwar1  |
-| 東方大葦鶯 | Oriental Reed Warbler | ORWA;ORRW | ACOR | Acrocephalus orientalis | orrwar1  |
-| 細紋葦鶯 | Streaked Reed Warbler | STRW;SRWA | ACSO | Acrocephalus sorghophilus | strwar1  |
-| 遠東葦鶯 | Manchurian Reed Warbler | WBRW;MRWA | ACTA | Acrocephalus tangorum | manrew1  |
-| 紋翼畫眉 | Taiwan Barwing | TABA | ACMO | Actinodura morrisoniana | taibar1  |
-| 磯鷸 | Common Sandpiper |  | ACHY | Actitis hypoleucos | comsan  |
-| 紅頭山雀 | Black-throated Tit | BTTI;BTBU;BTHC | AECO | Aegithalos concinnus | blttit2  |
-| 禿鷲 | Cinereous Vulture | CIVU;BLVU | AEMO | Aegypius monachus | cinvul1  |
-| 叉尾太陽鳥 | Fork-tailed Sunbird | FTSU | AECH | Aethopyga christinae | fotsun1  |
-| 藍喉太陽鳥 | Mrs. Gould's Sunbird | MGSU;GOSU | AEGO | Aethopyga gouldiae | gousun1  |
-| 費氏愛情鳥 | Fischer's Lovebird | FILO | AGFI | Agapornis fischeri | fislov1  |
-| 黃領愛情鳥 | Yellow-collared Lovebird | YCLO | AGPE | Agapornis personatus | yeclov  |
-| 桃臉愛情鳥 | Rosy-faced Lovebird |  | AGRO | Agapornis roseicollis | peflov  |
-| 小椋鳥 | Chestnut-cheeked Starling | CCST | AGPH | Agropsar philippensis | chcsta1  |
-| 北椋鳥 | Daurian Starling | DAST;PBST | AGST | Agropsar sturninus | dausta1  |
-| 鴛鴦 | Mandarin Duck | MADU | AIGA | Aix galericulata | manduc  |
-| 美洲鴛鴦 | Wood Duck | CWDU | AISP | Aix sponsa | wooduc  |
-| 歐亞雲雀 | Eurasian Skylark | SKYL | ALAR | Alauda arvensis | skylar  |
-| 小雲雀 | Oriental Skylark | ORSK | ALGU | Alauda gulgula | orisky1  |
-| 亞洲短趾百靈 | Asian Short-toed Lark | ASTL | ALCH | Alaudala cheleensis | lstlar2  |
-| 翠鳥 | Common Kingfisher | COKI | ALAT | Alcedo atthis | comkin1  |
-| 繡眼畫眉 | Morrison's Fulvetta | MOFU;GCFU | ALMO | Alcippe morrisonia | gycful1  |
-| 埃及雁 | Egyptian Goose |  | ALAE | Alopochen aegyptiaca | egygoo  |
-| Red Avadavat | Red Avadavat |  | AMAM | Amandava amandava | redava  |
-| Zebra Waxbill | Zebra Waxbill | ZEWA;OBWA | AMSU | Amandava subflava | zebwax2  |
-| 白腹秧雞 | White-breasted Waterhen | WBWA | AMPH | Amaurornis phoenicurus | whbwat1  |
-| 東方環頸鴴 | Kentish Plover | KEPL | ANAL | Anarhynchus alexandrinus | kenplo1  |
-| 西藏鴴 | Tibetan Sand-Plover | LSPL;TISD;LSDO;LESA;TISP;TSPL;TSDO | ANAT | Anarhynchus atrifrons | lessap1  |
-| 白臉鴴 | White-faced Plover | WFPL | ANDE | Anarhynchus dealbatus | whfplo2  |
-| 鐵嘴鴴 | Greater Sand-Plover | GRSA;GSPL;GRSP;GRSD;GSDO | ANLE | Anarhynchus leschenaultii | grsplo  |
-| 蒙古鴴 | Siberian Sand-Plover | LSPL;LSDO;SISD;LESA;SISP;SSPL;SSDO | ANMO | Anarhynchus mongolus | lessap2  |
-| 東方紅胸鴴 | Oriental Plover |  | ANVE | Anarhynchus veredus | oriplo1  |
-| 尖尾鴨 | Northern Pintail |  | ANAC | Anas acuta | norpin  |
-| 小水鴨 | Green-winged Teal | EUTE;CWTE;EWTE | ANCR | Anas crecca | gnwtea  |
-| 呂宋鴨 | Philippine Duck | PHDU | ANLU | Anas luzonica | phiduc1  |
-| 綠頭鴨 | Mallard |  | ANPL | Anas platyrhynchos | mallar3  |
-| 綠頭鴨x花嘴鴨(雜交) | Mallard x Eastern Spot-billed Duck (hybrid) | ESBD;CSBD;MALL | ANZO;ANPL | Anas platyrhynchos x zonorhyncha | x00835  |
-| 花嘴鴨 | Eastern Spot-billed Duck | CSBD | ANZO | Anas zonorhyncha | spbduc  |
-| 黑玄燕鷗 | Black Noddy |  | ANMI | Anous minutus | blknod  |
-| 玄燕鷗 | Brown Noddy | CONO | ANST | Anous stolidus | brnnod  |
-| 白額雁 | Greater White-fronted Goose |  | ANAL | Anser albifrons | gwfgoo  |
-| 灰雁 | Graylag Goose |  | ANAN | Anser anser | gragoo  |
-| 灰雁x鴻雁(雜交) | Graylag x Swan Goose (hybrid) | GRGO;SWGO | ANAN;ANCY | Anser anser x cygnoides | x00776  |
-| 鴻雁 | Swan Goose | SWGO | ANCY | Anser cygnoides | swagoo1  |
-| 小白額雁 | Lesser White-fronted Goose |  | ANER | Anser erythropus | lwfgoo  |
-| 寒林豆雁 | Taiga Bean-Goose | BEGO;TBGO | ANFA | Anser fabalis | taibeg1  |
-| 斑頭雁 | Bar-headed Goose | BHGO | ANIN | Anser indicus | bahgoo  |
-| 凍原豆雁 | Tundra Bean-Goose | BEGO;TBGO | ANSE | Anser serrirostris | tunbeg1  |
-| Domestic goose sp. x Canada Goose (hybrid) | Domestic goose sp. x Canada Goose (hybrid) |  |  | Anser sp. (Domestic type) x Branta canadensis | x00759  |
-| 簑羽鶴 | Demoiselle Crane | DECR | ANVI | Anthropoides virgo | demcra1  |
-| 赤喉鷚 | Red-throated Pipit |  | ANCE | Anthus cervinus | retpip  |
-| 布萊氏鷚 | Blyth's Pipit | BLPI | ANGO | Anthus godlewskii | blypip1  |
-| 白背鷚 | Pechora Pipit |  | ANGU | Anthus gustavi | pecpip  |
-| 樹鷚 | Olive-backed Pipit |  | ANHO | Anthus hodgsoni | olbpip  |
-| 草地鷚 | Meadow Pipit |  | ANPR | Anthus pratensis | meapip1  |
-| 大花鷚 | Richard's Pipit | RIPI | ANRI | Anthus richardi | ricpip1  |
-| 粉紅胸鷚 | Rosy Pipit | ROPI | ANRO | Anthus roseatus | rospip1  |
-| 黃腹鷚 | American Pipit | BBPI | ANRU | Anthus rubescens | amepip  |
-| 稻田鷚 | Paddyfield Pipit | PAPI | ANRU | Anthus rufulus | oripip1  |
-| 水鷚 | Water Pipit | WAPI | ANSP | Anthus spinoletta | watpip1  |
-| 林鷚 | Tree Pipit |  | ANTR | Anthus trivialis | trepip  |
-| 沙丘鶴 | Sandhill Crane |  | ANCA | Antigone canadensis | sancra  |
-| 白枕鶴 | White-naped Crane | WNCR | ANVI | Antigone vipio | whncra1  |
-| 亞洲輝椋鳥 | Asian Glossy Starling | AGST | APPA | Aplonis panayensis | asgsta1  |
-| 小雨燕 | House Swift | HOSW | APNI | Apus nipalensis | houswi1  |
-| 叉尾雨燕 | Pacific Swift | PASW | APPA | Apus pacificus | fotswi  |
-| 金鵰 | Golden Eagle |  | AQCH | Aquila chrysaetos | goleag  |
-| 白腹鵰 | Bonelli's Eagle | BOEA | AQFA | Aquila fasciata | boneag2  |
-| 白肩鵰 | Imperial Eagle | EIEA;IMEA | AQHE | Aquila heliaca | impeag1  |
-| 藍黃金剛鸚鵡 | Blue-and-yellow Macaw |  | ARAR | Ara ararauna | baymac  |
-| 紅綠金剛鸚鵡 | Red-and-green Macaw |  | ARCH | Ara chloropterus | ragmac1  |
-| 緋紅金剛鸚鵡 | Scarlet Macaw |  | ARMA | Ara macao | scamac1  |
-| 太陽鸚鵡 | Sun Parakeet | SUPA | ARSO | Aratinga solstitialis | sunpar1  |
-| 臺灣山鷓鴣 | Taiwan Partridge | TAPA | ARCR | Arborophila crudigularis | taipar1  |
-| 大白鷺 | Great Egret | WHHE;GWEG | ARAL | Ardea alba | greegr  |
-| 蒼鷺 | Gray Heron | GRHE | ARCI | Ardea cinerea | graher1  |
-| 中白鷺 | Medium Egret | YBEG;MEEG | ARIN | Ardea intermedia | integr1  |
-| 紫鷺 | Purple Heron |  | ARPU | Ardea purpurea | purher1  |
-| 肉足水薙鳥 | Flesh-footed Shearwater |  | ARCA | Ardenna carneipes | flfshe  |
-| 灰水薙鳥 | Sooty Shearwater |  | ARGR | Ardenna grisea | sooshe  |
-| 長尾水薙鳥 | Wedge-tailed Shearwater |  | ARPA | Ardenna pacifica | wetshe  |
-| 短尾水薙鳥 | Short-tailed Shearwater | STSH | ARTE | Ardenna tenuirostris | shtshe  |
-| 池鷺 | Chinese Pond-Heron | CPHE | ARBA | Ardeola bacchus | chpher1  |
-| 印度池鷺 | Indian Pond-Heron | IPHE;INPH | ARGR | Ardeola grayii | inpher1  |
-| 爪哇池鷺 | Javan Pond-Heron | JPHE;JAPH | ARSP | Ardeola speciosa | japher1  |
-| 翻石鷸 | Ruddy Turnstone |  | ARIN | Arenaria interpres | rudtur  |
-| 厚嘴葦鶯 | Thick-billed Warbler |  | ARAE | Arundinax aedon | thbwar1  |
-| 短耳鴞 | Short-eared Owl |  | ASFL | Asio flammeus | sheowl  |
-| 長耳鴞 | Long-eared Owl | NLEO | ASOT | Asio otus | loeowl  |
-| 黑冠鵑隼 | Black Baza | BLBA | AVLE | Aviceda leuphotes | blabaz1  |
-| 小斑背潛鴨 | Lesser Scaup |  | AYAF | Aythya affinis | lessca  |
-| 青頭潛鴨 | Baer's Pochard | BAPO | AYBA | Aythya baeri | baepoc1  |
-| 環頸潛鴨 | Ring-necked Duck |  | AYCO | Aythya collaris | rinduc  |
-| 紅頭潛鴨 | Common Pochard | COPO | AYFE | Aythya ferina | compoc  |
-| 鳳頭潛鴨 | Tufted Duck |  | AYFU | Aythya fuligula | tufduc  |
-| 鳳頭潛鴨x斑背潛鴨(雜交) | Tufted Duck x Greater Scaup (hybrid) | TUDU;GRSC | AYFU;AYMA | Aythya fuligula x marila | x00654  |
-| 斑背潛鴨 | Greater Scaup |  | AYMA | Aythya marila | gresca  |
-| 白眼潛鴨 | Ferruginous Duck | FEDU | AYNY | Aythya nyroca | ferduc  |
-| 白眼潛鴨x青頭潛鴨(雜交) | Ferruginous Duck x Baer's Pochard (hybrid) | BAPO;FEDU | AYNY;AYBA | Aythya nyroca x baeri | x00838  |
-| 臺灣竹雞 | Taiwan Bamboo-Partridge | TBPA;TABP | BASO | Bambusicola sonorivox | taibap1  |
-| 黃連雀 | Bohemian Waxwing |  | BOGA | Bombycilla garrulus | bohwax  |
-| 朱連雀 | Japanese Waxwing | JAWA | BOJA | Bombycilla japonica | japwax1  |
-| 大麻鷺 | Great Bittern | EUBI;GRBI | BOST | Botaurus stellaris | grebit1  |
-| 小翼鶇 | Taiwan Shortwing | TASH | BRGO | Brachypteryx goodfellowi | whbsho6  |
-| 白喉短翅鶇 | Lesser Shortwing | LESH | BRLE | Brachypteryx leucophris | lessho1  |
-| Eurasian Eagle-Owl | Eurasian Eagle-Owl | EEOW;EUEO | BUBU | Bubo bubo | eueowl1  |
-| 黃頭鷺 | Eastern Cattle Egret | ECEG | BUCO | Bubulcus coromandus | categr2  |
-| 鵲鴨 | Common Goldeneye |  | BUCL | Bucephala clangula | comgol  |
-| 穴鳥 | Bulwer's Petrel |  | BUBU | Bulweria bulwerii | bulpet  |
-| 灰面鵟鷹 | Gray-faced Buzzard | GFBU | BUIN | Butastur indicus | gyfbuz1  |
-| 歐亞鵟 | Common Buzzard | COBU;STBU;EUBU | BUBU | Buteo buteo | combuz1  |
-| 大鵟 | Upland Buzzard | UPBU | BUHE | Buteo hemilasius | uplbuz1  |
-| 東方鵟 | Eastern Buzzard | JABU;EABU | BUJA | Buteo japonicus | combuz6  |
-| 毛足鵟 | Rough-legged Hawk | RLBU | BULA | Buteo lagopus | rolhaw  |
-| 綠簑鷺 | Striated Heron | STHE;GBHE | BUST | Butorides striata | strher  |
-| Trumpeter Hornbill | Trumpeter Hornbill | TRHO | BYBU | Bycanistes bucinator | truhor1  |
-| 白鳳頭鸚鵡 | White Cockatoo | WHCO | CAAL | Cacatua alba | whicoc1  |
-| Ducorps's Cockatoo | Ducorps's Cockatoo | DUCO;SOCO | CADU | Cacatua ducorpsii | duccoc1  |
-| 葵花鳳頭鸚鵡 | Sulphur-crested Cockatoo | SCCO | CAGA | Cacatua galerita | succoc  |
-| 戈芬氏鳳頭鸚鵡 | Tanimbar Corella | TACO | CAGO | Cacatua goffiniana | tancoc1  |
-| 八聲杜鵑 | Plaintive Cuckoo | PLCU | CAME | Cacomantis merulinus | placuc1  |
-| 疣鼻棲鴨(薑母鴨) | Muscovy Duck |  | CAMO | Cairina moschata | musduc  |
-| 疣鼻棲鴨x綠頭鴨(雜交) | Muscovy Duck x Mallard (hybrid) | MUDU;MALL | ANPL;CAMO | Cairina moschata x Anas platyrhynchos | mdxmal1  |
-| 鐵爪鵐 | Lapland Longspur | LABU | CALA | Calcarius lapponicus | laplon  |
-| 尖尾濱鷸 | Sharp-tailed Sandpiper | STSA | CAAC | Calidris acuminata | shtsan  |
-| 三趾濱鷸 | Sanderling |  | CAAL | Calidris alba | sander  |
-| 黑腹濱鷸 | Dunlin |  | CAAL | Calidris alpina | dunlin  |
-| 紅腹濱鷸 | Red Knot |  | CACA | Calidris canutus | redkno  |
-| 寬嘴鷸 | Broad-billed Sandpiper | BBSA | CAFA | Calidris falcinellus | brbsan  |
-| 彎嘴濱鷸 | Curlew Sandpiper |  | CAFE | Calidris ferruginea | cursan  |
-| 美洲尖尾濱鷸 | Pectoral Sandpiper |  | CAME | Calidris melanotos | pecsan  |
-| 小濱鷸 | Little Stint |  | CAMI | Calidris minuta | litsti  |
-| 流蘇鷸 | Ruff |  | CAPU | Calidris pugnax | ruff  |
-| 琵嘴鷸 | Spoon-billed Sandpiper |  | CAPY | Calidris pygmaea | spbsan1  |
-| 紅胸濱鷸 | Red-necked Stint |  | CARU | Calidris ruficollis | rensti  |
-| 長趾濱鷸 | Long-toed Stint |  | CASU | Calidris subminuta | lotsti  |
-| 黃胸鷸 | Buff-breasted Sandpiper |  | CASU | Calidris subruficollis | bubsan  |
-| 丹氏濱鷸 | Temminck's Stint |  | CATE | Calidris temminckii | temsti  |
-| 大濱鷸 | Great Knot |  | CATE | Calidris tenuirostris | grekno  |
-| 野鴝 | Siberian Rubythroat |  | CACA | Calliope calliope | sibrub  |
-| 大水薙鳥 | Streaked Shearwater | STSH | CALE | Calonectris leucomelas | strshe  |
-| 南亞夜鷹 | Savanna Nightjar | SANI | CAAF | Caprimulgus affinis | savnig1  |
-| 普通夜鷹 | Gray Nightjar |  | CAJO | Caprimulgus jotaka | grynig1  |
-| 普通朱雀 | Common Rosefinch |  | CAER | Carpodacus erythrinus | comros  |
-| 臺灣朱雀 | Taiwan Rosefinch | TARO | CAFO | Carpodacus formosanus | vinros3  |
-| 北朱雀 | Pallas's Rosefinch |  | CARO | Carpodacus roseus | palros2  |
-| 酒紅朱雀 | Vinaceous Rosefinch | VIRO | CAVI | Carpodacus vinaceus | vinros2  |
-| 金腰燕 | Red-rumped Swallow | RRAS;RRSW | CEDA | Cecropis daurica | rerswa1  |
-| 赤腰燕 | Striated Swallow | RRSW;STSW | CEST | Cecropis striolata | strswa2  |
-| 番鵑 | Lesser Coucal | LECO | CEBE | Centropus bengalensis | lescou1  |
-| 褐翅鴉鵑 | Greater Coucal | GRCO | CESI | Centropus sinensis | grecou1  |
-| 斑翡翠 | Pied Kingfisher | PIKI | CERU | Ceryle rudis | piekin1  |
-| 黑背三趾翠鳥 | Black-backed Dwarf-Kingfisher | BBDK;ODKI | CEER | Ceyx erithaca | bkbkin1  |
-| 翠翼鳩 | Asian Emerald Dove | AEDO;CEDO;GCED | CHIN | Chalcophaps indica | emedov2  |
-| 小環頸鴴 | Little Ringed Plover |  | CHDU | Charadrius dubius | lirplo  |
-| 環頸鴴 | Common Ringed Plover | RIPL | CHHI | Charadrius hiaticula | corplo  |
-| 劍鴴 | Long-billed Plover | LBPL | CHPL | Charadrius placidus | lobplo1  |
-| 黑腹燕鷗 | Whiskered Tern | WHTE | CHHY | Chlidonias hybrida | whiter2  |
-| 白翅黑燕鷗 | White-winged Tern | WWBT | CHLE | Chlidonias leucopterus | whwter  |
-| 黑浮鷗 | Black Tern |  | CHNI | Chlidonias niger | blkter  |
-| 金翅雀 | Oriental Greenfinch | GCGR | CHSI | Chloris sinica | origre  |
-| 橙腹葉鵯 | Orange-bellied Leafbird | OBCL;OBLE | CHHA | Chloropsis hardwickii | orblea1  |
-| Blue-winged Leafbird | Blue-winged Leafbird | BWLE | CHMO | Chloropsis moluccensis | blwlea1  |
-| 棕頭鷗 | Brown-headed Gull | BHGU | CHBR | Chroicocephalus brunnicephalus | bnhgul1  |
-| 細嘴鷗 | Slender-billed Gull | SBGU | CHGE | Chroicocephalus genei | slbgul1  |
-| 紐澳紅嘴鷗 | Silver Gull | SIGU | CHNO | Chroicocephalus novaehollandiae | silgul2  |
-| 紅嘴鷗 | Black-headed Gull |  | CHRI | Chroicocephalus ridibundus | bkhgul  |
-| 紅腹錦雞 | Golden Pheasant | GOPH | CHPI | Chrysolophus pictus | golphe  |
-| 東方白鸛 | Oriental Stork | ORST | CIBO | Ciconia boyciana | oristo1  |
-| 黑鸛 | Black Stork | BLST | CINI | Ciconia nigra | blasto1  |
-| 河烏 | Brown Dipper | BRDI | CIPA | Cinclus pallasii | brodip1  |
-| 黃腹花蜜鳥 | Ornate Sunbird | ORSU;OBSU | CIOR | Cinnyris ornatus | olbsun4  |
-| 西方澤鵟 | Western Marsh Harrier | EMHA;WEMH;EUMH | CIAE | Circus aeruginosus | wemhar1  |
-| 灰澤鵟 | Hen Harrier | HEHA | CICY | Circus cyaneus | norhar1  |
-| 花澤鵟 | Pied Harrier | PIHA | CIME | Circus melanoleucos | piehar1  |
-| 東方澤鵟 | Eastern Marsh Harrier | EMHA;EAMH | CISP | Circus spilonotus | easmah1  |
-| 黃頭扇尾鶯 | Golden-headed Cisticola | GHCI | CIEX | Cisticola exilis | gohcis1  |
-| 棕扇尾鶯 | Zitting Cisticola | ZICI | CIJU | Cisticola juncidis | zitcis1  |
-| 冠郭公 | Chestnut-winged Cuckoo | CWCU | CLCO | Clamator coromandus | chwcuc1  |
-| 斑翅鳳頭鵑 | Pied Cuckoo | PICU;JACU | CLJA | Clamator jacobinus | piecuc1  |
-| 花鵰 | Greater Spotted Eagle | GSEA | CLCL | Clanga clanga | grseag1  |
-| 長尾鴨 | Long-tailed Duck |  | CLHY | Clangula hyemalis | lotduc  |
-| 臘嘴雀 | Hawfinch |  | COCO | Coccothraustes coccothraustes | hawfin  |
-| 黑林鴿 | Black Wood-Pigeon | BWPI;JAWP;JWPI;BLWP;JAWO | COJA | Columba janthina | jawpig1  |
-| 野鴿 | Rock Pigeon | ROPI;RODO | COLI | Columba livia | rocpig  |
-| 灰林鴿 | Ashy Wood-Pigeon | ASWO;ASWP;AWPI | COPU | Columba pulchricollis | aswpig1  |
-| 白喉林鴿 | Metallic Pigeon | MEPI;WTPI | COVI | Columba vitiensis | metpig1  |
-| 白腰鵲鴝 | White-rumped Shama |  | COMA | Copsychus malabaricus | whrsha  |
-| 鵲鴝 | Oriental Magpie-Robin | ORMR;OMRO | COSA | Copsychus saularis | magrob  |
-| 花翅山椒鳥 | Large Cuckooshrike | LACU;LACS;LCSH | COMA | Coracina macei | larcus1  |
-| 小嘴烏鴉 | Carrion Crow | CACR | COCO | Corvus corone | carcro1  |
-| 東方寒鴉 | Daurian Jackdaw | DAJA | CODA | Corvus dauuricus | daujac1  |
-| 禿鼻鴉 | Rook |  | COFR | Corvus frugilegus | rook1  |
-| 巨嘴鴉 | Large-billed Crow | LBJJ;LBCR | COMA | Corvus macrorhynchos | labcro1  |
-| 玉頸鴉 | Collared Crow | COCR | COPE | Corvus pectoralis | colcro1  |
-| 家烏鴉 | House Crow | HOCR | COSP | Corvus splendens | houcro1  |
-| 鵪鶉 | Japanese Quail |  | COJA | Coturnix japonica | japqua  |
-| Lemon-breasted Seedeater | Lemon-breasted Seedeater | LBCA;LBSE | CRCI | Crithagra citrinipectus | lebsee1  |
-| 黃額絲雀 | Yellow-fronted Canary |  | CRMO | Crithagra mozambica | yefcan  |
-| 大杜鵑 | Common Cuckoo |  | CUCA | Cuculus canorus | comcuc  |
-| 四聲杜鵑 | Indian Cuckoo | INCU | CUMI | Cuculus micropterus | indcuc1  |
-| 北方中杜鵑 | Oriental Cuckoo |  | CUOP | Cuculus optatus | oricuc2  |
-| 小杜鵑 | Lesser Cuckoo | LECU | CUPO | Cuculus poliocephalus | lescuc1  |
-| 方尾鶲 | Gray-headed Canary-Flycatcher | GHCF | CUCE | Culicicapa ceylonensis | gyhcaf1  |
-| 白喉林鶯 | Lesser Whitethroat |  | CUCU | Curruca curruca | leswhi4  |
-| 漠地林鶯 | Asian Desert Warbler | ADWA | CUNA | Curruca nana | asdwar1  |
-| 山紅頭 | Rufous-capped Babbler | RCBA | CYRU | Cyanoderma ruficeps | rucbab1  |
-| 灰喜鵲 | Azure-winged Magpie | AAWM;AWMA | CYCY | Cyanopica cyanus | azwmag2  |
-| 白腹琉璃 | Blue-and-white Flycatcher | BAWF | CYCY | Cyanoptila cyanomelana | bawfly2  |
-| 黑天鵝 | Black Swan | BLSW | CYAT | Cygnus atratus | blkswa  |
-| 小天鵝 | Tundra Swan | BESW | CYCO | Cygnus columbianus | tunswa  |
-| 黃嘴天鵝 | Whooper Swan | WHSW | CYCY | Cygnus cygnus | whoswa  |
-| 疣鼻天鵝 | Mute Swan |  | CYOL | Cygnus olor | mutswa  |
-| 白喉林鶲 | Brown-chested Jungle Flycatcher | BCJF | CYBR | Cyornis brunneatus | bncjuf1  |
-| 中華藍仙鶲 | Chinese Blue Flycatcher | CBFL;CHBF | CYGL | Cyornis glaucicomans | butfly2  |
-| 海南藍仙鶲 | Hainan Blue Flycatcher | HABF;HBFL | CYHA | Cyornis hainanus | habfly1  |
-| 山藍仙鶲 | Hill Blue Flycatcher | HIBF;HBFL | CYWH | Cyornis whitei | hibfly1  |
-| Laughing Kookaburra | Laughing Kookaburra | LAKO | DANO | Dacelo novaeguineae | laukoo1  |
-| 東方毛腳燕 | Asian House-Martin | AHMA;ASHM | DEDA | Delichon dasypus | ashmar1  |
-| 白腹毛腳燕 | Siberian House-Martin | CHMA;SHMA;EHMA | DELA | Delichon lagopodum | comhom2  |
-| 樹鵲 | Gray Treepie | GRTR | DEFO | Dendrocitta formosae | grytre1  |
-| 大赤啄木 | White-backed Woodpecker | WBWO | DELE | Dendrocopos leucotos | whbwoo1  |
-| 樹鴨 | Lesser Whistling-Duck | LEWD;LWDU | DEJA | Dendrocygna javanica | lewduc1  |
-| 山鶺鴒 | Forest Wagtail | FOWA | DEIN | Dendronanthus indicus | forwag1  |
-| 紅胸啄花 | Fire-breasted Flowerpecker | FBFL | DIIG | Dicaeum ignipectus | fibflo1  |
-| 綠啄花 | Plain Flowerpecker | PLFL | DIMI | Dicaeum minullum | plaflo2  |
-| 小卷尾 | Bronzed Drongo | BRDR | DIAE | Dicrurus aeneus | brodro1  |
-| 髮冠卷尾 | Hair-crested Drongo | BCDR;HCDR;HCTD | DIHO | Dicrurus hottentottus | hacdro1  |
-| 灰卷尾 | Ashy Drongo | ASDR | DILE | Dicrurus leucophaeus | ashdro1  |
-| 大卷尾 | Black Drongo | BLDR | DIMA | Dicrurus macrocercus | bladro1  |
-| 紅肩金剛鸚鵡 | Red-shouldered Macaw | NRSM;RSMA | DINO | Diopsittaca nobilis | resmac2  |
-| 唐白鷺 | Chinese Egret |  | EGEU | Egretta eulophotes | chiegr  |
-| 小白鷺 | Little Egret | LEWR | EGGA | Egretta garzetta | litegr  |
-| 白頸黑鷺 | Pied Heron | PIHE | EGPI | Egretta picata | pieher2  |
-| 岩鷺 | Pacific Reef-Heron | PARE;PREG;PRHE;PARH;REHE;EREG | EGSA | Egretta sacra | pacreh1  |
-| 黑翅鳶 | Black-winged Kite | BSKI;BWKI;ABSK | ELCA | Elanus caeruleus | bkskit1  |
-| 金鵐 | Yellow-breasted Bunting | YBBU | EMAU | Emberiza aureola | yebbun  |
-| 褐頭鵐 | Red-headed Bunting | RHBU | EMBR | Emberiza bruniceps | rehbun1  |
-| 黃眉鵐 | Yellow-browed Bunting | YBBU | EMCH | Emberiza chrysophrys | yebbun1  |
-| 草鵐 | Meadow Bunting | MEBU | EMCI | Emberiza cioides | meabun1  |
-| 黃喉鵐 | Yellow-throated Bunting |  | EMEL | Emberiza elegans | yetbun1  |
-| 赤胸鵐 | Chestnut-eared Bunting | CEBU | EMFU | Emberiza fucata | chebun2  |
-| 圃鵐 | Ortolan Bunting | ORBU | EMHO | Emberiza hortulana | ortbun1  |
-| 冠鵐 | Crested Bunting | CRBU | EMLA | Emberiza lathami | crebun1  |
-| 白頭鵐 | Pine Bunting |  | EMLE | Emberiza leucocephalos | pinbun  |
-| 黑頭鵐 | Black-headed Bunting | BHBU | EMME | Emberiza melanocephala | blhbun1  |
-| 葦鵐 | Pallas's Bunting | PRBU;PABU | EMPA | Emberiza pallasi | palbun  |
-| 黃喉黑臉鵐 | Masked Bunting | MABU | EMPE | Emberiza personata | bkfbun2  |
-| 小鵐 | Little Bunting |  | EMPU | Emberiza pusilla | litbun  |
-| 田鵐 | Rustic Bunting |  | EMRU | Emberiza rustica | rusbun  |
-| 鏽鵐 | Chestnut Bunting | CHBU | EMRU | Emberiza rutila | chebun1  |
-| 蘆鵐 | Reed Bunting | CRBU | EMSC | Emberiza schoeniclus | reebun  |
-| 灰頭黑臉鵐 | Black-faced Bunting | BFBU | EMSP | Emberiza spodocephala | bkfbun1  |
-| 白頂鵐 | White-capped Bunting | WCBU | EMST | Emberiza stewarti | chbbun1  |
-| 野鵐 | Yellow Bunting | YEBU | EMSU | Emberiza sulphurata | yelbun1  |
-| 白眉鵐 | Tristram's Bunting | TRBU | EMTR | Emberiza tristrami | tribun1  |
-| 灰鵐 | Gray Bunting |  | EMVA | Emberiza variabilis | grybun  |
-| 紅頸葦鵐 | Ochre-rumped Bunting | JRBU;ORBU | EMYE | Emberiza yessoensis | ocrbun1  |
-| 小剪尾 | Little Forktail | LIFO | ENSC | Enicurus scouleri | litfor1  |
-| 小桑鳲 | Yellow-billed Grosbeak | YBGR;CHGR | EOMI | Eophona migratoria | yebgro1  |
-| 桑鳲 | Japanese Grosbeak | JAGR | EOPE | Eophona personata | japgro1  |
-| 紅色吸蜜鸚鵡 | Red Lory | RELO | EOBO | Eos bornea | redlor1  |
-| 綠畫眉 | White-bellied Erpornis | WBER | ERZA | Erpornis zantholeuca | whbyuh1  |
-| 大彎嘴 | Black-necklaced Scimitar-Babbler | BNSB | ERER | Erythrogenys erythrocnemis | sbsbab2  |
-| 橫斑梅花雀 | Common Waxbill | COWA | ESAS | Estrilda astrild | comwax  |
-| 橙頰梅花雀 | Orange-cheeked Waxbill | OCWA | ESME | Estrilda melpoda | orcwax  |
-| 噪鵑 | Asian Koel | ASKO;WEKO | EUSC | Eudynamys scolopaceus | asikoe2  |
-| 銅藍鶲 | Verditer Flycatcher | VEFL | EUTH | Eumyias thalassinus | verfly4  |
-| 白喉文鳥 | Indian Silverbill |  | EUMA | Euodice malabarica | indsil  |
-| Southern Red Bishop | Southern Red Bishop | SRBI | EUOR | Euplectes orix | redbis  |
-| 佛法僧 | Dollarbird | ORDO;DOLL | EUOR | Eurystomus orientalis | dollar1  |
-| 紅腳隼 | Amur Falcon | AMFA | FAAM | Falco amurensis | amufal1  |
-| 灰背隼 | Merlin |  | FACO | Falco columbarius | merlin  |
-| 遊隼 | Peregrine Falcon |  | FAPE | Falco peregrinus | perfal  |
-| 燕隼 | Eurasian Hobby | EUHO | FASU | Falco subbuteo | eurhob  |
-| 紅隼 | Eurasian Kestrel | COKE | FATI | Falco tinnunculus | eurkes  |
-| 紅喉鶲 | Taiga Flycatcher | RTFL | FIAL | Ficedula albicilla | taifly1  |
-| 綠背姬鶲 | Green-backed Flycatcher | GBFL | FIEL | Ficedula elisae | narfly1  |
-| 黃胸青鶲 | Snowy-browed Flycatcher | SBFL | FIHY | Ficedula hyperythra | snbfly1  |
-| 白眉黃鶲 | Mugimaki Flycatcher |  | FIMU | Ficedula mugimaki | mugfly  |
-| 黃眉黃鶲 | Narcissus Flycatcher |  | FINA | Ficedula narcissina | narfly2  |
-| 琉球姬鶲 | Ryukyu Flycatcher | RYFL | FIOW | Ficedula owstoni | narfly3  |
-| 紅胸鶲 | Red-breasted Flycatcher | RBFL | FIPA | Ficedula parva | rebfly  |
-| 橙胸姬鶲 | Rufous-gorgeted Flycatcher | RGFL | FIST | Ficedula strophiata | rugfly1  |
-| 白眉鶲 | Yellow-rumped Flycatcher | KOFL;YRFL | FIZA | Ficedula zanthopygia | korfly1  |
-| 聖誕島軍艦鳥 | Christmas Island Frigatebird | CIFR;CHFR | FRAN | Fregata andrewsi | chifri1  |
-| 白斑軍艦鳥 | Lesser Frigatebird |  | FRAR | Fregata ariel | lesfri  |
-| 軍艦鳥 | Great Frigatebird | GRFR | FRMI | Fregata minor | grefri  |
-| 花雀 | Brambling |  | FRMO | Fringilla montifringilla | brambl  |
-| 白冠雞 | Eurasian Coot | COCO | FUAT | Fulica atra | eurcoo  |
-| 暴風鸌 | Northern Fulmar |  | FUGL | Fulmarus glacialis | norful  |
-| 褐頭花翼 | Taiwan Fulvetta | TAFU | FUFO | Fulvetta formosana | taiful1  |
-| 董雞 | Watercock | WATE | GACI | Gallicrex cinerea | waterc1  |
-| 田鷸 | Common Snipe |  | GAGA | Gallinago gallinago | comsni  |
-| 中地鷸 | Swinhoe's Snipe | SWSN | GAME | Gallinago megala | swisni1  |
-| 孤田鷸 | Solitary Snipe |  | GASO | Gallinago solitaria | solsni1  |
-| 針尾鷸 | Pin-tailed Snipe | PISN | GAST | Gallinago stenura | pitsni  |
-| 紅冠水雞 | Eurasian Moorhen | EUMO | GACH | Gallinula chloropus | commoo3  |
-| Red Junglefowl | Red Junglefowl |  | GAGA | Gallus gallus | redjun  |
-| 大陸畫眉 | Chinese Hwamei | CHHW | GACA | Garrulax canorus | melthr  |
-| 臺灣畫眉x大陸畫眉(雜交) | Chinese x Taiwan Hwamei (hybrid) | HWAM;TAHW;CHHW | GACA;GATA | Garrulax canorus x taewanus | x00816  |
-| 臺灣畫眉 | Taiwan Hwamei | TAHW | GATA | Garrulax taewanus | taihwa1  |
-| 松鴉 | Eurasian Jay | ECFJ;EUJA | GAGL | Garrulus glandarius | eurjay1  |
-| 黑喉潛鳥 | Arctic Loon | BTDI;BTLO | GAAR | Gavia arctica | arcloo  |
-| 紅喉潛鳥 | Red-throated Loon | RTDI | GAST | Gavia stellata | retloo  |
-| 鷗嘴燕鷗 | Gull-billed Tern | CGBT | GENI | Gelochelidon nilotica | gubter2  |
-| 橙頭地鶇 | Orange-headed Thrush | OHTH | GECI | Geokichla citrina | orhthr1  |
-| Chestnut-backed Thrush | Chestnut-backed Thrush | CBTH | GEDO | Geokichla dohertyi | chbthr1  |
-| 白眉地鶇 | Siberian Thrush | SITH | GESI | Geokichla sibirica | sibthr1  |
-| 雪花姬地鳩 | Diamond Dove | DIDO | GECU | Geopelia cuneata | diadov1  |
-| 斑馬鳩 | Zebra Dove | ZEDO | GEST | Geopelia striata | zebdov  |
-| 燕鴴 | Oriental Pratincole |  | GLMA | Glareola maldivarum | oripra  |
-| 麻鷺 | Japanese Night Heron | JNHE;JANH | GOGO | Gorsachius goisagi | janher1  |
-| 黑冠麻鷺 | Malayan Night Heron | MANH;MNHE | GOME | Gorsachius melanolophus | manher1  |
-| 九官鳥 | Common Hill Myna | CHMY | GRRE | Gracula religiosa | hilmyn  |
-| 印度鵲椋鳥 | Indian Pied Starling | IPMY;APST;IPST | GRCO | Gracupica contra | aspsta2  |
-| 黑領椋鳥 | Black-collared Starling | BCST | GRNI | Gracupica nigricollis | bkcsta1  |
-| 灰鶴 | Common Crane | COCR | GRGR | Grus grus | comcra  |
-| 丹頂鶴 | Red-crowned Crane | RCCR | GRJA | Grus japonensis | reccra1  |
-| 白頭鶴 | Hooded Crane |  | GRMO | Grus monacha | hoocra1  |
-| 蠣鴴 | Eurasian Oystercatcher |  | HAOS | Haematopus ostralegus | euroys1  |
-| 赤翡翠 | Ruddy Kingfisher | RUKI | HACO | Halcyon coromanda | rudkin1  |
-| 黑頭翡翠 | Black-capped Kingfisher | BCKI | HAPI | Halcyon pileata | blckin1  |
-| 蒼翡翠 | White-throated Kingfisher | WBKI;WTKI | HASM | Halcyon smyrnensis | whtkin2  |
-| 白尾海鵰 | White-tailed Eagle | WTSE | HAAL | Haliaeetus albicilla | whteag  |
-| 栗鳶 | Brahminy Kite | BRKI | HAIN | Haliastur indus | brakit1  |
-| 小蝗鶯 | Pallas's Grasshopper Warbler | PAGW | HECE | Helopsaltes certhiola | pagwar1  |
-| 蒼眉蝗鶯 | Gray's Grasshopper Warbler | GRGW;GGWA | HEFA | Helopsaltes fasciolatus | grgwar1  |
-| 北蝗鶯 | Middendorff's Grasshopper Warbler | MGWA;MIGW | HEOC | Helopsaltes ochotensis | migwar  |
-| 栗背短腳鵯 | Chestnut Bulbul | CHBU | HECA | Hemixos castanonotus | chebul1  |
-| 白耳畫眉 | White-eared Sibia | WESI | HEAU | Heterophasia auricularis | whesib1  |
-| 靴隼鵰 | Booted Eagle | BOEA | HIPE | Hieraaetus pennatus | booeag1  |
-| 北方鷹鵑 | Northern Hawk-Cuckoo | NOHC;RUHC;NHCU;RHCU | HIHY | Hierococcyx hyperythrus | nohcuc1  |
-| 棕腹鷹鵑 | Hodgson's Hawk-Cuckoo | HHCU;WHCU;HOHC;WHHC | HINI | Hierococcyx nisicolor | hodhac1  |
-| 鷹鵑 | Large Hawk-Cuckoo | LHCU;LAHC | HISP | Hierococcyx sparverioides | larhac2  |
-| 高蹺鴴 | Black-winged Stilt | EBWS | HIHI | Himantopus himantopus | bkwsti  |
-| 黑領高蹺鴴 | Pied Stilt | BWST;PIST | HILE | Himantopus leucocephalus | piesti1  |
-| 白喉針尾雨燕 | White-throated Needletail |  | HICA | Hirundapus caudacutus | whtnee  |
-| 紫針尾雨燕 | Purple Needletail | PUNE | HICE | Hirundapus celebensis | purnee1  |
-| 灰喉針尾雨燕 | Silver-backed Needletail | SBNE | HICO | Hirundapus cochinchinensis | sibnee1  |
-| 家燕 | Barn Swallow | BASW | HIRU | Hirundo rustica | barswa  |
-| 洋燕 | Pacific Swallow | PASW;HOSW | HITA | Hirundo tahitica | pacswa1  |
-| 深山鶯 | Yellowish-bellied Bush Warbler | YBBW | HOAC | Horornis acanthizoides | ybbwar1  |
-| 遠東樹鶯 | Manchurian Bush Warbler | KOBW;KBWA;MBWA | HOCA | Horornis canturians | manbuw1  |
-| 日本樹鶯 | Japanese Bush Warbler | JBWA | HODI | Horornis diphone | jabwar  |
-| 小鶯 | Brownish-flanked Bush Warbler | BFBW | HOFO | Horornis fortipes | bfbwar1  |
-| 白腰叉尾海燕 | Leach's Storm-Petrel | LSPE | HYLE | Hydrobates leucorhous | lcspet  |
-| 黑叉尾海燕 | Swinhoe's Storm-Petrel | SWSP;SSPE | HYMO | Hydrobates monorhis | swspet  |
-| 褐翅叉尾海燕 | Tristram's Storm-Petrel | TSPE | HYTR | Hydrobates tristrami | trspet  |
-| 小鷗 | Little Gull |  | HYMI | Hydrocoloeus minutus | litgul  |
-| 水雉 | Pheasant-tailed Jacana | PTJA | HYCH | Hydrophasianus chirurgus | phtjac1  |
-| 裏海燕鷗 | Caspian Tern |  | HYCA | Hydroprogne caspia | caster1  |
-| 黑枕藍鶲 | Black-naped Monarch | BNMO | HYAZ | Hypothymis azurea | blnmon1  |
-| 棕耳鵯 | Brown-eared Bulbul | BEBU | HYAM | Hypsipetes amaurotis | brebul1  |
-| 紅嘴黑鵯 | Black Bulbul | HBBU;BLBU | HYLE | Hypsipetes leucocephalus | blabul1  |
-| 漁鷗 | Pallas's Gull |  | ICIC | Ichthyaetus ichthyaetus | gbhgul2  |
-| 遺鷗 | Relict Gull | REGU | ICRE | Ichthyaetus relictus | relgul2  |
-| 白腹海鵰 | White-bellied Sea-Eagle | WBSE | ICLE | Icthyophaga leucogaster | wbseag1  |
-| 林鵰 | Black Eagle | BLEA | ICMA | Ictinaetus malaiensis | blaeag1  |
-| 靴籬鶯 | Booted Warbler | BOWA | IDCA | Iduna caligata | boowar1  |
-| 栗小鷺 | Cinnamon Bittern | CIBI | IXCI | Ixobrychus cinnamomeus | cinbit1  |
-| 秋小鷺 | Schrenck's Bittern | VSBI;SCBI | IXEU | Ixobrychus eurhythmus | schbit1  |
-| 黃頸黑鷺 | Black Bittern | BLBI | IXFL | Ixobrychus flavicollis | blabit1  |
-| 黃小鷺 | Yellow Bittern |  | IXSI | Ixobrychus sinensis | yelbit  |
-| 地啄木 | Eurasian Wryneck |  | JYTO | Jynx torquilla | eurwry  |
-| 黃魚鴞 | Tawny Fish-Owl | TAFO;TFOW | KEFL | Ketupa flavipes | tafowl1  |
-| 黑翅山椒鳥 | Black-winged Cuckooshrike | BWCU;BWCS | LAME | Lalage melaschistos | bkwcus1  |
-| 長尾麗椋鳥 | Long-tailed Glossy Starling | LTST;LTGS | LACA | Lamprotornis caudatus | ltgsta1  |
-| 栗頭麗椋鳥 | Superb Starling | SUST | LASU | Lamprotornis superbus | supsta1  |
-| 紅頭伯勞 | Bull-headed Shrike | BHSH | LABU | Lanius bucephalus | buhshr1  |
-| 紅背伯勞 | Red-backed Shrike |  | LACO | Lanius collurio | rebshr1  |
-| 栗背伯勞 | Burmese Shrike | BUSH | LACO | Lanius collurioides | burshr1  |
-| 紅尾伯勞 | Brown Shrike | BRSH | LACR | Lanius cristatus | brnshr  |
-| 西方灰伯勞 | Great Gray Shrike | GGSH | LAEX | Lanius excubitor | norshr1  |
-| 荒漠伯勞 | Isabelline Shrike | ISSH | LAIS | Lanius isabellinus | isashr1  |
-| 棕背伯勞 | Long-tailed Shrike | LTSH | LASC | Lanius schach | lotshr1  |
-| 楔尾伯勞 | Chinese Gray Shrike | CGSH | LASP | Lanius sphenocercus | chgshr1  |
-| 灰背伯勞 | Gray-backed Shrike | GBSH | LATE | Lanius tephronotus | gybshr1  |
-| 虎紋伯勞 | Tiger Shrike | TISH | LATI | Lanius tigrinus | tigshr1  |
-| 銀鷗 | Herring Gull | AHHG;EHGU;HEGU | LAAR | Larus argentatus | hergul  |
-| 歐亞海鷗 | Common Gull | MEGU | LACA | Larus canus | mewgul  |
-| 黑尾鷗 | Black-tailed Gull |  | LACR | Larus crassirostris | bktgul  |
-| 小黑背鷗 | Lesser Black-backed Gull |  | LAFU | Larus fuscus | lbbgul  |
-| 北極鷗 | Glaucous Gull |  | LAHY | Larus hyperboreus | glagul  |
-| 灰背鷗 | Slaty-backed Gull | SBGU | LASC | Larus schistisagus | slbgul  |
-| 日本歌鴝 | Japanese Robin | JARO | LAAK | Larvivora akahige | japrob2  |
-| 藍歌鴝 | Siberian Blue Robin |  | LACY | Larvivora cyane | sibrob  |
-| 琉球歌鴝 | Ryukyu Robin | RYRO | LAKO | Larvivora komadori | ryurob2  |
-| 紅尾歌鴝 | Rufous-tailed Robin |  | LASI | Larvivora sibilans | rutrob1  |
-| Silver-eared Mesia | Silver-eared Mesia | SEME | LEAR | Leiothrix argentauris | siemes1  |
-| 紅嘴相思鳥 | Red-billed Leiothrix |  | LELU | Leiothrix lutea | reblei  |
-| White-browed Meadowlark | White-browed Meadowlark | WBBL;WBME | LESU | Leistes superciliaris | whbbla2  |
-| 白鶴 | Siberian Crane | SICR | LELE | Leucogeranus leucogeranus | sibcra1  |
-| 笑鷗 | Laughing Gull |  | LEAT | Leucophaeus atricilla | laugul  |
-| 弗氏鷗 | Franklin's Gull |  | LEPI | Leucophaeus pipixcan | fragul  |
-| 灰胸秧雞 | Slaty-breasted Rail | SBRA | LEST | Lewinia striata | slbrai1  |
-| Short-billed Dowitcher | Short-billed Dowitcher |  | LIGR | Limnodromus griseus | shbdow  |
-| 長嘴半蹼鷸 | Long-billed Dowitcher |  | LISC | Limnodromus scolopaceus | lobdow  |
-| 半蹼鷸 | Asian Dowitcher | ASDO | LISE | Limnodromus semipalmatus | asidow1  |
-| 斑尾鷸 | Bar-tailed Godwit |  | LILA | Limosa lapponica | batgod  |
-| 黑尾鷸 | Black-tailed Godwit | BTGO | LILI | Limosa limosa | bktgod  |
-| 赤胸朱頂雀 | Eurasian Linnet | EULI;COLI | LICA | Linaria cannabina | eurlin1  |
-| 黃胸藪眉 | Steere's Liocichla | STLI;TALI | LIST | Liocichla steerii | stelio1  |
-| 臺灣叢樹鶯 | Taiwan Bush Warbler | TAGW;TGWA;TBWA | LOAL | Locustella alishanensis | taibuw1  |
-| 矛斑蝗鶯 | Lanceolated Warbler | LAWA | LOLA | Locustella lanceolata | lanwar  |
-| 赤褐蝗鶯 | Russet Bush Warbler | RBWA;RGWA | LOMA | Locustella mandelli | rubwar1  |
-| 黑頭文鳥 | Chestnut Munia |  | LOAT | Lonchura atricapilla | chemun  |
-| 白頭文鳥 | White-headed Munia | WHMU | LOMA | Lonchura maja | whhmun1  |
-| 斑文鳥 | Scaly-breasted Munia |  | LOPU | Lonchura punctulata | nutman  |
-| 白腰文鳥 | White-rumped Munia | WRMU | LOST | Lonchura striata | whrmun  |
-| 白鷴 | Silver Pheasant | SIPH | LONY | Lophura nycthemera | silphe  |
-| 藍腹鷴 | Swinhoe's Pheasant | SWPH | LOSW | Lophura swinhoii | swiphe1  |
-| 紅交嘴雀 | Red Crossbill | COCR | LOCU | Loxia curvirostra | redcro  |
-| 藍喉鴝 | Bluethroat |  | LUSV | Luscinia svecica | blueth  |
-| 小鷸 | Jack Snipe |  | LYMI | Lymnocryptes minimus | jacsni  |
-| 黃山雀 | Taiwan Yellow Tit | YETI;TYTI | MAHO | Machlolophus holsti | yeltit2  |
-| Yellow-cheeked Tit | Yellow-cheeked Tit | YCTI | MASP | Machlolophus spilonotus | yectit1  |
-| 長尾鳩 | Philippine Cuckoo-Dove | PHCD;PCDO | MATE | Macropygia tenuirostris | phcdov1  |
-| 斑尾鵑鳩 | Barred Cuckoo-Dove | BACD;BCDO | MAUN | Macropygia unchall | bacdov1  |
-| 葡萄胸鴨 | American Wigeon |  | MAAM | Mareca americana | amewig  |
-| 羅文鴨 | Falcated Duck |  | MAFA | Mareca falcata | falduc  |
-| 赤頸鴨 | Eurasian Wigeon |  | MAPE | Mareca penelope | eurwig  |
-| 赤頸鴨x葡萄胸鴨(雜交) | Eurasian x American Wigeon (hybrid) | AMWI;EUWI | MAPE;MAAM | Mareca penelope x americana | x00421  |
-| 赤膀鴨 | Gadwall |  | MAST | Mareca strepera | gadwal  |
-| 火雞 | Wild Turkey |  | MEGA | Meleagris gallopavo | wiltur  |
-| Budgerigar | Budgerigar |  | MEUN | Melopsittacus undulatus | budger  |
-| 白秋沙 | Smew |  | MEAL | Mergellus albellus | smew  |
-| 川秋沙 | Common Merganser | GOOS | MEME | Mergus merganser | commer  |
-| 紅胸秋沙 | Red-breasted Merganser |  | MESE | Mergus serrator | rebmer  |
-| 唐秋沙 | Scaly-sided Merganser | SSME | MESQ | Mergus squamatus | scsmer1  |
-| 彩虹蜂虎 | Rainbow Bee-eater | RABE;RBEA | MEOR | Merops ornatus | rabeat1  |
-| 藍頰蜂虎 | Blue-cheeked Bee-eater | BCBE | MEPE | Merops persicus | bcbeat1  |
-| 栗喉蜂虎 | Blue-tailed Bee-eater | BTBE | MEPH | Merops philippinus | btbeat1  |
-| 藍喉蜂虎 | Blue-throated Bee-eater | IBTB;BTBE | MEVI | Merops viridis | btbeat2  |
-| 黑鳶 | Black Kite | BBKI;BLKI | MIMI | Milvus migrans | blakit1  |
-| 白喉磯鶇 | White-throated Rock-Thrush | WTRT | MOGU | Monticola gularis | wtrthr1  |
-| 藍磯鶇 | Blue Rock-Thrush | BRTH;BLRT | MOSO | Monticola solitarius | burthr  |
-| 白鶺鴒 | White Wagtail | PWWA | MOAL | Motacilla alba | whiwag  |
-| 灰鶺鴒 | Gray Wagtail | GRWA | MOCI | Motacilla cinerea | grywag  |
-| 黃頭鶺鴒 | Citrine Wagtail |  | MOCI | Motacilla citreola | citwag  |
-| 日本鶺鴒 | Japanese Wagtail | JAWA | MOGR | Motacilla grandis | japwag1  |
-| 東方黃鶺鴒 | Eastern Yellow Wagtail |  | MOTS | Motacilla tschutschensis | eaywag  |
-| 寬嘴鶲 | Asian Brown Flycatcher |  | MUDA | Muscicapa dauurica | asbfly  |
-| 紅尾鶲 | Ferruginous Flycatcher | FEFL | MUFE | Muscicapa ferruginea | ferfly1  |
-| 灰斑鶲 | Gray-streaked Flycatcher |  | MUGR | Muscicapa griseisticta | gysfly1  |
-| 褐胸鶲 | Brown-breasted Flycatcher | BBFL | MUMU | Muscicapa muttui | brbfly2  |
-| 烏鶲 | Dark-sided Flycatcher |  | MUSI | Muscicapa sibirica | dasfly  |
-| 斑鶲 | Spotted Flycatcher |  | MUST | Muscicapa striata | spofly1  |
-| 白尾鴝 | White-tailed Robin | WTBR;WTRO | MYLE | Myiomela leucura | whtrob2  |
-| 和尚鸚鵡 | Monk Parakeet |  | MYMO | Myiopsitta monachus | monpar  |
-| 白斑紫嘯鶇 | Blue Whistling-Thrush | BLWT;BWTH | MYCA | Myophonus caeruleus | blwthr1  |
-| 臺灣紫嘯鶇 | Taiwan Whistling-Thrush | TWTH;TAWT | MYIN | Myophonus insularis | fowthr1  |
-| 赤嘴潛鴨 | Red-crested Pochard | RCPO | NERU | Netta rufina | recpoc  |
-| 棉鴨 | Cotton Pygmy-Goose | COPG;CPGO | NECO | Nettapus coromandelianus | copgoo1  |
-| 棕腹大仙鶲 | Fujian Niltava | FUNI | NIDA | Niltava davidi | fujnil1  |
-| 棕腹仙鶲 | Rufous-bellied Niltava | RBNI | NISU | Niltava sundara | rubnil1  |
-| 黃腹琉璃 | Taiwan Vivid Niltava | SVNI;TVNI | NIVI | Niltava vivida | vivnil3  |
-| 褐鷹鴞 | Northern Boobook | NOBO | NIJA | Ninox japonica | norboo1  |
-| 熊鷹 | Mountain Hawk-Eagle | MOHE;MHEA | NINI | Nisaetus nipalensis | mouhae1  |
-| 星鴉 | Eurasian Nutcracker | NONU;SPNU;EUNU | NUCA | Nucifraga caryocatactes | eurnut1  |
-| 大杓鷸 | Eurasian Curlew |  | NUAR | Numenius arquata | eurcur  |
-| 黦鷸 | Far Eastern Curlew | EACU | NUMA | Numenius madagascariensis | faecur  |
-| 小杓鷸 | Little Curlew | LIWH | NUMI | Numenius minutus | litcur  |
-| 中杓鷸 | Whimbrel | EUWH | NUPH | Numenius phaeopus | whimbr  |
-| Helmeted Guineafowl | Helmeted Guineafowl | HEGU | NUME | Numida meleagris | helgui  |
-| 棕夜鷺 | Nankeen Night Heron | NANH;NNHE;RUNH;RNHE | NYCA | Nycticorax caledonicus | runher1  |
-| 夜鷺 | Black-crowned Night Heron |  | NYNY | Nycticorax nycticorax | bcnher  |
-| Cockatiel | Cockatiel | COCK | NYHO | Nymphicus hollandicus | cockat  |
-| 黃蹼洋海燕 | Wilson's Storm-Petrel | WSPE | OCOC | Oceanites oceanicus | wispet  |
-| 漠䳭 | Desert Wheatear | DEWH | OEDE | Oenanthe deserti | deswhe1  |
-| 沙䳭 | Isabelline Wheatear | ISWH | OEIS | Oenanthe isabellina | isawhe1  |
-| 穗䳭 | Northern Wheatear |  | OEOE | Oenanthe oenanthe | norwhe  |
-| 白頂䳭 | Pied Wheatear |  | OEPL | Oenanthe pleschanka | piewhe1  |
-| 白腰燕鷗 | Aleutian Tern |  | ONAL | Onychoprion aleuticus | aleter1  |
-| 白眉燕鷗 | Bridled Tern |  | ONAN | Onychoprion anaethetus | briter1  |
-| 烏領燕鷗 | Sooty Tern |  | ONFU | Onychoprion fuscatus | sooter1  |
-| 黃鸝 | Black-naped Oriole | BNOR | ORCH | Oriolus chinensis | blnori1  |
-| 朱鸝 | Maroon Oriole | MAOR | ORTR | Oriolus traillii | marori2  |
-| 蘭嶼角鴞 | Ryukyu Scops-Owl | RYSO;RSOW | OTEL | Otus elegans | ryusco1  |
-| 領角鴞 | Collared Scops-Owl | COSO;CSOW | OTLE | Otus lettia | cosowl1  |
-| 黃嘴角鴞 | Mountain Scops-Owl | MSOW;MOSO | OTSP | Otus spilocephalus | mosowl2  |
-| 東方角鴞 | Oriental Scops-Owl | OSOW | OTSU | Otus sunia | orsowl  |
-| 爪哇雀 | Java Sparrow |  | PAOR | Padda oryzivora | javspa  |
-| 魚鷹 | Osprey |  | PAHA | Pandion haliaetus | osprey  |
-| 栗翅鷹 | Harris's Hawk |  | PAUN | Parabuteo unicinctus | hrshaw  |
-| 紅冠唐納雀 | Red-crested Cardinal |  | PACO | Paroaria coronata | reccar  |
-| 紅頂唐納雀 | Red-capped Cardinal | RCCA | PAGU | Paroaria gularis | reccar4  |
-| 白頰山雀 | Japanese Tit | GRTI;JATI | PAMI | Parus minor | gretit4  |
-| 青背山雀 | Green-backed Tit | GBTI | PAMO | Parus monticolus | grbtit1  |
-| 山麻雀 | Russet Sparrow | RUSP | PACI | Passer cinnamomeus | russpa2  |
-| 家麻雀 | House Sparrow |  | PADO | Passer domesticus | houspa  |
-| 麻雀 | Eurasian Tree Sparrow |  | PAMO | Passer montanus | eutspa  |
-| 稀樹草鵐 | Savannah Sparrow | SASP;SBBS | PASA | Passerculus sandwichensis | savspa  |
-| 粉紅椋鳥 | Rosy Starling | RCST;ROST | PARO | Pastor roseus | rossta2  |
-| 藍孔雀 | Indian Peafowl |  | PACR | Pavo cristatus | compea  |
-| 卷羽鵜鶘 | Dalmatian Pelican | DAPE | PECR | Pelecanus crispus | dalpel1  |
-| 白鵜鶘 | Great White Pelican | GWPE | PEON | Pelecanus onocrotalus | grwpel1  |
-| 小灰山椒鳥 | Brown-rumped Minivet | BRMI;SWMI | PECA | Pericrocotus cantonensis | brrmin1  |
-| 灰山椒鳥 | Ashy Minivet | ASMI | PEDI | Pericrocotus divaricatus | ashmin1  |
-| 粉紅山椒鳥 | Rosy Minivet | ROMI | PERO | Pericrocotus roseus | rosmin1  |
-| 灰喉山椒鳥 | Gray-chinned Minivet | GCTM;GCMI | PESO | Pericrocotus solaris | gycmin1  |
-| 赤紅山椒鳥 | Scarlet Minivet | SCMI | PESP | Pericrocotus speciosus | scamin1  |
-| 琉球山椒鳥 | Ryukyu Minivet | RYMI | PETE | Pericrocotus tegimae | ryumin1  |
-| 煤山雀 | Coal Tit | COTI | PEAT | Periparus ater | coatit2  |
-| 黃腹山雀 | Yellow-bellied Tit | YBTI | PEVE | Periparus venustulus | yebtit4  |
-| 東方蜂鷹 | Oriental Honey-buzzard | ORHB;OHBU;CRHB;CHBU | PEPT | Pernis ptilorhynchus | orihob2  |
-| 紅嘴熱帶鳥 | Red-billed Tropicbird |  | PHAE | Phaethon aethereus | rebtro  |
-| 白尾熱帶鳥 | White-tailed Tropicbird |  | PHLE | Phaethon lepturus | whttro  |
-| 紅尾熱帶鳥 | Red-tailed Tropicbird |  | PHRU | Phaethon rubricauda | rettro  |
-| 丹氏鸕鷀 | Japanese Cormorant | JACO | PHCA | Phalacrocorax capillatus | japcor1  |
-| 鸕鷀 | Great Cormorant | BLSH;GBCO | PHCA | Phalacrocorax carbo | grecor  |
-| 灰瓣足鷸 | Red Phalarope | GRPH | PHFU | Phalaropus fulicarius | redpha1  |
-| 紅領瓣足鷸 | Red-necked Phalarope |  | PHLO | Phalaropus lobatus | renpha  |
-| 環頸雉 | Ring-necked Pheasant | RNPH;COPH | PHCO | Phasianus colchicus | rinphe1  |
-| 短尾信天翁 | Short-tailed Albatross |  | PHAL | Phoebastria albatrus | shtalb  |
-| 黑背信天翁 | Laysan Albatross |  | PHIM | Phoebastria immutabilis | layalb  |
-| 黑腳信天翁 | Black-footed Albatross |  | PHNI | Phoebastria nigripes | bkfalb  |
-| 大紅鸛 | Greater Flamingo | GRFL | PHRO | Phoenicopterus roseus | grefla3  |
-| 黃尾鴝 | Daurian Redstart | DARE | PHAU | Phoenicurus auroreus | daured1  |
-| 藍額紅尾鴝 | Blue-fronted Redstart | BFRE | PHFR | Phoenicurus frontalis | blfred1  |
-| 鉛色水鶇 | Plumbeous Redstart | PLWR;PLRE;PWRE | PHFU | Phoenicurus fuliginosus | plured1  |
-| 白頂溪鴝 | White-capped Redstart | WCRE;WCWR | PHLE | Phoenicurus leucocephalus | whcred1  |
-| 赭紅尾鴝 | Black Redstart | BLRE | PHOC | Phoenicurus ochruros | blared1  |
-| 黃腹柳鶯 | Tickell's Leaf Warbler | TLWA;TILW | PHAF | Phylloscopus affinis | y00989  |
-| 極北柳鶯 | Arctic Warbler |  | PHBO | Phylloscopus borealis | arcwar1  |
-| 庫頁島柳鶯 | Sakhalin Leaf Warbler | SLWA;SALW | PHBO | Phylloscopus borealoides | salwar1  |
-| 栗頭鶲鶯 | Chestnut-crowned Warbler | CCWA | PHCA | Phylloscopus castaniceps | chcwar2  |
-| 嘰喳柳鶯 | Common Chiffchaff | COCH | PHCO | Phylloscopus collybita | comchi1  |
-| 冠羽柳鶯 | Eastern Crowned Warbler | ECWA | PHCO | Phylloscopus coronatus | eacwar1  |
-| 勘察加柳鶯 | Kamchatka Leaf Warbler | KALW | PHEX | Phylloscopus examinandus | arcwar2  |
-| 褐色柳鶯 | Dusky Warbler |  | PHFU | Phylloscopus fuscatus | duswar  |
-| 哈氏冠紋柳鶯 | Hartert's Leaf Warbler | HALW;HLWA | PHGO | Phylloscopus goodsoni | harlew1  |
-| 淡眉柳鶯 | Hume's Warbler | HUWA;HULW;HLWA | PHHU | Phylloscopus humei | humwar1  |
-| 飯島柳鶯 | Ijima's Leaf Warbler | IJLW;ILWA | PHIJ | Phylloscopus ijimae | ijlwar1  |
-| 黃眉柳鶯 | Yellow-browed Warbler |  | PHIN | Phylloscopus inornatus | yebwar3  |
-| 白眶鶲鶯 | White-spectacled Warbler | WSWA | PHIN | Phylloscopus intermedius | whswar1  |
-| Martens's Warbler | Martens's Warbler | MAWA | PHOM | Phylloscopus omeiensis | marwar4  |
-| 雙斑綠柳鶯 | Two-barred Warbler | TBWA | PHPL | Phylloscopus plumbeitarsus | grewar2  |
-| 黃腰柳鶯 | Pallas's Leaf Warbler | PALW;PAWA;PLWA | PHPR | Phylloscopus proregulus | palwar5  |
-| 黑眉柳鶯 | Sulphur-breasted Warbler | SBWA | PHRI | Phylloscopus ricketti | subwar3  |
-| 巨嘴柳鶯 | Radde's Warbler | RAWA | PHSC | Phylloscopus schwarzi | radwar1  |
-| 林柳鶯 | Wood Warbler |  | PHSI | Phylloscopus sibilatrix | woowar  |
-| 淡尾鶲鶯 | Alström's Warbler | ALWA | PHSO | Phylloscopus soror | pltwar1  |
-| 淡腳柳鶯 | Pale-legged Leaf Warbler | PLLW | PHTE | Phylloscopus tenellipes | pllwar1  |
-| 暗綠柳鶯 | Greenish Warbler | GRWA | PHTR | Phylloscopus trochiloides | grewar3  |
-| 歐亞柳鶯 | Willow Warbler | WIWA | PHTR | Phylloscopus trochilus | wlwwar  |
-| 比氏鶲鶯 | Bianchi's Warbler | BIWA | PHVA | Phylloscopus valentini | biawar1  |
-| 日本柳鶯 | Japanese Leaf Warbler | JALW;JLWA | PHXA | Phylloscopus xanthodryas | arcwar3  |
-| 雲南柳鶯 | Chinese Leaf Warbler | CLWA;CHLW | PHYU | Phylloscopus yunnanensis | chilew1  |
-| 喜鵲 | Oriental Magpie | EUMA;ORMA | PISE | Pica serica | orimag1  |
-| 綠啄木 | Gray-headed Woodpecker | GHWO;GFNW | PICA | Picus canus | gyfwoo1  |
-| 藍翅八色鳥 | Blue-winged Pitta | BWPI | PIMO | Pitta moluccensis | blwpit1  |
-| 八色鳥 | Fairy Pitta | FAPI | PINY | Pitta nympha | faipit1  |
-| 綠胸八色鳥 | Western Hooded Pitta | WHPI | PISO | Pitta sordida | wehpit1  |
-| 白琵鷺 | Eurasian Spoonbill | EUSP | PLLE | Platalea leucorodia | eurspo1  |
-| 白琵鷺x黑面琵鷺(雜交) | Eurasian x Black-faced Spoonbill (hybrid) | EURS;EUSP;BFSP | PLLE;PLMI | Platalea leucorodia x minor | x00883  |
-| 黑面琵鷺 | Black-faced Spoonbill | BFSP | PLMI | Platalea minor | blfspo1  |
-| 彩䴉 | Glossy Ibis |  | PLFA | Plegadis falcinellus | gloibi  |
-| 黑頭織雀 | Village Weaver |  | PLCU | Ploceus cucullatus | vilwea1  |
-| Golden-backed Weaver | Golden-backed Weaver | GBWE | PLJA | Ploceus jacksoni | gobwea1  |
-| 太平洋金斑鴴 | Pacific Golden-Plover | PGPL | PLFU | Pluvialis fulva | pagplo  |
-| 灰斑鴴 | Black-bellied Plover | GRPL | PLSQ | Pluvialis squatarola | bkbplo  |
-| 臺灣鷦眉 | Taiwan Cupwing | TACU | PNFO | Pnoepyga formosana | taiwrb1  |
-| 角鸊鷉 | Horned Grebe | SLGR | POAU | Podiceps auritus | horgre  |
-| 冠鸊鷉 | Great Crested Grebe | GCGR | POCR | Podiceps cristatus | grcgre1  |
-| 赤頸鸊鷉 | Red-necked Grebe |  | POGR | Podiceps grisegena | rengre  |
-| 黑頸鸊鷉 | Eared Grebe | BNGR | PONI | Podiceps nigricollis | eargre  |
-| 塞內加爾鸚鵡 | Senegal Parrot | SEPA | POSE | Poicephalus senegalus | senpar  |
-| 白眉秧雞 | White-browed Crake | WBCR | POCI | Poliolimnas cinereus | whbcra1  |
-| 小彎嘴 | Taiwan Scimitar-Babbler | TSBA;TASB | POMU | Pomatorhinus musicus | taiscb1  |
-| 灰頭紫水雞 | Gray-headed Swamphen | PUSW | POPO | Porphyrio poliocephalus | purswa3  |
-| 斑胸秧雞 | Spotted Crake |  | POPO | Porzana porzana | spocra1  |
-| 黃領金剛鸚鵡 | Yellow-collared Macaw | GCMA;YCMA | PRAU | Primolius auricollis | yecmac  |
-| 灰頭鷦鶯 | Yellow-bellied Prinia | YBPR | PRFL | Prinia flaviventris | yebpri1  |
-| 褐頭鷦鶯 | Plain Prinia | PLPR | PRIN | Prinia inornata | plapri1  |
-| 斑紋鷦鶯 | Striped Prinia | STPR | PRST | Prinia striata | strpri8  |
-| 岩鷚 | Alpine Accentor | ALAC | PRCO | Prunella collaris | alpacc1  |
-| 棕眉山岩鷚 | Siberian Accentor |  | PRMO | Prunella montanella | sibacc  |
-| 黑背白腹穴鳥 | Tahiti Petrel |  | PSRO | Pseudobulweria rostrata | tahpet1  |
-| 五色鳥 | Taiwan Barbet | TABA | PSNU | Psilopogon nuchalis | taibar2  |
-| 紅臉鸚鵡 | Red-masked Parakeet |  | PSER | Psittacara erythrogenys | rempar  |
-| 亞歷山大鸚鵡 | Alexandrine Parakeet | ALPA | PSEU | Psittacula eupatria | alepar2  |
-| 紅領綠鸚鵡 | Rose-ringed Parakeet | RNPA | PSKR | Psittacula krameri | rorpar  |
-| 灰鸚鵡 | Gray Parrot | GRPA | PSER | Psittacus erithacus | grepar  |
-| 白腹穴鳥 | Bonin Petrel |  | PTHY | Pterodroma hypoleuca | bonpet  |
-| 克島圓尾穴鳥 | Kermadec Petrel |  | PTNE | Pterodroma neglecta | kerpet  |
-| 索氏圓尾鸌 | Providence Petrel |  | PTSO | Pterodroma solandri | solpet1  |
-| 黑喉噪眉 | Black-throated Laughingthrush | BTLA | PTCH | Pterorhinus chinensis | bltlau1  |
-| 棕噪眉 | Rusty Laughingthrush | RULA | PTPO | Pterorhinus poecilorhynchus | ruslau1  |
-| 臺灣白喉噪眉 | Rufous-crowned Laughingthrush | RCLA | PTRU | Pterorhinus ruficeps | ruclau2  |
-| 白頰噪眉 | White-browed Laughingthrush | WBLA | PTSA | Pterorhinus sannio | whblau1  |
-| 小綠鳩 | Black-chinned Fruit-Dove | BCFD | PTLE | Ptilinopus leclancheri | bcfdov1  |
-| 黑細鸌 | Christmas Shearwater |  | PUNA | Puffinus nativitatis | chrshe  |
-| 白喉紅臀鵯 | Sooty-headed Bulbul | SHBU | PYAU | Pycnonotus aurigaster | sohbul1  |
-| 紅耳鵯 | Red-whiskered Bulbul |  | PYJO | Pycnonotus jocosus | rewbul  |
-| 白頭翁 | Light-vented Bulbul | LVBU | PYSI | Pycnonotus sinensis | livbul1  |
-| 烏頭翁x白頭翁(雜交) | Light-vented x Styan's Bulbul (hybrid) | STBU;LVBU | PYSI;PYTA | Pycnonotus sinensis x taivanus | x00744  |
-| 烏頭翁 | Styan's Bulbul | STBU | PYTA | Pycnonotus taivanus | stybul1  |
-| 紅嘴山鴉 | Red-billed Chough | RBCH | PYPY | Pyrrhocorax pyrrhocorax | rebcho1  |
-| 褐鷽 | Brown Bullfinch | BRBU | PYNI | Pyrrhula nipalensis | brobul1  |
-| 灰鷽 | Taiwan Bullfinch | TABU | PYOW | Pyrrhula owstoni | gyhbul5  |
-| 歐亞鷽 | Eurasian Bullfinch |  | PYPY | Pyrrhula pyrrhula | eurbul  |
-| 灰腳秧雞 | Slaty-legged Crake | SLCR | RAEU | Rallina eurizonoides | sllcra1  |
-| 西方秧雞 | Water Rail | WARA;WWRA | RAAQ | Rallus aquaticus | watrai1  |
-| 東亞秧雞 | Brown-cheeked Rail | EWRA;BCRA | RAIN | Rallus indicus | bncrai1  |
-| 反嘴鴴 | Pied Avocet | PIAV | REAV | Recurvirostra avosetta | pieavo1  |
-| 火冠戴菊鳥 | Flamecrest | FLAM | REGO | Regulus goodfellowi | flamec1  |
-| 戴菊鳥 | Goldcrest | GOLD | RERE | Regulus regulus | goldcr1  |
-| 攀雀 | Chinese Penduline-Tit | CPTI;CHPT | RECO | Remiz consobrinus | chptit1  |
-| 菲律賓扇尾鶲 | Philippine Pied-Fantail | PPFA;PHPF | RHNI | Rhipidura nigritorquis | phipif1  |
-| 棕沙燕 | Gray-throated Martin | GTMA;APMA;PLMA | RICH | Riparia chinensis | gytmar1  |
-| 灰沙燕 | Bank Swallow | SAMA;BASW;CSMA | RIRI | Riparia riparia | banswa  |
-| 三趾鷗 | Black-legged Kittiwake |  | RITR | Rissa tridactyla | bklkit  |
-| 彩鷸 | Greater Painted-Snipe | GPSN;GRPS | ROBE | Rostratula benghalensis | grpsni1  |
-| 黑嘴鷗 | Saunders's Gull | SAGU | SASA | Saundersilarus saundersi | saugul2  |
-| 白斑黑石䳭 | Pied Bushchat | PIBU;PBCH | SACA | Saxicola caprata | piebus1  |
-| 灰叢鴝 | Gray Bushchat | GBCH;GRBU | SAFE | Saxicola ferreus | grybus1  |
-| 黑喉鴝 | Amur Stonechat | COST;AMST | SAST | Saxicola stejnegeri | stonec7  |
-| 頭烏線 | Dusky Fulvetta | DUFU | SCBR | Schoeniparus brunneus | dusful1  |
-| 山鷸 | Eurasian Woodcock |  | SCRU | Scolopax rusticola | eurwoo  |
-| 巴鴨 | Baikal Teal |  | SIFO | Sibirionetta formosa | baitea  |
-| 橙額黃雀鵐 | Orange-fronted Yellow-Finch | OFYF | SICO | Sicalis columbiana | ofyfin1  |
-| 橙黃雀鵐 | Saffron Finch |  | SIFL | Sicalis flaveola | saffin  |
-| 茶腹鳾 | Eurasian Nuthatch | EUNU | SIEU | Sitta europaea | eurnut2  |
-| 赤腹山雀 | Chestnut-bellied Tit | CBTI | SICA | Sittiparus castaneoventris | vartit3  |
-| 雜色山雀 | Varied Tit | VATI | SIVA | Sittiparus varius | vartit1  |
-| 琵嘴鴨 | Northern Shoveler | NOSH | SPCL | Spatula clypeata | norsho  |
-| 琵嘴鴨x赤膀鴨(雜交) | Northern Shoveler x Gadwall (hybrid) | GADW;NSHO;NOSH | SPCL;MAST | Spatula clypeata x Mareca strepera | x00457  |
-| Blue-winged Teal x Northern Shoveler (hybrid) | Blue-winged Teal x Northern Shoveler (hybrid) | NSHO;BWTE;NOSH | SPCL;SPDI | Spatula discors x clypeata | x00629  |
-| 白眉鴨 | Garganey |  | SPQU | Spatula querquedula | gargan  |
-| 珠頸斑鳩 | Spotted Dove | ESDO | SPCH | Spilopelia chinensis | spodov  |
-| 大冠鷲 | Crested Serpent-Eagle | CRSE;CSEA | SPCH | Spilornis cheela | crseag1  |
-| 黃雀 | Eurasian Siskin |  | SPSP | Spinus spinus | eursis  |
-| 白環鸚嘴鵯 | Collared Finchbill | COFI | SPSE | Spizixos semitorques | colfin1  |
-| 灰椋鳥 | White-cheeked Starling | WCST | SPCI | Spodiopsar cineraceus | whcsta1  |
-| 絲光椋鳥 | Red-billed Starling | RBST | SPSE | Spodiopsar sericeus | rebsta1  |
-| 栗耳鳳眉 | Indochinese Yuhina | INYU | STTO | Staphida torqueola | indyuh1  |
-| 長尾賊鷗 | Long-tailed Jaeger | LTSK | STLO | Stercorarius longicaudus | lotjae  |
-| 灰賊鷗 | South Polar Skua |  | STMA | Stercorarius maccormicki | sopsku1  |
-| 短尾賊鷗 | Parasitic Jaeger | ARJA;ARSK | STPA | Stercorarius parasiticus | parjae  |
-| 中賊鷗 | Pomarine Jaeger | POSK | STPO | Stercorarius pomarinus | pomjae  |
-| 紅燕鷗 | Roseate Tern | ROTE | STDO | Sterna dougallii | roster  |
-| 燕鷗 | Common Tern |  | STHI | Sterna hirundo | comter  |
-| 蒼燕鷗 | Black-naped Tern | BNTE | STSU | Sterna sumatrana | blnter1  |
-| 小燕鷗 | Little Tern |  | STAL | Sternula albifrons | litter1  |
-| 灰斑鳩 | Eurasian Collared-Dove | CODO;ECDO | STDE | Streptopelia decaocto | eucdov  |
-| 金背鳩 | Oriental Turtle-Dove | OTDO;RTDO | STOR | Streptopelia orientalis | ortdov  |
-| 紅鳩 | Red Collared-Dove | RCDO;RECD;RTDO;RETD | STTR | Streptopelia tranquebarica | recdov1  |
-| 褐林鴞 | Brown Wood-Owl | BWOW;BRWO | STLE | Strix leptogrammica | brwowl1  |
-| 東方灰林鴞 | Himalayan Owl | HIOW | STNI | Strix nivicolum | himowl1  |
-| 灰頭椋鳥 | Chestnut-tailed Starling | CTST | STMA | Sturnia malabarica | chtsta2  |
-| 黑冠椋鳥 | Brahminy Starling | BRST | STPA | Sturnia pagodarum | brasta1  |
-| 灰背椋鳥 | White-shouldered Starling | WSST | STSI | Sturnia sinensis | whssta2  |
-| 歐洲椋鳥 | European Starling | COST | STVU | Sturnus vulgaris | eursta  |
-| 藍臉鰹鳥 | Masked Booby |  | SUDA | Sula dactylatra | masboo  |
-| 白腹鰹鳥 | Brown Booby |  | SULE | Sula leucogaster | brnboo  |
-| 紅腳鰹鳥 | Red-footed Booby |  | SUSU | Sula sula | refboo  |
-| 方尾烏鵑 | Square-tailed Drongo-Cuckoo | STDC | SULU | Surniculus lugubris | asidrc3  |
-| 黃羽鸚嘴 | Golden Parrotbill | GOPA | SUVE | Suthora verreauxi | golpar2  |
-| 粉紅鸚嘴 | Vinous-throated Parrotbill | VTPA | SUWE | Suthora webbiana | vitpar1  |
-| 小鵪鶉 | Blue-breasted Quail | KIQU;ABQU;BBQU | SYCH | Synoicus chinensis | blbqua1  |
-| 扁嘴海雀 | Ancient Murrelet |  | SYAN | Synthliboramphus antiquus | ancmur  |
-| 冠海雀 | Japanese Murrelet | JAMU | SYWU | Synthliboramphus wumizusume | japmur1  |
-| 黑長尾雉 | Mikado Pheasant | MIPH | SYMI | Syrmaticus mikado | mikphe1  |
-| 小鸊鷉 | Little Grebe | DABC;LIGR | TARU | Tachybaptus ruficollis | litgre1  |
-| 瀆鳧 | Ruddy Shelduck |  | TAFE | Tadorna ferruginea | rudshe  |
-| 花鳧 | Common Shelduck | COSH | TATA | Tadorna tadorna | comshe  |
-| 鵂鶹 | Collared Owlet | COOW | TABR | Taenioptynx brodiei | colowl1  |
-| Zebra Finch | Zebra Finch | SZFI;TZFI;ZEFI | TAGU | Taeniopygia guttata | zebfin2  |
-| 藍尾鴝 | Red-flanked Bluetail | OFBR | TACY | Tarsiger cyanurus | refblu  |
-| 白眉林鴝 | White-browed Bush-Robin | WBBR | TAIN | Tarsiger indicus | wbbrob1  |
-| 栗背林鴝 | Collared Bush-Robin | COBR;CBRO | TAJO | Tarsiger johnstoniae | cobrob1  |
-| 紫綬帶 | Black Paradise-Flycatcher | BPFL;JPFL;BLPF;JAPF | TEAT | Terpsiphone atrocaudata | japfly1  |
-| 阿穆爾綬帶 | Amur Paradise-Flycatcher | APFL;CPFL;AMPF;CHPF | TEIN | Terpsiphone incei | amupaf1  |
-| 小鳳頭燕鷗 | Lesser Crested Tern | LCTE | THBE | Thalasseus bengalensis | lecter2  |
-| 鳳頭燕鷗 | Great Crested Tern | SWTE;CRTE | THBE | Thalasseus bergii | grcter1  |
-| 鳳頭燕鷗x黑嘴端鳳頭燕鷗(雜交) | Great x Chinese Crested Tern (hybrid) | SWTE;GCTE;CCTE;CRTE | THBE | Thalasseus bergii x bernsteini | x00848  |
-| 黑嘴端鳳頭燕鷗 | Chinese Crested Tern | CCTE | THBE | Thalasseus bernsteini | chcter2  |
-| 白嘴端燕鷗 | Sandwich Tern |  | THSA | Thalasseus sandvicensis | santer1  |
-| 埃及聖䴉 | African Sacred Ibis | ASIB;SAIB | THAE | Threskiornis aethiopicus | sacibi2  |
-| 黑頭白䴉 | Black-headed Ibis | BHIB | THME | Threskiornis melanocephalus | blhibi1  |
-| 白領翡翠 | Collared Kingfisher | COKI | TOCH | Todiramphus chloris | colkin1  |
-| 橙胸綠鳩 | Orange-breasted Green-Pigeon | OBGP | TRBI | Treron bicinctus | orbpig1  |
-| 紅頭綠鳩 | Whistling Green-Pigeon | WGPI;TAGP;WHGP;TGPI | TRFO | Treron formosae | whgpig1  |
-| 綠鳩 | White-bellied Green-Pigeon | WBGP | TRSI | Treron sieboldii | whbpig1  |
-| 新幾內亞彩虹吸蜜鸚鵡 | Coconut Lorikeet | COLO | TRHA | Trichoglossus haematodus | railor4  |
-| 彩虹吸蜜鸚鵡 | Rainbow Lorikeet | RALO | TRMO | Trichoglossus moluccanus | railor5  |
-| 紅領吸蜜鸚鵡 | Red-collared Lorikeet | RCLO | TRRU | Trichoglossus rubritorquis | railor7  |
-| 黃足鷸 | Gray-tailed Tattler |  | TRBR | Tringa brevipes | gyttat1  |
-| 鶴鷸 | Spotted Redshank |  | TRER | Tringa erythropus | spored  |
-| 鷹斑鷸 | Wood Sandpiper |  | TRGL | Tringa glareola | woosan  |
-| 諾氏鷸 | Nordmann's Greenshank | NOGR;SPGR | TRGU | Tringa guttifer | norgre1  |
-| 美洲黃足鷸 | Wandering Tattler |  | TRIN | Tringa incana | wantat1  |
-| 青足鷸 | Common Greenshank | COGR | TRNE | Tringa nebularia | comgre  |
-| 白腰草鷸 | Green Sandpiper |  | TROC | Tringa ochropus | grnsan  |
-| 小青足鷸 | Marsh Sandpiper |  | TRST | Tringa stagnatilis | marsan  |
-| 赤足鷸 | Common Redshank | CORE | TRTO | Tringa totanus | comred1  |
-| Red-winged Laughingthrush | Red-winged Laughingthrush | RWLA | TRFO | Trochalopteron formosum | rewlau1  |
-| 臺灣噪眉 | White-whiskered Laughingthrush | WWLA | TRMO | Trochalopteron morrisonianum | whwlau1  |
-| 鷦鷯 | Eurasian Wren | NOWR;EUWR | TRTR | Troglodytes troglodytes | winwre4  |
-| 黑頸鶇x赤頸鶇(雜交) | Black-throated x Red-throated Thrush (hybrid) | RTTH;BTTH | TURU;TUAT | Turdus atrogularis x ruficollis | x00644  |
-| 烏灰鶇 | Japanese Thrush | JATH | TUCA | Turdus cardis | japthr1  |
-| 赤腹鶇 | Brown-headed Thrush | BHTH | TUCH | Turdus chrysolaus | brhthr1  |
-| 斑點鶇 | Dusky Thrush |  | TUEU | Turdus eunomus | dusthr2  |
-| 斑點鶇x紅尾鶇(雜交) | Dusky x Naumann's Thrush (hybrid) | DUTH;NATH | TUEU;TUNA | Turdus eunomus x naumanni | x00973  |
-| 灰背鶇 | Gray-backed Thrush | GBTH | TUHO | Turdus hortulorum | gybthr1  |
-| 中國黑鶇 | Chinese Blackbird | CHBL | TUMA | Turdus mandarinus | chibla1  |
-| 寶興歌鶇 | Chinese Thrush | CHTH | TUMU | Turdus mupinensis | chithr2  |
-| 紅尾鶇 | Naumann's Thrush |  | TUNA | Turdus naumanni | dusthr1  |
-| 白頭鶇 | Taiwan Thrush | TATH | TUNI | Turdus niveiceps | islthr24  |
-| 白眉鶇 | Eyebrowed Thrush |  | TUOB | Turdus obscurus | eyethr  |
-| 白腹鶇 | Pale Thrush | PATH | TUPA | Turdus pallidus | palthr1  |
-| 赤頸鶇 | Red-throated Thrush | RTTH | TURU | Turdus ruficollis | retthr1  |
-| Mistle Thrush | Mistle Thrush |  | TUVI | Turdus viscivorus | misthr1  |
-| 棕三趾鶉 | Barred Buttonquail | BABU | TUSU | Turnix suscitator | barbut1  |
-| 黃腳三趾鶉 | Yellow-legged Buttonquail | YLBU | TUTA | Turnix tanki | yelbut1  |
-| 草鴞 | Australasian Grass-Owl | AGOW;AUGO;EGOW;EAGO | TYLO | Tyto longimembris | ausgro1  |
-| 戴勝 | Eurasian Hoopoe | COHO;HOOP;EUHO | UPEP | Upupa epops | hoopoe  |
-| 崖海鴉 | Common Murre | COGU | URAA | Uria aalge | commur  |
-| 海鸕鷀 | Pelagic Cormorant |  | URPE | Urile pelagicus | pelcor  |
-| 臺灣藍鵲 | Taiwan Blue-Magpie | TBMA;TABM | URCA | Urocissa caerulea | formag1  |
-| 紅嘴藍鵲 | Red-billed Blue-Magpie | RBBM | URER | Urocissa erythroryncha | rbbmag  |
-| 短尾鶯 | Asian Stubtail | ASST | URSQ | Urosphena squameiceps | asistu1  |
-| 跳鴴 | Gray-headed Lapwing | GHLA | VACI | Vanellus cinereus | gyhlap1  |
-| 小辮鴴 | Northern Lapwing |  | VAVA | Vanellus vanellus | norlap  |
-| 靛藍維達雀 | Village Indigobird | VIIN | VICH | Vidua chalybeata | vilind  |
-| 針尾維達雀 | Pin-tailed Whydah |  | VIMA | Vidua macroura | pitwhy  |
-| Broad-tailed Paradise-Whydah | Broad-tailed Paradise-Whydah | BTPW | VIOB | Vidua obtusa | btpwhy1  |
-| 叉尾鷗 | Sabine's Gull |  | XESA | Xema sabini | sabgul  |
-| 反嘴鷸 | Terek Sandpiper |  | XECI | Xenus cinereus | tersan  |
-| 冠羽畫眉 | Taiwan Yuhina | TAYU | YUBR | Yuhina brunneiceps | taiyuh1  |
-| 小啄木 | Gray-capped Pygmy Woodpecker | GCWO;GCPW | YUCA | Yungipicus canicapillus | gycwoo1  |
-| 紅腳苦惡鳥 | Brown Crake | BRCR | ZAAK | Zapornia akool | brocra1  |
-| 緋秧雞 | Ruddy-breasted Crake | RBCR | ZAFU | Zapornia fusca | rubcra1  |
-| 斑脇秧雞 | Band-bellied Crake | BBCR | ZAPA | Zapornia paykullii | babcra1  |
-| 小秧雞 | Baillon's Crake | MACR;BACR | ZAPU | Zapornia pusilla | baicra1  |
-| 白氏地鶇 | White's Thrush |  | ZOAU | Zoothera aurea | scathr2  |
-| 虎斑地鶇 | Scaly Thrush | WHTH;SCTH | ZODA | Zoothera dauma | scathr8  |
-| 紅脇繡眼 | Chestnut-flanked White-eye | CFWE | ZOER | Zosterops erythropleurus | cfweye1  |
-| 日菲繡眼 | Warbling White-eye | WWEY | ZOJA | Zosterops japonicus | warwhe1  |
-| 低地繡眼 | Lowland White-eye | LWEY;LOWE | ZOME | Zosterops meyeni | loweye2  |
-| 斯氏繡眼 | Swinhoe's White-eye | SWWE;SWEY | ZOSI | Zosterops simplex | swiwhe1  |
+| 中文俗名                                      | 英文俗名                                      | 學名                                          | comNameCodes                  | sciNameCodes | bandingCodes | familySciName     |
+| --------------------------------------------- | --------------------------------------------- | --------------------------------------------- | ----------------------------- | ------------ | ------------ | ----------------- |
+| 黦鷸                                          | Far Eastern Curlew                            | Numenius madagascariensis                     | EACU                          | NUMA         | FECU         | Scolopacidae      |
+| 黑鸛                                          | Black Stork                                   | Ciconia nigra                                 | BLST                          | CINI         |              | Ciconiidae        |
+| 黑鳶                                          | Black Kite                                    | Milvus migrans                                | BBKI,BLKI                     | MIMI         | BLAK         | Accipitridae      |
+| 黑頸鸊鷉                                      | Eared Grebe                                   | Podiceps nigricollis                          | BNGR                          | PONI         | EAGR         | Podicipedidae     |
+| 黑頸鶇 x 赤頸鶇(雜交)                         | Black-throated x Red-throated Thrush (hybrid) | Turdus atrogularis x ruficollis               | RTTH,BTTH                     | TUAT,TURU    |              | Turdidae          |
+| 黑頭鵐                                        | Black-headed Bunting                          | Emberiza melanocephala                        | BHBU                          | EMME         |              | Emberizidae       |
+| 黑頭翡翠                                      | Black-capped Kingfisher                       | Halcyon pileata                               | BCKI                          | HAPI         |              | Alcedinidae       |
+| 黑頭織雀                                      | Village Weaver                                | Ploceus cucullatus                            |                               | PLCU         | VIWE         | Ploceidae         |
+| 黑頭白䴉                                      | Black-headed Ibis                             | Threskiornis melanocephalus                   | BHIB                          | THME         |              | Threskiornithidae |
+| 黑頭文鳥                                      | Chestnut Munia                                | Lonchura atricapilla                          |                               | LOAT         | CHMU         | Estrildidae       |
+| 黑領高蹺鴴                                    | Pied Stilt                                    | Himantopus leucocephalus                      | BWST,PIST                     | HILE         |              | Recurvirostridae  |
+| 黑領椋鳥                                      | Black-collared Starling                       | Gracupica nigricollis                         | BCST                          | GRNI         |              | Sturnidae         |
+| 黑面琵鷺                                      | Black-faced Spoonbill                         | Platalea minor                                | BFSP                          | PLMI         |              | Threskiornithidae |
+| 黑長尾雉                                      | Mikado Pheasant                               | Syrmaticus mikado                             | MIPH                          | SYMI         |              | Phasianidae       |
+| 黑腹燕鷗                                      | Whiskered Tern                                | Chlidonias hybrida                            | WHTE                          | CHHY         | WHST         | Laridae           |
+| 黑腹濱鷸                                      | Dunlin                                        | Calidris alpina                               |                               | CAAL         | DUNL         | Scolopacidae      |
+| 黑腳信天翁                                    | Black-footed Albatross                        | Phoebastria nigripes                          |                               | PHNI         | BFAL         | Diomedeidae       |
+| 黑背白腹穴鳥                                  | Tahiti Petrel                                 | Pseudobulweria rostrata                       |                               | PSRO         | TAPE         | Procellariidae    |
+| 黑背信天翁                                    | Laysan Albatross                              | Phoebastria immutabilis                       |                               | PHIM         | LAAL         | Diomedeidae       |
+| 黑背三趾翠鳥                                  | Black-backed Dwarf-Kingfisher                 | Ceyx erithaca                                 | BBDK,ODKI                     | CEER         |              | Alcedinidae       |
+| 黑翅鳶                                        | Black-winged Kite                             | Elanus caeruleus                              | BWKI,ABSK                     | ELCA         |              | Accipitridae      |
+| 黑翅山椒鳥                                    | Black-winged Cuckooshrike                     | Lalage melaschistos                           | BWCU,BWCS                     | LAME         |              | Campephagidae     |
+| 黑細鸌                                        | Christmas Shearwater                          | Puffinus nativitatis                          | CISH                          | PUNA         | CHSH         | Procellariidae    |
+| 黑眉柳鶯                                      | Sulphur-breasted Warbler                      | Phylloscopus ricketti                         | SBWA                          | PHRI         |              | Phylloscopidae    |
+| 黑玄燕鷗                                      | Black Noddy                                   | Anous minutus                                 |                               | ANMI         | BLNO         | Laridae           |
+| 黑浮鷗                                        | Black Tern                                    | Chlidonias niger                              |                               | CHNI         | BLTE         | Laridae           |
+| 黑林鴿                                        | Black Wood-Pigeon                             | Columba janthina                              | BLWP,JAWO,BWPI                | COJA         |              | Columbidae        |
+| 黑枕藍鶲                                      | Black-naped Monarch                           | Hypothymis azurea                             | BNMO                          | HYAZ         |              | Monarchidae       |
+| 黑尾鷸                                        | Black-tailed Godwit                           | Limosa limosa                                 | BTGO                          | LILI         | BLTG         | Scolopacidae      |
+| 黑尾鷗                                        | Black-tailed Gull                             | Larus crassirostris                           |                               | LACR         | BTGU         | Laridae           |
+| 黑天鵝                                        | Black Swan                                    | Cygnus atratus                                | BLSW                          | CYAT         |              | Anatidae          |
+| 黑嘴鷗                                        | Saunders's Gull                               | Saundersilarus saundersi                      | SAGU                          | SASA         |              | Laridae           |
+| 黑嘴端鳳頭燕鷗                                | Chinese Crested Tern                          | Thalasseus bernsteini                         | CCTE                          | THBE         |              | Laridae           |
+| 黑喉鴝                                        | Amur Stonechat                                | Saxicola stejnegeri                           | COST,AMST                     | SAST         | ASST         | Muscicapidae      |
+| 黑喉潛鳥                                      | Arctic Loon                                   | Gavia arctica                                 | BTDI,BTLO                     | GAAR         | ARLO         | Gaviidae          |
+| 黑喉噪眉                                      | Black-throated Laughingthrush                 | Pterorhinus chinensis                         | BTLA                          | PTCH         |              | Leiothrichidae    |
+| 黑叉尾海燕                                    | Swinhoe's Storm-Petrel                        | Hydrobates monorhis                           | SWSP,SSPE                     | HYMO         | SSTP         | Hydrobatidae      |
+| 黑冠麻鷺                                      | Malayan Night Heron                           | Gorsachius melanolophus                       | MANH,MNHE                     | GOME         |              | Ardeidae          |
+| 黑冠鵑隼                                      | Black Baza                                    | Aviceda leuphotes                             | BLBA                          | AVLE         |              | Accipitridae      |
+| 黑冠椋鳥                                      | Brahminy Starling                             | Sturnia pagodarum                             | BRST                          | STPA         |              | Sturnidae         |
+| 黃鸝                                          | Black-naped Oriole                            | Oriolus chinensis                             | BNOR                          | ORCH         |              | Oriolidae         |
+| 黃魚鴞                                        | Tawny Fish-Owl                                | Ketupa flavipes                               | TFOW,TAFO                     | KEFL         |              | Strigidae         |
+| 黃額絲雀                                      | Yellow-fronted Canary                         | Crithagra mozambica                           |                               | CRMO         | YFCA         | Fringillidae      |
+| 黃頸黑鷺                                      | Black Bittern                                 | Botaurus flavicollis                          | BLBI                          | BOFL         |              | Ardeidae          |
+| 黃頭鷺                                        | Eastern Cattle-Egret                          | Ardea coromanda                               | ECEG,CAEG                     | ARCO         | EACE         | Ardeidae          |
+| 黃頭鶺鴒                                      | Citrine Wagtail                               | Motacilla citreola                            |                               | MOCI         | CIWA         | Motacillidae      |
+| 黃頭扇尾鶯                                    | Golden-headed Cisticola                       | Cisticola exilis                              | GHCI                          | CIEX         |              | Cisticolidae      |
+| 黃領金剛鸚鵡                                  | Yellow-collared Macaw                         | Primolius auricollis                          | GCMA,YCMA                     | PRAU         |              | Psittacidae       |
+| 黃領愛情鳥                                    | Yellow-collared Lovebird                      | Agapornis personatus                          | YCLO                          | AGPE         |              | Psittaculidae     |
+| 黃雀                                          | Eurasian Siskin                               | Spinus spinus                                 |                               | SPSP         | EUSI         | Fringillidae      |
+| 黃連雀                                        | Bohemian Waxwing                              | Bombycilla garrulus                           |                               | BOGA         | BOWA         | Bombycillidae     |
+| 黃蹼洋海燕                                    | Wilson's Storm-Petrel                         | Oceanites oceanicus                           | WSPE                          | OCOC         | WISP         | Oceanitidae       |
+| 黃足鷸                                        | Gray-tailed Tattler                           | Tringa brevipes                               |                               | TRBR         | GTTA         | Scolopacidae      |
+| 黃腹鷚                                        | Siberian Pipit                                | Anthus japonicus                              | BBPI,AMPI                     | ANJA         | SIPI         | Motacillidae      |
+| 黃腹花蜜鳥                                    | Ornate Sunbird                                | Cinnyris ornatus                              | ORSU,OBSU                     | CIOR         |              | Nectariniidae     |
+| 黃腹琉璃                                      | Taiwan Vivid Niltava                          | Niltava vivida                                | SVNI,TVNI                     | NIVI         |              | Muscicapidae      |
+| 黃腹柳鶯                                      | Tickell's Leaf Warbler                        | Phylloscopus affinis                          | TLWA,TILW                     | PHAF         |              | Phylloscopidae    |
+| 黃腹山雀                                      | Yellow-bellied Tit                            | Periparus venustulus                          | YBTI                          | PEVE         |              | Paridae           |
+| 黃腳三趾鶉                                    | Yellow-legged Buttonquail                     | Turnix tanki                                  | YLBU                          | TUTA         |              | Turnicidae        |
+| 黃腰柳鶯                                      | Pallas's Leaf Warbler                         | Phylloscopus proregulus                       | PALW,PAWA,PLWA                | PHPR         | PLEW         | Phylloscopidae    |
+| 黃胸鷸                                        | Buff-breasted Sandpiper                       | Calidris subruficollis                        |                               | CASU         | BBSA         | Scolopacidae      |
+| 黃胸青鶲                                      | Snowy-browed Flycatcher                       | Ficedula hyperythra                           | SBFL                          | FIHY         |              | Muscicapidae      |
+| 黃胸藪眉                                      | Taiwan Liocichla                              | Liocichla steerii                             | STLI,TALI                     | LIST         |              | Leiothrichidae    |
+| 黃羽鸚嘴                                      | Golden Parrotbill                             | Suthora verreauxi                             | GOPA                          | SUVE         |              | Paradoxornithidae |
+| 黃眉黃鶲                                      | Narcissus Flycatcher                          | Ficedula narcissina                           |                               | FINA         | NAFL         | Muscicapidae      |
+| 黃眉鵐                                        | Yellow-browed Bunting                         | Emberiza chrysophrys                          | YBBU                          | EMCH         | YBWB         | Emberizidae       |
+| 黃眉柳鶯                                      | Yellow-browed Warbler                         | Phylloscopus inornatus                        |                               | PHIN         | YBWA         | Phylloscopidae    |
+| 黃山雀                                        | Taiwan Yellow Tit                             | Machlolophus holsti                           | YETI,TYTI                     | MAHO         |              | Paridae           |
+| 黃尾鴝                                        | Daurian Redstart                              | Phoenicurus auroreus                          | DARE                          | PHAU         |              | Muscicapidae      |
+| 黃小鷺                                        | Yellow Bittern                                | Botaurus sinensis                             |                               | BOSI         | YEBI         | Ardeidae          |
+| 黃嘴角鴞                                      | Mountain Scops-Owl                            | Otus spilocephalus                            | MSOW,MOSO                     | OTSP         |              | Strigidae         |
+| 黃嘴天鵝                                      | Whooper Swan                                  | Cygnus cygnus                                 | WHSW                          | CYCY         | WHOS         | Anatidae          |
+| 黃喉黑臉鵐                                    | Masked Bunting                                | Emberiza personata                            | MABU                          | EMPE         |              | Emberizidae       |
+| 黃喉鵐                                        | Yellow-throated Bunting                       | Emberiza elegans                              |                               | EMEL         | YTBU         | Emberizidae       |
+| 麻鷺                                          | Japanese Night Heron                          | Gorsachius goisagi                            | JNHE,JANH                     | GOGO         |              | Ardeidae          |
+| 麻雀                                          | Eurasian Tree Sparrow                         | Passer montanus                               |                               | PAMO         | ETSP         | Passeridae        |
+| 鸕鷀                                          | Great Cormorant                               | Phalacrocorax carbo                           | BLSH,GBCO                     | PHCA         | GRCO         | Phalacrocoracidae |
+| 鷹鵑                                          | Large Hawk-Cuckoo                             | Hierococcyx sparverioides                     | LHCU,LAHC                     | HISP         |              | Cuculidae         |
+| 鷹斑鷸                                        | Wood Sandpiper                                | Tringa glareola                               |                               | TRGL         | WOSA         | Scolopacidae      |
+| 鷦鷯                                          | Eurasian Wren                                 | Troglodytes troglodytes                       | NOWR,EUWR                     | TRTR         |              | Troglodytidae     |
+| 鷗嘴燕鷗                                      | Gull-billed Tern                              | Gelochelidon nilotica                         | CGBT                          | GENI         | GBTE         | Laridae           |
+| 鶴鷸                                          | Spotted Redshank                              | Tringa erythropus                             |                               | TRER         | SPRE         | Scolopacidae      |
+| 鵲鴨                                          | Common Goldeneye                              | Bucephala clangula                            |                               | BUCL         | COGO         | Anatidae          |
+| 鵲鴝                                          | Oriental Magpie-Robin                         | Copsychus saularis                            | ORMR,OMRO                     | COSA         |              | Muscicapidae      |
+| 鵪鶉                                          | Japanese Quail                                | Coturnix japonica                             |                               | COJA         | JAQU         | Phasianidae       |
+| 鵂鶹                                          | Collared Owlet                                | Taenioptynx brodiei                           | COOW                          | TABR         |              | Strigidae         |
+| 鴻雁                                          | Swan Goose                                    | Anser cygnoides                               | SWGO                          | ANCY         |              | Anatidae          |
+| 鴛鴦                                          | Mandarin Duck                                 | Aix galericulata                              | MADU                          | AIGA         |              | Anatidae          |
+| 鳳頭蒼鷹                                      | Crested Goshawk                               | Lophospiza trivirgata                         | CRGO                          | LOTR         |              | Accipitridae      |
+| 鳳頭燕鷗 x 黑嘴端鳳頭燕鷗(雜交)               | Great x Chinese Crested Tern (hybrid)         | Thalasseus bergii x bernsteini                | SWTE,GCTE,SWIF,CCTE,CRTE      | THBE         |              | Laridae           |
+| 鳳頭燕鷗                                      | Great Crested Tern                            | Thalasseus bergii                             | SWIF,SWTE,CRTE                | THBE         | GCTE         | Laridae           |
+| 鳳頭潛鴨 x 斑背潛鴨(雜交)                     | Tufted Duck x Greater Scaup (hybrid)          | Aythya fuligula x marila                      | TUDU,GRSC                     | AYFU,AYMA    |              | Anatidae          |
+| 鳳頭潛鴨                                      | Tufted Duck                                   | Aythya fuligula                               |                               | AYFU         | TUDU         | Anatidae          |
+| 魚鷹                                          | Osprey                                        | Pandion haliaetus                             |                               | PAHA         | OSPR         | Pandionidae       |
+| 髮冠卷尾                                      | Hair-crested Drongo                           | Dicrurus hottentottus                         | HCDR,HCTD                     | DIHO         |              | Dicruridae        |
+| 高蹺鴴                                        | Black-winged Stilt                            | Himantopus himantopus                         | EBWS                          | HIHI         | BWST         | Recurvirostridae  |
+| 飯島柳鶯                                      | Ijima's Leaf Warbler                          | Phylloscopus ijimae                           | IJLW,ILWA                     | PHIJ         |              | Phylloscopidae    |
+| 頭烏線                                        | Dusky Fulvetta                                | Schoeniparus brunneus                         | DUFU                          | SCBR         |              | Pellorneidae      |
+| 領角鴞                                        | Collared Scops-Owl                            | Otus lettia                                   | COSO,CSOW                     | OTLE         |              | Strigidae         |
+| 靴隼鵰                                        | Booted Eagle                                  | Hieraaetus pennatus                           | BOEA                          | HIPE         |              | Accipitridae      |
+| 靴籬鶯                                        | Booted Warbler                                | Iduna caligata                                | BOWA                          | IDCA         |              | Acrocephalidae    |
+| 靛藍維達雀                                    | Village Indigobird                            | Vidua chalybeata                              | VIIN                          | VICH         |              | Viduidae          |
+| 青頭潛鴨                                      | Baer's Pochard                                | Aythya baeri                                  | BAPO                          | AYBA         |              | Anatidae          |
+| 青足鷸                                        | Common Greenshank                             | Tringa nebularia                              | COGR                          | TRNE         | COMG         | Scolopacidae      |
+| 青藏鴴                                        | Tibetan Sand-Plover                           | Anarhynchus atrifrons                         | TISD,LESA,TSPL,TISP,TSDO      | ANAT         |              | Charadriidae      |
+| 青背山雀                                      | Green-backed Tit                              | Parus monticolus                              | GBTI                          | PAMO         |              | Paridae           |
+| 雲南柳鶯                                      | Chinese Leaf Warbler                          | Phylloscopus yunnanensis                      | CLWA,CHLW                     | PHYU         |              | Phylloscopidae    |
+| 雪花姬地鳩                                    | Diamond Dove                                  | Geopelia cuneata                              | DIDO                          | GECU         |              | Columbidae        |
+| 雞尾鸚鵡                                      | Cockatiel                                     | Nymphicus hollandicus                         | COCK                          | NYHO         |              | Cacatuidae        |
+| 雜色山雀                                      | Varied Tit                                    | Sittiparus varius                             | VATI                          | SIVA         |              | Paridae           |
+| 雙眉葦鶯                                      | Black-browed Reed Warbler                     | Acrocephalus bistrigiceps                     | BBRW                          | ACBI         |              | Acrocephalidae    |
+| 雙斑綠柳鶯                                    | Two-barred Warbler                            | Phylloscopus plumbeitarsus                    | TBWA                          | PHPL         |              | Phylloscopidae    |
+| 阿穆爾綬帶                                    | Amur Paradise-Flycatcher                      | Terpsiphone incei                             | APFL,CHPF,CPFL,AMPF           | TEIN         |              | Monarchidae       |
+| 長趾濱鷸                                      | Long-toed Stint                               | Calidris subminuta                            |                               | CASU         | LTST         | Scolopacidae      |
+| 長耳鴞                                        | Long-eared Owl                                | Asio otus                                     | NLEO                          | ASOT         | LEOW         | Strigidae         |
+| 長尾麗椋鳥                                    | Long-tailed Glossy Starling                   | Lamprotornis caudatus                         | LTGS                          | LACA         |              | Sturnidae         |
+| 長尾鴨                                        | Long-tailed Duck                              | Clangula hyemalis                             |                               | CLHY         | LTDU         | Anatidae          |
+| 長尾鳩                                        | Philippine Cuckoo-Dove                        | Macropygia tenuirostris                       | PHCD,PCDO                     | MATE         |              | Columbidae        |
+| 長尾賊鷗                                      | Long-tailed Jaeger                            | Stercorarius longicaudus                      | LTSK                          | STLO         | LTJA         | Stercorariidae    |
+| 長尾水薙鳥                                    | Wedge-tailed Shearwater                       | Ardenna pacifica                              |                               | ARPA         | WTSH         | Procellariidae    |
+| 長嘴半蹼鷸                                    | Long-billed Dowitcher                         | Limnodromus scolopaceus                       |                               | LISC         | LBDO         | Scolopacidae      |
+| 鐵爪鵐                                        | Lapland Longspur                              | Calcarius lapponicus                          | LABU                          | CALA         | LALO         | Calcariidae       |
+| 鐵嘴鴴                                        | Greater Sand-Plover                           | Anarhynchus leschenaultii                     | GRSA,GRSP,GSPL,GRSD,GSDO      | ANLE         | GSAP         | Charadriidae      |
+| 鏽鵐                                          | Chestnut Bunting                              | Emberiza rutila                               | CHBU                          | EMRU         |              | Emberizidae       |
+| 銅藍鶲                                        | Verditer Flycatcher                           | Eumyias thalassinus                           | VEFL                          | EUTH         |              | Muscicapidae      |
+| 鉛色水鶇                                      | Plumbeous Redstart                            | Phoenicurus fuliginosus                       | PLRE,PLWR,PWRE                | PHFU         |              | Muscicapidae      |
+| 鈍翅葦鶯                                      | Blunt-winged Warbler                          | Acrocephalus concinens                        | BWWA                          | ACCO         |              | Acrocephalidae    |
+| 針尾鷸                                        | Pin-tailed Snipe                              | Gallinago stenura                             | PISN                          | GAST         | PTSN         | Scolopacidae      |
+| 針尾維達雀                                    | Pin-tailed Whydah                             | Vidua macroura                                |                               | VIMA         | PTWH         | Viduidae          |
+| 金鵰                                          | Golden Eagle                                  | Aquila chrysaetos                             |                               | AQCH         | GOEA         | Accipitridae      |
+| 金鵐                                          | Yellow-breasted Bunting                       | Emberiza aureola                              | YBBU                          | EMAU         | YBSB         | Emberizidae       |
+| 金背鳩                                        | Oriental Turtle-Dove                          | Streptopelia orientalis                       | OTDO,RTDO                     | STOR         | ORTD         | Columbidae        |
+| 金翅雀                                        | Oriental Greenfinch                           | Chloris sinica                                | GCGR                          | CHSI         | ORGR         | Fringillidae      |
+| 野鵐                                          | Yellow Bunting                                | Emberiza sulphurata                           | JYBU,YEBU                     | EMSU         |              | Emberizidae       |
+| 野鴝                                          | Siberian Rubythroat                           | Calliope calliope                             |                               | CACA         | SIRU         | Muscicapidae      |
+| 酒紅朱雀                                      | Vinaceous Rosefinch                           | Carpodacus vinaceus                           | VIRO                          | CAVI         |              | Fringillidae      |
+| 遺鷗                                          | Relict Gull                                   | Ichthyaetus relictus                          | REGU                          | ICRE         |              | Laridae           |
+| 遠東葦鶯                                      | Manchurian Reed Warbler                       | Acrocephalus tangorum                         | WBRW,MRWA                     | ACTA         |              | Acrocephalidae    |
+| 遠東樹鶯                                      | Manchurian Bush Warbler                       | Horornis canturians                           | KBWA,KOBW,MBWA                | HOCA         |              | Scotocercidae     |
+| 遊隼                                          | Peregrine Falcon                              | Falco peregrinus                              |                               | FAPE         | PEFA         | Falconidae        |
+| 軍艦鳥                                        | Great Frigatebird                             | Fregata minor                                 | GRFR                          | FRMI         | GREF         | Fregatidae        |
+| 跳鴴                                          | Gray-headed Lapwing                           | Vanellus cinereus                             | GHLA                          | VACI         |              | Charadriidae      |
+| 赭紅尾鴝                                      | Black Redstart                                | Phoenicurus ochruros                          | BLRE                          | PHOC         |              | Muscicapidae      |
+| 赤頸鸊鷉                                      | Red-necked Grebe                              | Podiceps grisegena                            |                               | POGR         | RNGR         | Podicipedidae     |
+| 赤頸鶇                                        | Red-throated Thrush                           | Turdus ruficollis                             | RTTH                          | TURU         |              | Turdidae          |
+| 赤頸鴨 x 葡萄胸鴨(雜交)                       | Eurasian x American Wigeon (hybrid)           | Mareca penelope x americana                   | AMWI,EUWI                     | MAPE,MAAM    |              | Anatidae          |
+| 赤頸鴨                                        | Eurasian Wigeon                               | Mareca penelope                               |                               | MAPE         | EUWI         | Anatidae          |
+| 赤足鷸                                        | Common Redshank                               | Tringa totanus                                | CORE                          | TRTO         | CREH         | Scolopacidae      |
+| 赤褐蝗鶯                                      | Russet Bush Warbler                           | Locustella mandelli                           | RBWA,RUGW,RGWA                | LOMA         |              | Locustellidae     |
+| 赤膀鴨                                        | Gadwall                                       | Mareca strepera                               |                               | MAST         | GADW         | Anatidae          |
+| 赤腹鷹                                        | Chinese Sparrowhawk                           | Tachyspiza soloensis                          | CHSP                          | TASO         | CHIS         | Accipitridae      |
+| 赤腹鶇                                        | Brown-headed Thrush                           | Turdus chrysolaus                             | BHTH                          | TUCH         |              | Turdidae          |
+| 赤腹山雀                                      | Chestnut-bellied Tit                          | Sittiparus castaneoventris                    | CBTI                          | SICA         |              | Paridae           |
+| 赤胸鵐                                        | Chestnut-eared Bunting                        | Emberiza fucata                               | CEBU                          | EMFU         |              | Emberizidae       |
+| 赤胸朱頂雀                                    | Eurasian Linnet                               | Linaria cannabina                             | EULI,COLI                     | LICA         |              | Fringillidae      |
+| 赤翡翠                                        | Ruddy Kingfisher                              | Halcyon coromanda                             | RUKI                          | HACO         |              | Alcedinidae       |
+| 赤紅山椒鳥                                    | Scarlet Minivet                               | Pericrocotus speciosus                        | SCMI                          | PESP         |              | Campephagidae     |
+| 赤嘴潛鴨                                      | Red-crested Pochard                           | Netta rufina                                  | RCPO                          | NERU         |              | Anatidae          |
+| 赤喉鷚                                        | Red-throated Pipit                            | Anthus cervinus                               |                               | ANCE         | RTPI         | Motacillidae      |
+| 費氏愛情鳥                                    | Fischer's Lovebird                            | Agapornis fischeri                            | FILO                          | AGFI         |              | Psittaculidae     |
+| 諾氏鷸                                        | Nordmann's Greenshank                         | Tringa guttifer                               | NOGR,SPGR                     | TRGU         |              | Scolopacidae      |
+| 角鸊鷉                                        | Horned Grebe                                  | Podiceps auritus                              | SLGR                          | POAU         | HOGR         | Podicipedidae     |
+| 西方秧雞                                      | Water Rail                                    | Rallus aquaticus                              | WARA,WWRA                     | RAAQ         | WEWR         | Rallidae          |
+| 西方灰伯勞                                    | Great Gray Shrike                             | Lanius excubitor                              | GGSH                          | LAEX         |              | Laniidae          |
+| 西方澤鵟                                      | Western Marsh Harrier                         | Circus aeruginosus                            | WEMH                          | CIAE         | WMHA         | Accipitridae      |
+| 西伯利亞銀鷗                                  | Vega Gull                                     | Larus vegae                                   | VEGU,HEGU,AHGU                | LAVE         |              | Laridae           |
+| 褐鷽                                          | Brown Bullfinch                               | Pyrrhula nipalensis                           | BRBU                          | PYNI         |              | Fringillidae      |
+| 褐鷹鴞                                        | Northern Boobook                              | Ninox japonica                                | NOBO                          | NIJA         | NOBB         | Strigidae         |
+| 褐頭鷦鶯                                      | Plain Prinia                                  | Prinia inornata                               | PLPR                          | PRIN         |              | Cisticolidae      |
+| 褐頭鵐                                        | Red-headed Bunting                            | Emberiza bruniceps                            | RHBU                          | EMBR         |              | Emberizidae       |
+| 褐頭花翼                                      | Taiwan Fulvetta                               | Fulvetta formosana                            | TAFU                          | FUFO         |              | Paradoxornithidae |
+| 褐色柳鶯                                      | Dusky Warbler                                 | Phylloscopus fuscatus                         |                               | PHFU         | DUWA         | Phylloscopidae    |
+| 褐胸鶲                                        | Brown-breasted Flycatcher                     | Muscicapa muttui                              | BBFL                          | MUMU         |              | Muscicapidae      |
+| 褐翅鴉鵑                                      | Greater Coucal                                | Centropus sinensis                            | GRCO                          | CESI         |              | Cuculidae         |
+| 褐翅叉尾海燕                                  | Tristram's Storm-Petrel                       | Hydrobates tristrami                          | TSPE                          | HYTR         | TRSP         | Hydrobatidae      |
+| 褐林鴞                                        | Brown Wood-Owl                                | Strix leptogrammica                           | BWOW,BRWO                     | STLE         |              | Strigidae         |
+| 裏海燕鷗                                      | Caspian Tern                                  | Hydroprogne caspia                            |                               | HYCA         | CATE         | Laridae           |
+| 蠣鴴                                          | Eurasian Oystercatcher                        | Haematopus ostralegus                         |                               | HAOS         | EUOY         | Haematopodidae    |
+| 虎紋伯勞                                      | Tiger Shrike                                  | Lanius tigrinus                               | TISH                          | LATI         |              | Laniidae          |
+| 虎皮鸚鵡                                      | Budgerigar                                    | Melopsittacus undulatus                       | BUDG                          | MEUN         |              | Psittaculidae     |
+| 虎斑地鶇                                      | Scaly Thrush                                  | Zoothera dauma                                | WHTH,SCTH                     | ZODA         |              | Turdidae          |
+| 蘭嶼角鴞                                      | Ryukyu Scops-Owl                              | Otus elegans                                  | RYSO,RSOW                     | OTEL         |              | Strigidae         |
+| 蘆鵐                                          | Reed Bunting                                  | Emberiza schoeniclus                          | CRBU                          | EMSC         | REBU         | Emberizidae       |
+| 藍黃金剛鸚鵡                                  | Blue-and-yellow Macaw                         | Ara ararauna                                  |                               | ARAR         | BAYM         | Psittacidae       |
+| 藍額紅尾鴝                                    | Blue-fronted Redstart                         | Phoenicurus frontalis                         | BFRE                          | PHFR         |              | Muscicapidae      |
+| 藍頰蜂虎                                      | Blue-cheeked Bee-eater                        | Merops persicus                               | BCBE                          | MEPE         |              | Meropidae         |
+| 藍臉鰹鳥                                      | Masked Booby                                  | Sula dactylatra                               |                               | SUDA         | MABO         | Sulidae           |
+| 藍腹鷴                                        | Swinhoe's Pheasant                            | Lophura swinhoii                              | SWPH                          | LOSW         |              | Phasianidae       |
+| 藍翅八色鳥                                    | Blue-winged Pitta                             | Pitta moluccensis                             | BWPI                          | PIMO         |              | Pittidae          |
+| 藍磯鶇                                        | Blue Rock-Thrush                              | Monticola solitarius                          | BRTH,BLRT                     | MOSO         |              | Muscicapidae      |
+| 藍歌鴝                                        | Siberian Blue Robin                           | Larvivora cyane                               |                               | LACY         | SBRO         | Muscicapidae      |
+| 藍尾鴝                                        | Red-flanked Bluetail                          | Tarsiger cyanurus                             | OFBR                          | TACY         | RFBL         | Muscicapidae      |
+| 藍孔雀                                        | Indian Peafowl                                | Pavo cristatus                                |                               | PACR         | INPE         | Phasianidae       |
+| 藍喉鴝                                        | Bluethroat                                    | Luscinia svecica                              |                               | LUSV         | BLUE         | Muscicapidae      |
+| 藍喉蜂虎                                      | Blue-throated Bee-eater                       | Merops viridis                                | BTBE                          | MEVI         |              | Meropidae         |
+| 藍喉太陽鳥                                    | Mrs. Gould's Sunbird                          | Aethopyga gouldiae                            | MGSU,GOSU                     | AEGO         |              | Nectariniidae     |
+| 蒼鷺                                          | Gray Heron                                    | Ardea cinerea                                 | GRHE                          | ARCI         | GRAH         | Ardeidae          |
+| 蒼鷹                                          | Eurasian Goshawk                              | Astur gentilis                                | EUGO,NOGO                     | ASGE         | EGOS         | Accipitridae      |
+| 蒼翡翠                                        | White-throated Kingfisher                     | Halcyon smyrnensis                            | WBKI,WTKI                     | HASM         |              | Alcedinidae       |
+| 蒼眉蝗鶯                                      | Gray's Grasshopper Warbler                    | Helopsaltes fasciolatus                       | GRGW,GGWA                     | HEFA         |              | Locustellidae     |
+| 蒼燕鷗                                        | Black-naped Tern                              | Sterna sumatrana                              | BNTE                          | STSU         |              | Laridae           |
+| 蒙古鴴                                        | Siberian Sand-Plover                          | Anarhynchus mongolus                          | LSPL,SISD,SSPL,LESA,SSDO      | ANMO         | SISP         | Charadriidae      |
+| 蒙古銀鷗                                      | Mongolian Gull                                | Larus mongolicus                              | HEGU,AHGU,MOGU,VEGU           | LAMO         |              | Laridae           |
+| 葵花鳳頭鸚鵡                                  | Sulphur-crested Cockatoo                      | Cacatua galerita                              | SCCO                          | CAGA         |              | Cacatuidae        |
+| 葦鵐                                          | Pallas's Bunting                              | Emberiza pallasi                              | PRBU,PABU                     | EMPA         | PALB         | Emberizidae       |
+| 董雞                                          | Watercock                                     | Gallicrex cinerea                             | WATE                          | GACI         |              | Rallidae          |
+| 葡萄胸鴨                                      | American Wigeon                               | Mareca americana                              |                               | MAAM         | AMWI         | Anatidae          |
+| 葡萄胸椋鳥                                    | Vinous-breasted Myna                          | Acridotheres leucocephalus                    | VBMY,VBST                     | ACLE         |              | Sturnidae         |
+| 菲律賓扇尾鶲                                  | Philippine Pied-Fantail                       | Rhipidura nigritorquis                        | PPFA,PHPF                     | RHNI         |              | Rhipiduridae      |
+| 荒漠伯勞                                      | Isabelline Shrike                             | Lanius isabellinus                            | ISSH                          | LAIS         |              | Laniidae          |
+| 草鵐                                          | Meadow Bunting                                | Emberiza cioides                              | MEBU                          | EMCI         |              | Emberizidae       |
+| 草鴞                                          | Australasian Grass-Owl                        | Tyto longimembris                             | AGOW,EGOW,AUGO,EAGO           | TYLO         |              | Tytonidae         |
+| 草地鷚                                        | Meadow Pipit                                  | Anthus pratensis                              |                               | ANPR         | MEPI         | Motacillidae      |
+| 茶腹鳾                                        | Eurasian Nuthatch                             | Sitta europaea                                | EUNU                          | SIEU         |              | Sittidae          |
+| 花鵰                                          | Greater Spotted Eagle                         | Clanga clanga                                 | GSEA                          | CLCL         |              | Accipitridae      |
+| 花鳧                                          | Common Shelduck                               | Tadorna tadorna                               | COSH                          | TATA         | COMS         | Anatidae          |
+| 花雀                                          | Brambling                                     | Fringilla montifringilla                      |                               | FRMO         | BRAM         | Fringillidae      |
+| 花翅山椒鳥                                    | Oriental Cuckooshrike                         | Coracina javensis                             | ORCU,LACU,OCSH,ORCS           | COJA         |              | Campephagidae     |
+| 花澤鵟                                        | Pied Harrier                                  | Circus melanoleucos                           | PIHA                          | CIME         |              | Accipitridae      |
+| 花嘴鴨                                        | Eastern Spot-billed Duck                      | Anas zonorhyncha                              | CSBD                          | ANZO         | ESBD         | Anatidae          |
+| 臺灣鷦眉                                      | Taiwan Cupwing                                | Pnoepyga formosana                            | TACU                          | PNFO         |              | Pnoepygidae       |
+| 臺灣藍鵲                                      | Taiwan Blue-Magpie                            | Urocissa caerulea                             | TBMA,TABM                     | URCA         |              | Corvidae          |
+| 臺灣紫嘯鶇                                    | Taiwan Whistling-Thrush                       | Myophonus insularis                           | TWTH,TAWT                     | MYIN         |              | Muscicapidae      |
+| 臺灣竹雞                                      | Taiwan Bamboo-Partridge                       | Bambusicola sonorivox                         | TABP,TBPA                     | BASO         |              | Phasianidae       |
+| 臺灣白眉林鴝                                  | Taiwan Bush-Robin                             | Tarsiger formosanus                           | TBRO,TABR,WBBR                | TAFO         |              | Muscicapidae      |
+| 臺灣白喉噪眉                                  | Rufous-crowned Laughingthrush                 | Pterorhinus ruficeps                          | RCLA                          | PTRU         |              | Leiothrichidae    |
+| 臺灣畫眉                                      | Taiwan Hwamei                                 | Garrulax taewanus                             | TAHW                          | GATA         |              | Leiothrichidae    |
+| 臺灣朱雀                                      | Taiwan Rosefinch                              | Carpodacus formosanus                         | TARO                          | CAFO         |              | Fringillidae      |
+| 臺灣山鷓鴣                                    | Taiwan Partridge                              | Arborophila crudigularis                      | TAPA                          | ARCR         |              | Phasianidae       |
+| 臺灣噪眉                                      | White-whiskered Laughingthrush                | Trochalopteron morrisonianum                  | WWLA                          | TRMO         |              | Leiothrichidae    |
+| 臺灣叢樹鶯                                    | Taiwan Bush Warbler                           | Locustella alishanensis                       | TAGW,TGWA,TBWA                | LOAL         |              | Locustellidae     |
+| 臘嘴雀                                        | Hawfinch                                      | Coccothraustes coccothraustes                 |                               | COCO         | HAWF         | Fringillidae      |
+| 肉足水薙鳥                                    | Flesh-footed Shearwater                       | Ardenna carneipes                             |                               | ARCA         | FFSH         | Procellariidae    |
+| 聖誕島軍艦鳥                                  | Christmas Island Frigatebird                  | Fregata andrewsi                              | CIFR,CHFR                     | FRAN         |              | Fregatidae        |
+| 翻石鷸                                        | Ruddy Turnstone                               | Arenaria interpres                            |                               | ARIN         | RUTU         | Scolopacidae      |
+| 翠鳥                                          | Common Kingfisher                             | Alcedo atthis                                 | COKI                          | ALAT         |              | Alcedinidae       |
+| 翠翼鳩                                        | Asian Emerald Dove                            | Chalcophaps indica                            | AEDO,GCED,CEDO                | CHIN         |              | Columbidae        |
+| 美洲黃足鷸                                    | Wandering Tattler                             | Tringa incana                                 |                               | TRIN         | WATA         | Scolopacidae      |
+| 美洲鴛鴦                                      | Wood Duck                                     | Aix sponsa                                    | CWDU                          | AISP         | WODU         | Anatidae          |
+| 美洲尖尾濱鷸                                  | Pectoral Sandpiper                            | Calidris melanotos                            |                               | CAME         | PESA         | Scolopacidae      |
+| 羅文鴨                                        | Falcated Duck                                 | Mareca falcata                                |                               | MAFA         | FADU         | Anatidae          |
+| 繡眼畫眉                                      | Morrison's Fulvetta                           | Alcippe morrisonia                            | MOFU,GCFU                     | ALMO         |              | Leiothrichidae    |
+| 緋紅金剛鸚鵡                                  | Scarlet Macaw                                 | Ara macao                                     |                               | ARMA         | SCMA         | Psittacidae       |
+| 緋秧雞                                        | Ruddy-breasted Crake                          | Zapornia fusca                                | RBCR                          | ZAFU         |              | Rallidae          |
+| 綠鳩                                          | White-bellied Green-Pigeon                    | Treron sieboldii                              | WBGP                          | TRSI         |              | Columbidae        |
+| 綠頭鴨 x 花嘴鴨(雜交)                         | Mallard x Eastern Spot-billed Duck (hybrid)   | Anas platyrhynchos x zonorhyncha              | ESBD,CSBD,MALL                | ANZO,ANPL    |              | Anatidae          |
+| 綠頭鴨                                        | Mallard                                       | Anas platyrhynchos                            |                               | ANPL         | MALL         | Anatidae          |
+| 綠胸八色鳥                                    | Western Hooded Pitta                          | Pitta sordida                                 | HOPI,WHPI                     | PISO         |              | Pittidae          |
+| 綠背姬鶲                                      | Green-backed Flycatcher                       | Ficedula elisae                               | GBFL                          | FIEL         |              | Muscicapidae      |
+| 綠簑鷺                                        | Striated Heron                                | Butorides striata                             | STHE,GBHE,GRBA                | BUST         | STRH         | Ardeidae          |
+| 綠畫眉                                        | White-bellied Erpornis                        | Erpornis zantholeuca                          | WBER                          | ERZA         |              | Vireonidae        |
+| 綠啄花                                        | Plain Flowerpecker                            | Dicaeum minullum                              | PLFL                          | DIMI         |              | Dicaeidae         |
+| 綠啄木                                        | Gray-headed Woodpecker                        | Picus canus                                   | GHWO,GFNW                     | PICA         |              | Picidae           |
+| 絲光椋鳥                                      | Red-billed Starling                           | Spodiopsar sericeus                           | RBST                          | SPSE         |              | Sturnidae         |
+| 細紋葦鶯                                      | Streaked Reed Warbler                         | Acrocephalus sorghophilus                     | STRW,SRWA                     | ACSO         |              | Acrocephalidae    |
+| 細嘴鷗                                        | Slender-billed Gull                           | Chroicocephalus genei                         | SBGU                          | CHGE         |              | Laridae           |
+| 紫鷺                                          | Purple Heron                                  | Ardea purpurea                                |                               | ARPU         | PUHE         | Ardeidae          |
+| 紫針尾雨燕                                    | Purple Needletail                             | Hirundapus celebensis                         | PUNE                          | HICE         |              | Apodidae          |
+| 紫綬帶                                        | Black Paradise-Flycatcher                     | Terpsiphone atrocaudata                       | BPFL,JPFL,JAPF,BLPF           | TEAT         |              | Monarchidae       |
+| 索氏圓尾鸌                                    | Providence Petrel                             | Pterodroma solandri                           |                               | PTSO         | PRPE         | Procellariidae    |
+| 紐澳紅嘴鷗                                    | Silver Gull                                   | Chroicocephalus novaehollandiae               | SIGU                          | CHNO         |              | Laridae           |
+| 紋翼畫眉                                      | Taiwan Barwing                                | Actinodura morrisoniana                       | TABA                          | ACMO         |              | Leiothrichidae    |
+| 紅鳩                                          | Red Collared-Dove                             | Streptopelia tranquebarica                    | RCDO,RECD,RTDO,RETD           | STTR         |              | Columbidae        |
+| 紅頸葦鵐                                      | Ochre-rumped Bunting                          | Emberiza yessoensis                           | JRBU,ORBU                     | EMYE         |              | Emberizidae       |
+| 紅頭綠鳩                                      | Whistling Green-Pigeon                        | Treron formosae                               | TAGP,WGPI,WHGP,TGPI           | TRFO         |              | Columbidae        |
+| 紅頭潛鴨                                      | Common Pochard                                | Aythya ferina                                 | COPO                          | AYFE         | COMP         | Anatidae          |
+| 紅頭山雀                                      | Black-throated Tit                            | Aegithalos concinnus                          | BTTI,BTHC,BTBU                | AECO         |              | Aegithalidae      |
+| 紅頭伯勞                                      | Bull-headed Shrike                            | Lanius bucephalus                             | BHSH                          | LABU         |              | Laniidae          |
+| 紅領綠鸚鵡                                    | Rose-ringed Parakeet                          | Psittacula krameri                            | RNPA                          | PSKR         | RRPA         | Psittaculidae     |
+| 紅領瓣足鷸                                    | Red-necked Phalarope                          | Phalaropus lobatus                            |                               | PHLO         | RNPH         | Scolopacidae      |
+| 紅領吸蜜鸚鵡                                  | Red-collared Lorikeet                         | Trichoglossus rubritorquis                    | RCLO                          | TRRU         |              | Psittaculidae     |
+| 紅頂唐納雀                                    | Red-capped Cardinal                           | Paroaria gularis                              | RCCA                          | PAGU         |              | Thraupidae        |
+| 紅隼                                          | Eurasian Kestrel                              | Falco tinnunculus                             | COKE                          | FATI         | EUKE         | Falconidae        |
+| 紅色吸蜜鸚鵡                                  | Red Lory                                      | Trichoglossus borneus                         | RELO                          | TRBO         |              | Psittaculidae     |
+| 紅臉鸚鵡                                      | Red-masked Parakeet                           | Psittacara erythrogenys                       |                               | PSER         | RMPA         | Psittacidae       |
+| 紅腹錦雞                                      | Golden Pheasant                               | Chrysolophus pictus                           | GOPH                          | CHPI         |              | Phasianidae       |
+| 紅腹濱鷸                                      | Red Knot                                      | Calidris canutus                              |                               | CACA         | REKN         | Scolopacidae      |
+| 紅腳鰹鳥                                      | Red-footed Booby                              | Sula sula                                     |                               | SUSU         | RFBO         | Sulidae           |
+| 紅腳隼                                        | Amur Falcon                                   | Falco amurensis                               | AMFA                          | FAAM         |              | Falconidae        |
+| 紅腳苦惡鳥                                    | Brown Crake                                   | Zapornia akool                                | BRCR                          | ZAAK         |              | Rallidae          |
+| 紅脇繡眼                                      | Chestnut-flanked White-eye                    | Zosterops erythropleurus                      | CFWE                          | ZOER         |              | Zosteropidae      |
+| 紅胸鶲                                        | Red-breasted Flycatcher                       | Ficedula parva                                | RBFL                          | FIPA         |              | Muscicapidae      |
+| 紅胸秋沙                                      | Red-breasted Merganser                        | Mergus serrator                               |                               | MESE         | RBME         | Anatidae          |
+| 紅胸濱鷸                                      | Red-necked Stint                              | Calidris ruficollis                           |                               | CARU         | RNST         | Scolopacidae      |
+| 紅胸啄花                                      | Fire-breasted Flowerpecker                    | Dicaeum ignipectus                            | FBFL                          | DIIG         |              | Dicaeidae         |
+| 紅背伯勞                                      | Red-backed Shrike                             | Lanius collurio                               |                               | LACO         | RBSH         | Laniidae          |
+| 紅肩金剛鸚鵡                                  | Red-shouldered Macaw                          | Diopsittaca nobilis                           | NRSM,RSMA                     | DINO         |              | Psittacidae       |
+| 紅耳鵯                                        | Red-whiskered Bulbul                          | Pycnonotus jocosus                            |                               | PYJO         | RWBU         | Pycnonotidae      |
+| 紅綠金剛鸚鵡                                  | Red-and-green Macaw                           | Ara chloropterus                              |                               | ARCH         | RAGM         | Psittacidae       |
+| 紅燕鷗                                        | Roseate Tern                                  | Sterna dougallii                              | ROTE                          | STDO         | ROST         | Laridae           |
+| 紅尾鶲                                        | Ferruginous Flycatcher                        | Muscicapa ferruginea                          | FEFL                          | MUFE         |              | Muscicapidae      |
+| 紅尾鶇                                        | Naumann's Thrush                              | Turdus naumanni                               |                               | TUNA         | NATH         | Turdidae          |
+| 紅尾熱帶鳥                                    | Red-tailed Tropicbird                         | Phaethon rubricauda                           |                               | PHRU         | RTTR         | Phaethontidae     |
+| 紅尾歌鴝                                      | Rufous-tailed Robin                           | Larvivora sibilans                            |                               | LASI         | RTRO         | Muscicapidae      |
+| 紅尾伯勞                                      | Brown Shrike                                  | Lanius cristatus                              | BRSH                          | LACR         | BROS         | Laniidae          |
+| 紅嘴黑鵯                                      | Black Bulbul                                  | Hypsipetes leucocephalus                      | HBBU,BLBU                     | HYLE         |              | Pycnonotidae      |
+| 紅嘴鷗                                        | Black-headed Gull                             | Chroicocephalus ridibundus                    |                               | CHRI         | BHGU         | Laridae           |
+| 紅嘴藍鵲                                      | Red-billed Blue-Magpie                        | Urocissa erythroryncha                        | RBBM                          | URER         |              | Corvidae          |
+| 紅嘴相思鳥                                    | Red-billed Leiothrix                          | Leiothrix lutea                               |                               | LELU         | RBLE         | Leiothrichidae    |
+| 紅嘴熱帶鳥                                    | Red-billed Tropicbird                         | Phaethon aethereus                            |                               | PHAE         | RBTR         | Phaethontidae     |
+| 紅嘴山鴉                                      | Red-billed Chough                             | Pyrrhocorax pyrrhocorax                       | RBCH                          | PYPY         |              | Corvidae          |
+| 紅喉鶲                                        | Taiga Flycatcher                              | Ficedula albicilla                            | RTFL                          | FIAL         | TAFL         | Muscicapidae      |
+| 紅喉潛鳥                                      | Red-throated Loon                             | Gavia stellata                                | RTDI                          | GAST         | RTLO         | Gaviidae          |
+| 紅原雞                                        | Red Junglefowl                                | Gallus gallus                                 |                               | GAGA         | REJU         | Phasianidae       |
+| 紅冠水雞                                      | Eurasian Moorhen                              | Gallinula chloropus                           | EUMO                          | GACH         | COMO         | Rallidae          |
+| 紅冠唐納雀                                    | Red-crested Cardinal                          | Paroaria coronata                             |                               | PACO         | RCCA         | Thraupidae        |
+| 紅交嘴雀                                      | Red Crossbill                                 | Loxia curvirostra                             | COCR                          | LOCU         | RECR         | Fringillidae      |
+| 粉紅鸚嘴                                      | Vinous-throated Parrotbill                    | Suthora webbiana                              | VTPA                          | SUWE         |              | Paradoxornithidae |
+| 粉紅胸鷚                                      | Rosy Pipit                                    | Anthus roseatus                               | ROPI                          | ANRO         |              | Motacillidae      |
+| 粉紅椋鳥                                      | Rosy Starling                                 | Pastor roseus                                 | RCST,ROST                     | PARO         |              | Sturnidae         |
+| 粉紅山椒鳥                                    | Rosy Minivet                                  | Pericrocotus roseus                           | ROMI                          | PERO         |              | Campephagidae     |
+| 簑羽鶴                                        | Demoiselle Crane                              | Anthropoides virgo                            | DECR                          | ANVI         |              | Gruidae           |
+| 笑鷗                                          | Laughing Gull                                 | Leucophaeus atricilla                         |                               | LEAT         | LAGU         | Laridae           |
+| 穴鳥                                          | Bulwer's Petrel                               | Bulweria bulwerii                             |                               | BUBU         | BUPE         | Procellariidae    |
+| 穗䳭                                          | Northern Wheatear                             | Oenanthe oenanthe                             |                               | OEOE         | NOWH         | Muscicapidae      |
+| 稻田鷚                                        | Paddyfield Pipit                              | Anthus rufulus                                | PAPI                          | ANRU         |              | Motacillidae      |
+| 稀樹草鵐                                      | Savannah Sparrow                              | Passerculus sandwichensis                     | SASP,SBBS                     | PASA         | SAVS         | Passerellidae     |
+| 秋小鷺                                        | Schrenck's Bittern                            | Botaurus eurhythmus                           | VSBI,SCBI                     | BOEU         |              | Ardeidae          |
+| 禿鼻鴉                                        | Rook                                          | Corvus frugilegus                             |                               | COFR         | ROOK         | Corvidae          |
+| 禿鷲                                          | Cinereous Vulture                             | Aegypius monachus                             | CIVU,BLVU                     | AEMO         |              | Accipitridae      |
+| 磯鷸                                          | Common Sandpiper                              | Actitis hypoleucos                            |                               | ACHY         | COSA         | Scolopacidae      |
+| 短耳鴞                                        | Short-eared Owl                               | Asio flammeus                                 |                               | ASFL         | SEOW         | Strigidae         |
+| 短尾鶯                                        | Asian Stubtail                                | Urosphena squameiceps                         | ASST                          | URSQ         |              | Scotocercidae     |
+| 短尾賊鷗                                      | Parasitic Jaeger                              | Stercorarius parasiticus                      | ARJA,ARSK                     | STPA         | PAJA         | Stercorariidae    |
+| 短尾水薙鳥                                    | Short-tailed Shearwater                       | Ardenna tenuirostris                          | STSH                          | ARTE         | STTS         | Procellariidae    |
+| 短尾信天翁                                    | Short-tailed Albatross                        | Phoebastria albatrus                          |                               | PHAL         | STAL         | Diomedeidae       |
+| 短嘴半蹼鷸                                    | Short-billed Dowitcher                        | Limnodromus griseus                           |                               | LIGR         | SBDO         | Scolopacidae      |
+| 矛斑蝗鶯                                      | Lanceolated Warbler                           | Locustella lanceolata                         | LAWA                          | LOLA         | LANW         | Locustellidae     |
+| 白鷴                                          | Silver Pheasant                               | Lophura nycthemera                            | SIPH                          | LONY         |              | Phasianidae       |
+| 白鶺鴒                                        | White Wagtail                                 | Motacilla alba                                | PWWA                          | MOAL         | WHWA         | Motacillidae      |
+| 白鶴                                          | Siberian Crane                                | Leucogeranus leucogeranus                     | SICR                          | LELE         |              | Gruidae           |
+| 白鵜鶘                                        | Great White Pelican                           | Pelecanus onocrotalus                         | GWPE                          | PEON         |              | Pelecanidae       |
+| 白鳳頭鸚鵡                                    | White Cockatoo                                | Cacatua alba                                  | WHCO                          | CAAL         |              | Cacatuidae        |
+| 白額雁                                        | Greater White-fronted Goose                   | Anser albifrons                               |                               | ANAL         | GWFG         | Anatidae          |
+| 白頸黑鷺                                      | Pied Heron                                    | Egretta picata                                | PIHE                          | EGPI         |              | Ardeidae          |
+| 白頰山雀                                      | Asian Tit                                     | Parus cinereus                                | CITI,GRTI,ASTI                | PACI         |              | Paridae           |
+| 白頰噪眉                                      | White-browed Laughingthrush                   | Pterorhinus sannio                            | WBLA                          | PTSA         |              | Leiothrichidae    |
+| 白頭鶴                                        | Hooded Crane                                  | Grus monacha                                  |                               | GRMO         | HOCR         | Gruidae           |
+| 白頭鶇                                        | Taiwan Thrush                                 | Turdus niveiceps                              | TATH                          | TUNI         |              | Turdidae          |
+| 白頭鵐                                        | Pine Bunting                                  | Emberiza leucocephalos                        |                               | EMLE         | PIBU         | Emberizidae       |
+| 白頭翁 x 烏頭翁(雜交)                         | Light-vented x Styan's Bulbul (hybrid)        | Pycnonotus sinensis x taivanus                | STBU,LVBU,CHBU                | PYSI,PYTA    |              | Pycnonotidae      |
+| 白頭翁                                        | Light-vented Bulbul                           | Pycnonotus sinensis                           | LVBU,CHBU                     | PYSI         |              | Pycnonotidae      |
+| 白頭文鳥                                      | White-headed Munia                            | Lonchura maja                                 | WHMU                          | LOMA         |              | Estrildidae       |
+| 白領翡翠                                      | Collared Kingfisher                           | Todiramphus chloris                           | COKI                          | TOCH         |              | Alcedinidae       |
+| 白頂䳭                                        | Pied Wheatear                                 | Oenanthe pleschanka                           |                               | OEPL         | PIWH         | Muscicapidae      |
+| 白頂鵐                                        | White-capped Bunting                          | Emberiza stewarti                             | WCBU                          | EMST         |              | Emberizidae       |
+| 白頂溪鴝                                      | White-capped Redstart                         | Phoenicurus leucocephalus                     | WCWR,WCRE                     | PHLE         |              | Muscicapidae      |
+| 白臉鴴                                        | White-faced Plover                            | Anarhynchus dealbatus                         | WFPL                          | ANDE         |              | Charadriidae      |
+| 白腹鶇                                        | Pale Thrush                                   | Turdus pallidus                               | PATH                          | TUPA         |              | Turdidae          |
+| 白腹鵰                                        | Bonelli's Eagle                               | Aquila fasciata                               | BOEA                          | AQFA         |              | Accipitridae      |
+| 白腹鰹鳥                                      | Brown Booby                                   | Sula leucogaster                              |                               | SULE         | BRBO         | Sulidae           |
+| 白腹穴鳥                                      | Bonin Petrel                                  | Pterodroma hypoleuca                          |                               | PTHY         | BOPE         | Procellariidae    |
+| 白腹秧雞                                      | White-breasted Waterhen                       | Amaurornis phoenicurus                        | WBWA                          | AMPH         |              | Rallidae          |
+| 白腹琉璃                                      | Blue-and-white Flycatcher                     | Cyanoptila cyanomelana                        | BAWF                          | CYCY         |              | Muscicapidae      |
+| 白腹海鵰                                      | White-bellied Sea-Eagle                       | Icthyophaga leucogaster                       | WBSE                          | ICLE         |              | Accipitridae      |
+| 白腹毛腳燕                                    | Siberian House-Martin                         | Delichon lagopodum                            | EHMA,SHMA                     | DELA         | SIHM         | Hirundinidae      |
+| 白腰鵲鴝                                      | White-rumped Shama                            | Copsychus malabaricus                         |                               | COMA         | WRSH         | Muscicapidae      |
+| 白腰草鷸                                      | Green Sandpiper                               | Tringa ochropus                               |                               | TROC         | GRSA         | Scolopacidae      |
+| 白腰燕鷗                                      | Aleutian Tern                                 | Onychoprion aleuticus                         |                               | ONAL         | ALTE         | Laridae           |
+| 白腰文鳥                                      | White-rumped Munia                            | Lonchura striata                              | WRMU                          | LOST         |              | Estrildidae       |
+| 白腰叉尾海燕                                  | Leach's Storm-Petrel                          | Hydrobates leucorhous                         | LSPE                          | HYLE         | LESP         | Hydrobatidae      |
+| 白背鷚                                        | Pechora Pipit                                 | Anthus gustavi                                |                               | ANGU         | PEPI         | Motacillidae      |
+| 白肩鵰                                        | Imperial Eagle                                | Aquila heliaca                                | EIEA,IMEA                     | AQHE         |              | Accipitridae      |
+| 白耳畫眉                                      | White-eared Sibia                             | Heterophasia auricularis                      | WESI                          | HEAU         |              | Leiothrichidae    |
+| 白翅黑燕鷗                                    | White-winged Tern                             | Chlidonias leucopterus                        | WWBT                          | CHLE         | WWTE         | Laridae           |
+| 白秋沙                                        | Smew                                          | Mergellus albellus                            |                               | MEAL         | SMEW         | Anatidae          |
+| 白眼潛鴨 x 青頭潛鴨(雜交)                     | Ferruginous Duck x Baer's Pochard (hybrid)    | Aythya nyroca x baeri                         | BAPO,FEDU                     | AYNY,AYBA    |              | Anatidae          |
+| 白眼潛鴨                                      | Ferruginous Duck                              | Aythya nyroca                                 | FEDU                          | AYNY         |              | Anatidae          |
+| 白眶鶲鶯                                      | White-spectacled Warbler                      | Phylloscopus intermedius                      | WSWA                          | PHIN         |              | Phylloscopidae    |
+| 白眉黃鶲                                      | Mugimaki Flycatcher                           | Ficedula mugimaki                             |                               | FIMU         | MUFL         | Muscicapidae      |
+| 白眉鶲                                        | Yellow-rumped Flycatcher                      | Ficedula zanthopygia                          | KOFL,YRFL                     | FIZA         |              | Muscicapidae      |
+| 白眉鶇                                        | Eyebrowed Thrush                              | Turdus obscurus                               |                               | TUOB         | EYTH         | Turdidae          |
+| 白眉鵐                                        | Tristram's Bunting                            | Emberiza tristrami                            | TRBU                          | EMTR         |              | Emberizidae       |
+| 白眉鴨                                        | Garganey                                      | Spatula querquedula                           |                               | SPQU         | GARG         | Anatidae          |
+| 白眉秧雞                                      | White-browed Crake                            | Poliolimnas cinereus                          | WBCR                          | POCI         |              | Rallidae          |
+| 白眉燕鷗                                      | Bridled Tern                                  | Onychoprion anaethetus                        |                               | ONAN         | BRTE         | Laridae           |
+| 白眉地鶇                                      | Siberian Thrush                               | Geokichla sibirica                            | SITH                          | GESI         |              | Turdidae          |
+| 白環鸚嘴鵯                                    | Collared Finchbill                            | Spizixos semitorques                          | COFI                          | SPSE         |              | Pycnonotidae      |
+| 白琵鷺 x 黑面琵鷺(雜交)                       | Eurasian x Black-faced Spoonbill (hybrid)     | Platalea leucorodia x minor                   | EUSP,EURS,BFSP                | PLLE,PLMI    |              | Threskiornithidae |
+| 白琵鷺                                        | Eurasian Spoonbill                            | Platalea leucorodia                           | EUSP                          | PLLE         | EURS         | Threskiornithidae |
+| 白燕窩金絲燕                                  | White-nest Swiftlet                           | Aerodramus fuciphagus                         | ENSW,WNSW                     | AEFU         |              | Apodidae          |
+| 白氏地鶇                                      | White's Thrush                                | Zoothera aurea                                |                               | ZOAU         | WHTH         | Turdidae          |
+| 白枕鶴                                        | White-naped Crane                             | Antigone vipio                                | WNCR                          | ANVI         |              | Gruidae           |
+| 白斑黑石䳭                                    | Pied Bushchat                                 | Saxicola caprata                              | PIBU,PBCH                     | SACA         |              | Muscicapidae      |
+| 白斑軍艦鳥                                    | Lesser Frigatebird                            | Fregata ariel                                 |                               | FRAR         | LEFR         | Fregatidae        |
+| 白斑紫嘯鶇                                    | Blue Whistling-Thrush                         | Myophonus caeruleus                           | BLWT,BWTH                     | MYCA         |              | Muscicapidae      |
+| 白尾鴝                                        | White-tailed Robin                            | Myiomela leucura                              | WTBR,WTRO                     | MYLE         |              | Muscicapidae      |
+| 白尾熱帶鳥                                    | White-tailed Tropicbird                       | Phaethon lepturus                             |                               | PHLE         | WTTR         | Phaethontidae     |
+| 白尾海鵰                                      | White-tailed Eagle                            | Haliaeetus albicilla                          | WTSE                          | HAAL         | WTEA         | Accipitridae      |
+| 白尾八哥                                      | Javan Myna                                    | Acridotheres javanicus                        | JAMY                          | ACJA         |              | Sturnidae         |
+| 白嘴端燕鷗                                    | Sandwich Tern                                 | Thalasseus sandvicensis                       |                               | THSA         | SATE         | Laridae           |
+| 白喉針尾雨燕                                  | White-throated Needletail                     | Hirundapus caudacutus                         |                               | HICA         | WTNE         | Apodidae          |
+| 白喉紅臀鵯                                    | Sooty-headed Bulbul                           | Pycnonotus aurigaster                         | SHBU                          | PYAU         |              | Pycnonotidae      |
+| 白喉磯鶇                                      | White-throated Rock-Thrush                    | Monticola gularis                             | WTRT                          | MOGU         |              | Muscicapidae      |
+| 白喉短翅鶇                                    | Lesser Shortwing                              | Brachypteryx leucophris                       | LESH                          | BRLE         |              | Muscicapidae      |
+| 白喉林鶲                                      | Brown-chested Jungle Flycatcher               | Cyornis brunneatus                            | BCJF                          | CYBR         |              | Muscicapidae      |
+| 白喉林鶯                                      | Lesser Whitethroat                            | Curruca curruca                               |                               | CUCU         | LEWH         | Sylviidae         |
+| 白喉林鴿                                      | Metallic Pigeon                               | Columba vitiensis                             | MEPI,WTPI                     | COVI         |              | Columbidae        |
+| 白喉文鳥                                      | Indian Silverbill                             | Euodice malabarica                            |                               | EUMA         | INSI         | Estrildidae       |
+| 白冠雞                                        | Eurasian Coot                                 | Fulica atra                                   | COCO                          | FUAT         | EUCO         | Rallidae          |
+| 疣鼻棲鴨 x 綠頭鴨(雜交)                       | Muscovy Duck x Mallard (hybrid)               | Cairina moschata x Anas platyrhynchos         | MUDU,MALL                     | ANPL,CAMO    |              | Anatidae          |
+| 疣鼻棲鴨                                      | Muscovy Duck                                  | Cairina moschata                              |                               | CAMO         | MUDU         | Anatidae          |
+| 疣鼻天鵝                                      | Mute Swan                                     | Cygnus olor                                   |                               | CYOL         | MUSW         | Anatidae          |
+| 番鵑                                          | Lesser Coucal                                 | Centropus bengalensis                         | LECO                          | CEBE         |              | Cuculidae         |
+| 田鷸                                          | Common Snipe                                  | Gallinago gallinago                           |                               | GAGA         | COSN         | Scolopacidae      |
+| 田鵐                                          | Rustic Bunting                                | Emberiza rustica                              |                               | EMRU         | RUBU         | Emberizidae       |
+| 環頸鴴                                        | Common Ringed Plover                          | Charadrius hiaticula                          | RIPL                          | CHHI         | CRPL         | Charadriidae      |
+| 環頸雉                                        | Ring-necked Pheasant                          | Phasianus colchicus                           | RNPH,COPH                     | PHCO         | RNEP         | Phasianidae       |
+| 環頸潛鴨                                      | Ring-necked Duck                              | Aythya collaris                               |                               | AYCO         | RNDU         | Anatidae          |
+| 琵嘴鷸                                        | Spoon-billed Sandpiper                        | Calidris pygmaea                              |                               | CAPY         | SBSA         | Scolopacidae      |
+| 琵嘴鴨 x 赤膀鴨(雜交)                         | Northern Shoveler x Gadwall (hybrid)          | Spatula clypeata x Mareca strepera            | GADW,NSHO,NOSH                | SPCL,MAST    |              | Anatidae          |
+| 琵嘴鴨                                        | Northern Shoveler                             | Spatula clypeata                              | NOSH                          | SPCL         | NSHO         | Anatidae          |
+| 琉球歌鴝                                      | Ryukyu Robin                                  | Larvivora komadori                            | RYRO                          | LAKO         |              | Muscicapidae      |
+| 琉球山椒鳥                                    | Ryukyu Minivet                                | Pericrocotus tegimae                          | RYMI                          | PETE         |              | Campephagidae     |
+| 琉球姬鶲                                      | Ryukyu Flycatcher                             | Ficedula owstoni                              | RYFL                          | FIOW         |              | Muscicapidae      |
+| 珠頸斑鳩                                      | Spotted Dove                                  | Spilopelia chinensis                          | ESDO                          | SPCH         | SPDO         | Columbidae        |
+| 玉頸鴉                                        | Collared Crow                                 | Corvus torquatus                              | COCR                          | COTO         |              | Corvidae          |
+| 玄燕鷗                                        | Brown Noddy                                   | Anous stolidus                                | CONO                          | ANST         | BRNO         | Laridae           |
+| 爪哇雀                                        | Java Sparrow                                  | Padda oryzivora                               |                               | PAOR         | JASP         | Estrildidae       |
+| 爪哇池鷺                                      | Javan Pond-Heron                              | Ardeola speciosa                              | JAPH,JPHE                     | ARSP         |              | Ardeidae          |
+| 燕鷗                                          | Common Tern                                   | Sterna hirundo                                |                               | STHI         | COTE         | Laridae           |
+| 燕鴴                                          | Oriental Pratincole                           | Glareola maldivarum                           |                               | GLMA         | ORPR         | Glareolidae       |
+| 燕隼                                          | Eurasian Hobby                                | Falco subbuteo                                | EUHO                          | FASU         | EHOB         | Falconidae        |
+| 熊鷹                                          | Mountain Hawk-Eagle                           | Nisaetus nipalensis                           | MHEA,MOHE                     | NINI         |              | Accipitridae      |
+| 煤山雀                                        | Coal Tit                                      | Periparus ater                                | COTI                          | PEAT         |              | Paridae           |
+| 烏鶲                                          | Dark-sided Flycatcher                         | Muscicapa sibirica                            |                               | MUSI         | DSFL         | Muscicapidae      |
+| 烏頭翁                                        | Styan's Bulbul                                | Pycnonotus taivanus                           | STBU                          | PYTA         |              | Pycnonotidae      |
+| 烏領燕鷗                                      | Sooty Tern                                    | Onychoprion fuscatus                          |                               | ONFU         | SOTE         | Laridae           |
+| 烏灰鶇                                        | Japanese Thrush                               | Turdus cardis                                 | JATH                          | TUCA         |              | Turdidae          |
+| 灰鸚鵡                                        | Gray Parrot                                   | Psittacus erithacus                           | GRPA                          | PSER         |              | Psittacidae       |
+| 灰鷽                                          | Taiwan Bullfinch                              | Pyrrhula owstoni                              | TABU                          | PYOW         |              | Fringillidae      |
+| 灰鶺鴒                                        | Gray Wagtail                                  | Motacilla cinerea                             | GRWA                          | MOCI         | GRAW         | Motacillidae      |
+| 灰鶴                                          | Common Crane                                  | Grus grus                                     | COCR                          | GRGR         | CCRA         | Gruidae           |
+| 灰鵐                                          | Gray Bunting                                  | Emberiza variabilis                           |                               | EMVA         | GRBU         | Emberizidae       |
+| 灰頭黑臉鵐                                    | Black-faced Bunting                           | Emberiza spodocephala                         | BFBU                          | EMSP         |              | Emberizidae       |
+| 灰頭鷦鶯                                      | Yellow-bellied Prinia                         | Prinia flaviventris                           | YBPR                          | PRFL         |              | Cisticolidae      |
+| 灰頭紫水雞                                    | Gray-headed Swamphen                          | Porphyrio poliocephalus                       | PUSW                          | POPO         | GHSW         | Rallidae          |
+| 灰頭椋鳥                                      | Chestnut-tailed Starling                      | Sturnia malabarica                            | CTST                          | STMA         |              | Sturnidae         |
+| 灰面鵟鷹                                      | Gray-faced Buzzard                            | Butastur indicus                              | GFBU                          | BUIN         |              | Accipitridae      |
+| 灰雁 x 鴻雁(雜交)                             | Graylag x Swan Goose (hybrid)                 | Anser anser x cygnoides                       | GRGO,SWGO                     | ANAN,ANCY    |              | Anatidae          |
+| 灰雁                                          | Graylag Goose                                 | Anser anser                                   |                               | ANAN         | GRGO         | Anatidae          |
+| 灰賊鷗                                        | South Polar Skua                              | Stercorarius maccormicki                      |                               | STMA         | SPSK         | Stercorariidae    |
+| 灰腳秧雞                                      | Slaty-legged Crake                            | Rallina eurizonoides                          | SLCR                          | RAEU         |              | Rallidae          |
+| 灰胸秧雞                                      | Slaty-breasted Rail                           | Lewinia striata                               | SBRA                          | LEST         |              | Rallidae          |
+| 灰背鷗                                        | Slaty-backed Gull                             | Larus schistisagus                            | SBGU                          | LASC         | SBAG         | Laridae           |
+| 灰背鶇                                        | Gray-backed Thrush                            | Turdus hortulorum                             | GBTH                          | TUHO         |              | Turdidae          |
+| 灰背隼                                        | Merlin                                        | Falco columbarius                             |                               | FACO         | MERL         | Falconidae        |
+| 灰背椋鳥                                      | White-shouldered Starling                     | Sturnia sinensis                              | WSST                          | STSI         |              | Sturnidae         |
+| 灰背伯勞                                      | Gray-backed Shrike                            | Lanius tephronotus                            | GBSH                          | LATE         |              | Laniidae          |
+| 灰瓣足鷸                                      | Red Phalarope                                 | Phalaropus fulicarius                         | GRPH                          | PHFU         | REPH         | Scolopacidae      |
+| 灰澤鵟                                        | Hen Harrier                                   | Circus cyaneus                                | HEHA                          | CICY         |              | Accipitridae      |
+| 灰沙燕                                        | Bank Swallow                                  | Riparia riparia                               | SAMA,BASW,CSMA                | RIRI         | BANS         | Hirundinidae      |
+| 灰水薙鳥                                      | Sooty Shearwater                              | Ardenna grisea                                |                               | ARGR         | SOSH         | Procellariidae    |
+| 灰椋鳥                                        | White-cheeked Starling                        | Spodiopsar cineraceus                         | WCST                          | SPCI         |              | Sturnidae         |
+| 灰林鴿                                        | Ashy Wood-Pigeon                              | Columba pulchricollis                         | ASWO,AWPI,ASWP                | COPU         |              | Columbidae        |
+| 灰斑鶲                                        | Gray-streaked Flycatcher                      | Muscicapa griseisticta                        |                               | MUGR         | GSFL         | Muscicapidae      |
+| 灰斑鴴                                        | Black-bellied Plover                          | Pluvialis squatarola                          | GRPL                          | PLSQ         | BBPL         | Charadriidae      |
+| 灰斑鳩                                        | Eurasian Collared-Dove                        | Streptopelia decaocto                         | CODO,ECDO                     | STDE         | EUCD         | Columbidae        |
+| 灰山椒鳥                                      | Ashy Minivet                                  | Pericrocotus divaricatus                      | ASMI                          | PEDI         |              | Campephagidae     |
+| 灰喜鵲                                        | Azure-winged Magpie                           | Cyanopica cyanus                              | AWMA,AAWM                     | CYCY         |              | Corvidae          |
+| 灰喉針尾雨燕                                  | Silver-backed Needletail                      | Hirundapus cochinchinensis                    | SBNE                          | HICO         |              | Apodidae          |
+| 灰喉山椒鳥                                    | Gray-chinned Minivet                          | Pericrocotus solaris                          | GCTM,GCMI                     | PESO         |              | Campephagidae     |
+| 灰叢鴝                                        | Gray Bushchat                                 | Saxicola ferreus                              | GBCH,GRBU                     | SAFE         |              | Muscicapidae      |
+| 灰卷尾                                        | Ashy Drongo                                   | Dicrurus leucophaeus                          | ASDR                          | DILE         |              | Dicruridae        |
+| 火雞                                          | Wild Turkey                                   | Meleagris gallopavo                           |                               | MEGA         | WITU         | Phasianidae       |
+| 火冠戴菊鳥                                    | Flamecrest                                    | Regulus goodfellowi                           | FLAM                          | REGO         |              | Regulidae         |
+| 瀆鳧                                          | Ruddy Shelduck                                | Tadorna ferruginea                            |                               | TAFE         | RUSH         | Anatidae          |
+| 漠䳭                                          | Desert Wheatear                               | Oenanthe deserti                              | DEWH                          | OEDE         |              | Muscicapidae      |
+| 漠地林鶯                                      | Asian Desert Warbler                          | Curruca nana                                  | ADWA                          | CUNA         |              | Sylviidae         |
+| 漁鷗                                          | Pallas's Gull                                 | Ichthyaetus ichthyaetus                       |                               | ICIC         | PAGU         | Laridae           |
+| 深山鶯                                        | Yellowish-bellied Bush Warbler                | Horornis acanthizoides                        | YBBW                          | HOAC         |              | Scotocercidae     |
+| 淡腳柳鶯                                      | Pale-legged Leaf Warbler                      | Phylloscopus tenellipes                       | PLLW                          | PHTE         |              | Phylloscopidae    |
+| 淡眉柳鶯                                      | Hume's Warbler                                | Phylloscopus humei                            | HUWA,HULW,HLWA                | PHHU         |              | Phylloscopidae    |
+| 淡尾鶲鶯                                      | Alström's Warbler                             | Phylloscopus soror                            | ALWA                          | PHSO         |              | Phylloscopidae    |
+| 海鸕鷀                                        | Pelagic Cormorant                             | Urile pelagicus                               |                               | URPE         | PECO         | Phalacrocoracidae |
+| 海南藍仙鶲                                    | Hainan Blue Flycatcher                        | Cyornis hainanus                              | HABF,HBFL                     | CYHA         |              | Muscicapidae      |
+| 流蘇鷸                                        | Ruff                                          | Calidris pugnax                               |                               | CAPU         | RUFF         | Scolopacidae      |
+| 洋燕                                          | Pacific Swallow                               | Hirundo javanica                              | PASW,HOSW                     | HIJA         |              | Hirundinidae      |
+| 河烏                                          | Brown Dipper                                  | Cinclus pallasii                              | BRDI                          | CIPA         |              | Cinclidae         |
+| 沙䳭                                          | Isabelline Wheatear                           | Oenanthe isabellina                           | ISWH                          | OEIS         |              | Muscicapidae      |
+| 沙丘鶴                                        | Sandhill Crane                                | Antigone canadensis                           |                               | ANCA         | SACR         | Gruidae           |
+| 池鷺                                          | Chinese Pond-Heron                            | Ardeola bacchus                               | CPHE                          | ARBA         | CHPH         | Ardeidae          |
+| 水雉                                          | Pheasant-tailed Jacana                        | Hydrophasianus chirurgus                      | PTJA                          | HYCH         |              | Jacanidae         |
+| 毛足鵟                                        | Rough-legged Hawk                             | Buteo lagopus                                 | RLBU                          | BULA         | RLHA         | Accipitridae      |
+| 比氏鶲鶯                                      | Bianchi's Warbler                             | Phylloscopus valentini                        | BIWA                          | PHVA         |              | Phylloscopidae    |
+| 歐洲椋鳥                                      | European Starling                             | Sturnus vulgaris                              | COST                          | STVU         | EUST         | Sturnidae         |
+| 歐亞鷽                                        | Eurasian Bullfinch                            | Pyrrhula pyrrhula                             |                               | PYPY         | EUBU         | Fringillidae      |
+| 歐亞鵟                                        | Common Buzzard                                | Buteo buteo                                   | COBU,EUBU                     | BUBU         |              | Accipitridae      |
+| 歐亞雲雀                                      | Eurasian Skylark                              | Alauda arvensis                               | SKYL                          | ALAR         | EUSK         | Alaudidae         |
+| 歐亞海鷗                                      | Common Gull                                   | Larus canus                                   | MEGU                          | LACA         | COGU         | Laridae           |
+| 歐亞柳鶯                                      | Willow Warbler                                | Phylloscopus trochilus                        | WIWA                          | PHTR         | WILW         | Phylloscopidae    |
+| 橫斑梅花雀                                    | Common Waxbill                                | Estrilda astrild                              | COWA                          | ESAS         | COMW         | Estrildidae       |
+| 橙黃雀鵐                                      | Saffron Finch                                 | Sicalis flaveola                              |                               | SIFL         | SAFI         | Thraupidae        |
+| 橙額黃雀鵐                                    | Orange-fronted Yellow-Finch                   | Sicalis columbiana                            | OFYF                          | SICO         |              | Thraupidae        |
+| 橙頰梅花雀                                    | Orange-cheeked Waxbill                        | Estrilda melpoda                              | OCWA                          | ESME         | OCHW         | Estrildidae       |
+| 橙頭地鶇                                      | Orange-headed Thrush                          | Geokichla citrina                             | OHTH                          | GECI         |              | Turdidae          |
+| 橙腹葉鵯                                      | Orange-bellied Leafbird                       | Chloropsis hardwickii                         | OBLE,OBCL                     | CHHA         |              | Chloropseidae     |
+| 橙胸綠鳩                                      | Orange-breasted Green-Pigeon                  | Treron bicinctus                              | OBGP                          | TRBI         |              | Columbidae        |
+| 橙胸姬鶲                                      | Rufous-gorgeted Flycatcher                    | Ficedula strophiata                           | RGFL                          | FIST         |              | Muscicapidae      |
+| 樹鷚                                          | Olive-backed Pipit                            | Anthus hodgsoni                               |                               | ANHO         | OBPI         | Motacillidae      |
+| 樹鵲                                          | Gray Treepie                                  | Dendrocitta formosae                          | GRTR                          | DEFO         |              | Corvidae          |
+| 樹鴨                                          | Lesser Whistling-Duck                         | Dendrocygna javanica                          | LEWD,LWDU                     | DEJA         |              | Anatidae          |
+| 槲鶇                                          | Mistle Thrush                                 | Turdus viscivorus                             |                               | TUVI         | MITH         | Turdidae          |
+| 極北柳鶯                                      | Arctic Warbler                                | Phylloscopus borealis                         |                               | PHBO         | ARWA         | Phylloscopidae    |
+| 楔尾伯勞                                      | Chinese Gray Shrike                           | Lanius sphenocercus                           | CGSH                          | LASP         |              | Laniidae          |
+| 棕頭鷗                                        | Brown-headed Gull                             | Chroicocephalus brunnicephalus                | BHGU                          | CHBR         |              | Laridae           |
+| 棕面鶯                                        | Rufous-faced Warbler                          | Abroscopus albogularis                        | RFWA                          | ABAL         |              | Scotocercidae     |
+| 棕腹鷹鵑                                      | Hodgson's Hawk-Cuckoo                         | Hierococcyx nisicolor                         | HHCU,WHCU,HOHC,WHHC           | HINI         |              | Cuculidae         |
+| 棕腹大仙鶲                                    | Fujian Niltava                                | Niltava davidi                                | FUNI                          | NIDA         |              | Muscicapidae      |
+| 棕腹仙鶲                                      | Rufous-bellied Niltava                        | Niltava sundara                               | RBNI                          | NISU         |              | Muscicapidae      |
+| 棕背伯勞                                      | Long-tailed Shrike                            | Lanius schach                                 | LTSH                          | LASC         |              | Laniidae          |
+| 棕耳鵯                                        | Brown-eared Bulbul                            | Hypsipetes amaurotis                          | BEBU                          | HYAM         |              | Pycnonotidae      |
+| 棕眉山岩鷚                                    | Siberian Accentor                             | Prunella montanella                           |                               | PRMO         | SIAC         | Prunellidae       |
+| 棕沙燕                                        | Gray-throated Martin                          | Riparia chinensis                             | GTMA,PLMA,APMA                | RICH         |              | Hirundinidae      |
+| 棕扇尾鶯                                      | Zitting Cisticola                             | Cisticola juncidis                            | ZICI                          | CIJU         |              | Cisticolidae      |
+| 棕夜鷺                                        | Nankeen Night Heron                           | Nycticorax caledonicus                        | NNHE,RUNH,RNHE                | NYCA         |              | Ardeidae          |
+| 棕噪眉                                        | Rusty Laughingthrush                          | Pterorhinus poecilorhynchus                   | RULA                          | PTPO         |              | Leiothrichidae    |
+| 棕三趾鶉                                      | Barred Buttonquail                            | Turnix suscitator                             | BABU                          | TUSU         |              | Turnicidae        |
+| 棉鴨                                          | Cotton Pygmy-Goose                            | Nettapus coromandelianus                      | COPG,CPGO                     | NECO         |              | Anatidae          |
+| 桑鳲                                          | Japanese Grosbeak                             | Eophona personata                             | JAGR                          | EOPE         |              | Fringillidae      |
+| 桃臉愛情鳥                                    | Rosy-faced Lovebird                           | Agapornis roseicollis                         |                               | AGRO         | RFLO         | Psittaculidae     |
+| 栗鳶                                          | Brahminy Kite                                 | Haliastur indus                               | BRKI                          | HAIN         |              | Accipitridae      |
+| 栗頭麗椋鳥                                    | Superb Starling                               | Lamprotornis superbus                         | SUST                          | LASU         |              | Sturnidae         |
+| 栗頭鶲鶯                                      | Chestnut-crowned Warbler                      | Phylloscopus castaniceps                      | CCWA                          | PHCA         |              | Phylloscopidae    |
+| 栗背短腳鵯                                    | Chestnut Bulbul                               | Hemixos castanonotus                          | CHBU                          | HECA         |              | Pycnonotidae      |
+| 栗背林鴝                                      | Collared Bush-Robin                           | Tarsiger johnstoniae                          | CBRO,COBR                     | TAJO         |              | Muscicapidae      |
+| 栗背伯勞                                      | Burmese Shrike                                | Lanius collurioides                           | BUSH                          | LACO         |              | Laniidae          |
+| 栗耳鳳眉                                      | Indochinese Yuhina                            | Staphida torqueola                            | INYU                          | STTO         |              | Zosteropidae      |
+| 栗翅鷹                                        | Harris's Hawk                                 | Parabuteo unicinctus                          |                               | PAUN         | HAHA         | Accipitridae      |
+| 栗小鷺                                        | Cinnamon Bittern                              | Botaurus cinnamomeus                          | CIBI                          | BOCI         |              | Ardeidae          |
+| 栗喉蜂虎                                      | Blue-tailed Bee-eater                         | Merops philippinus                            | BTBE                          | MEPH         |              | Meropidae         |
+| 林鷚                                          | Tree Pipit                                    | Anthus trivialis                              |                               | ANTR         | TRPI         | Motacillidae      |
+| 林鵰                                          | Black Eagle                                   | Ictinaetus malaiensis                         | BLEA                          | ICMA         |              | Accipitridae      |
+| 林柳鶯                                        | Wood Warbler                                  | Phylloscopus sibilatrix                       |                               | PHSI         | WOWA         | Phylloscopidae    |
+| 林八哥                                        | Jungle Myna                                   | Acridotheres fuscus                           | JUMY                          | ACFU         |              | Sturnidae         |
+| 松鴉                                          | Eurasian Jay                                  | Garrulus glandarius                           | ECFJ,EUJA                     | GAGL         |              | Corvidae          |
+| 松雀鷹                                        | Besra                                         | Tachyspiza virgata                            | BESR                          | TAVI         |              | Accipitridae      |
+| 東方黃鶺鴒                                    | Eastern Yellow Wagtail                        | Motacilla tschutschensis                      |                               | MOTS         | EYWA         | Motacillidae      |
+| 東方鵟                                        | Eastern Buzzard                               | Buteo japonicus                               | JABU,EABU                     | BUJA         |              | Accipitridae      |
+| 東方金腰燕                                    | Eastern Red-rumped Swallow                    | Cecropis daurica                              | ERRS,RRSW                     | CEDA         |              | Hirundinidae      |
+| 東方角鴞                                      | Oriental Scops-Owl                            | Otus sunia                                    | OSOW                          | OTSU         | ORSO         | Strigidae         |
+| 東方蜂鷹                                      | Oriental Honey-buzzard                        | Pernis ptilorhynchus                          | ORHB,OHBU,CRHB,CHBU           | PEPT         |              | Accipitridae      |
+| 東方紅胸鴴                                    | Oriental Plover                               | Anarhynchus veredus                           |                               | ANVE         | ORPL         | Charadriidae      |
+| 東方白鸛                                      | Oriental Stork                                | Ciconia boyciana                              | ORST                          | CIBO         |              | Ciconiidae        |
+| 東方環頸鴴                                    | Kentish Plover                                | Anarhynchus alexandrinus                      | KEPL                          | ANAL         |              | Charadriidae      |
+| 東方灰林鴞                                    | Himalayan Owl                                 | Strix nivicolum                               | HIOW                          | STNI         |              | Strigidae         |
+| 東方澤鵟                                      | Eastern Marsh Harrier                         | Circus spilonotus                             | EMHA,EAMH                     | CISP         |              | Accipitridae      |
+| 東方毛腳燕                                    | Asian House-Martin                            | Delichon dasypus                              | ASHM,AHMA                     | DEDA         |              | Hirundinidae      |
+| 東方寒鴉                                      | Daurian Jackdaw                               | Coloeus dauuricus                             | DAJA                          | CODA         |              | Corvidae          |
+| 東方大葦鶯                                    | Oriental Reed Warbler                         | Acrocephalus orientalis                       | ORWA,ORRW                     | ACOR         |              | Acrocephalidae    |
+| 東亞秧雞                                      | Brown-cheeked Rail                            | Rallus indicus                                | EWRA,BCRA                     | RAIN         |              | Rallidae          |
+| 朱鸝                                          | Maroon Oriole                                 | Oriolus traillii                              | MAOR                          | ORTR         |              | Oriolidae         |
+| 朱連雀                                        | Japanese Waxwing                              | Bombycilla japonica                           | JAWA                          | BOJA         |              | Bombycillidae     |
+| 暴風鸌                                        | Northern Fulmar                               | Fulmarus glacialis                            |                               | FUGL         | NOFU         | Procellariidae    |
+| 暗綠柳鶯                                      | Greenish Warbler                              | Phylloscopus trochiloides                     | GRWA                          | PHTR         |              | Phylloscopidae    |
+| 普通珠雞                                      | Helmeted Guineafowl                           | Numida meleagris                              | HEGU                          | NUME         | HELG         | Numididae         |
+| 普通朱頂雀                                    | Redpoll                                       | Acanthis flammea                              | REDP,RESP                     | ACFL         | UNRE         | Fringillidae      |
+| 普通朱雀                                      | Common Rosefinch                              | Carpodacus erythrinus                         |                               | CAER         | CORO         | Fringillidae      |
+| 普通夜鷹                                      | Gray Nightjar                                 | Caprimulgus jotaka                            |                               | CAJO         | GRNI         | Caprimulgidae     |
+| 星鴉                                          | Southern Nutcracker                           | Nucifraga hemispila                           | SONU,SPNU,EUNU                | NUHE         |              | Corvidae          |
+| 日菲繡眼                                      | Warbling White-eye                            | Zosterops japonicus                           | WWEY                          | ZOJA         | WAWE         | Zosteropidae      |
+| 日本鶺鴒                                      | Japanese Wagtail                              | Motacilla grandis                             | JAWA                          | MOGR         |              | Motacillidae      |
+| 日本歌鴝                                      | Japanese Robin                                | Larvivora akahige                             | JARO                          | LAAK         |              | Muscicapidae      |
+| 日本樹鶯                                      | Japanese Bush Warbler                         | Horornis diphone                              | JABW                          | HODI         | JBWA         | Scotocercidae     |
+| 日本柳鶯                                      | Japanese Leaf Warbler                         | Phylloscopus xanthodryas                      | JALW,JLWA                     | PHXA         |              | Phylloscopidae    |
+| 日本松雀鷹                                    | Japanese Sparrowhawk                          | Tachyspiza gularis                            | JASP                          | TAGU         |              | Accipitridae      |
+| 方尾鶲                                        | Gray-headed Canary-Flycatcher                 | Culicicapa ceylonensis                        | GHCF                          | CUCE         |              | Stenostiridae     |
+| 方尾烏鵑                                      | Square-tailed Drongo-Cuckoo                   | Surniculus lugubris                           | STDC                          | SULU         |              | Cuculidae         |
+| 新幾內亞彩虹吸蜜鸚鵡                          | Coconut Lorikeet                              | Trichoglossus haematodus                      | COLO                          | TRHA         |              | Psittaculidae     |
+| 斯氏繡眼(綠繡眼)                              | Swinhoe's White-eye                           | Zosterops simplex                             | SWWE,SWEY                     | ZOSI         |              | Zosteropidae      |
+| 斑點鶇 x 紅尾鶇(雜交)                         | Dusky x Naumann's Thrush (hybrid)             | Turdus eunomus x naumanni                     | DUTH,NATH                     | TUEU,TUNA    |              | Turdidae          |
+| 斑點鶇                                        | Dusky Thrush                                  | Turdus eunomus                                |                               | TUEU         | DUTH         | Turdidae          |
+| 斑鶲                                          | Spotted Flycatcher                            | Muscicapa striata                             |                               | MUST         | SPFL         | Muscicapidae      |
+| 斑馬鳩                                        | Zebra Dove                                    | Geopelia striata                              | ZEDO                          | GEST         | ZEBD         | Columbidae        |
+| 斑頭雁                                        | Bar-headed Goose                              | Anser indicus                                 | BHGO                          | ANIN         |              | Anatidae          |
+| 斑脇秧雞                                      | Band-bellied Crake                            | Zapornia paykullii                            | BBCR                          | ZAPA         |              | Rallidae          |
+| 斑胸秧雞                                      | Spotted Crake                                 | Porzana porzana                               |                               | POPO         | SPCR         | Rallidae          |
+| 斑背潛鴨                                      | Greater Scaup                                 | Aythya marila                                 |                               | AYMA         | GRSC         | Anatidae          |
+| 斑翡翠                                        | Pied Kingfisher                               | Ceryle rudis                                  | PIKI                          | CERU         |              | Alcedinidae       |
+| 斑翅鳳頭鵑                                    | Pied Cuckoo                                   | Clamator jacobinus                            | PICU,JACU                     | CLJA         |              | Cuculidae         |
+| 斑紋鷦鶯                                      | Striped Prinia                                | Prinia striata                                | STPR                          | PRST         |              | Cisticolidae      |
+| 斑文鳥                                        | Scaly-breasted Munia                          | Lonchura punctulata                           |                               | LOPU         | SBMU         | Estrildidae       |
+| 斑尾鷸                                        | Bar-tailed Godwit                             | Limosa lapponica                              |                               | LILA         | BTGO         | Scolopacidae      |
+| 斑尾鵑鳩                                      | Barred Cuckoo-Dove                            | Macropygia unchall                            | BACD,BCDO                     | MAUN         |              | Columbidae        |
+| 攀雀                                          | Chinese Penduline-Tit                         | Remiz consobrinus                             | CPTI,CHPT                     | RECO         |              | Remizidae         |
+| 扁嘴海雀                                      | Ancient Murrelet                              | Synthliboramphus antiquus                     |                               | SYAN         | ANMU         | Alcidae           |
+| 戴菊鳥                                        | Goldcrest                                     | Regulus regulus                               | GOLD                          | RERE         |              | Regulidae         |
+| 戴勝                                          | Eurasian Hoopoe                               | Upupa epops                                   | COHO,HOOP,EUHO                | UPEP         | EHOO         | Upupidae          |
+| 戈芬氏鳳頭鸚鵡                                | Tanimbar Corella                              | Cacatua goffiniana                            | TACO                          | CAGO         |              | Cacatuidae        |
+| 彩䴉                                          | Glossy Ibis                                   | Plegadis falcinellus                          |                               | PLFA         | GLIB         | Threskiornithidae |
+| 彩鷸                                          | Greater Painted-Snipe                         | Rostratula benghalensis                       | GPSN,GRPS                     | ROBE         |              | Rostratulidae     |
+| 彩虹蜂虎                                      | Rainbow Bee-eater                             | Merops ornatus                                | RABE,RBEA                     | MEOR         |              | Meropidae         |
+| 彩虹吸蜜鸚鵡                                  | Rainbow Lorikeet                              | Trichoglossus moluccanus                      | RALO                          | TRMO         |              | Psittaculidae     |
+| 彎嘴濱鷸                                      | Curlew Sandpiper                              | Calidris ferruginea                           |                               | CAFE         | CUSA         | Scolopacidae      |
+| 弗氏鷗                                        | Franklin's Gull                               | Leucophaeus pipixcan                          |                               | LEPI         | FRGU         | Laridae           |
+| 庫頁島柳鶯                                    | Sakhalin Leaf Warbler                         | Phylloscopus borealoides                      | SLWA,SALW                     | PHBO         |              | Phylloscopidae    |
+| 布萊氏鷚                                      | Blyth's Pipit                                 | Anthus godlewskii                             | BLPI                          | ANGO         |              | Motacillidae      |
+| 布氏葦鶯                                      | Blyth's Reed Warbler                          | Acrocephalus dumetorum                        | BLRW,BRWA                     | ACDU         | BREW         | Acrocephalidae    |
+| 巴鴨                                          | Baikal Teal                                   | Sibirionetta formosa                          |                               | SIFO         | BATE         | Anatidae          |
+| 巨嘴鴉                                        | Large-billed Crow                             | Corvus macrorhynchos                          | LBJJ,LBCR                     | COMA         |              | Corvidae          |
+| 巨嘴柳鶯                                      | Radde's Warbler                               | Phylloscopus schwarzi                         | RAWA                          | PHSC         |              | Phylloscopidae    |
+| 川秋沙                                        | Common Merganser                              | Mergus merganser                              | GOOS                          | MEME         | COME         | Anatidae          |
+| 崖海鴉                                        | Common Murre                                  | Uria aalge                                    | COGU                          | URAA         | COMU         | Alcidae           |
+| 峨眉鶲鶯                                      | Martens's Warbler                             | Phylloscopus omeiensis                        | MAWA                          | PHOM         |              | Phylloscopidae    |
+| 岸八哥                                        | Bank Myna                                     | Acridotheres ginginianus                      | BAMY                          | ACGI         |              | Sturnidae         |
+| 岩鷺                                          | Pacific Reef-Heron                            | Egretta sacra                                 | PARE,PREG,PARH,PRHE,REHE,EREG | EGSA         |              | Ardeidae          |
+| 岩鷚                                          | Alpine Accentor                               | Prunella collaris                             | ALAC                          | PRCO         |              | Prunellidae       |
+| 山麻雀                                        | Russet Sparrow                                | Passer cinnamomeus                            | RUSP                          | PACI         |              | Passeridae        |
+| 山鷸                                          | Eurasian Woodcock                             | Scolopax rusticola                            |                               | SCRU         | EUWO         | Scolopacidae      |
+| 山鶺鴒                                        | Forest Wagtail                                | Dendronanthus indicus                         | FOWA                          | DEIN         |              | Motacillidae      |
+| 山藍仙鶲                                      | Hill Blue Flycatcher                          | Cyornis whitei                                | HIBF,HBFL                     | CYWH         |              | Muscicapidae      |
+| 山紅頭                                        | Rufous-capped Babbler                         | Cyanoderma ruficeps                           | RCBA                          | CYRU         |              | Timaliidae        |
+| 尖尾鴨                                        | Northern Pintail                              | Anas acuta                                    |                               | ANAC         | NOPI         | Anatidae          |
+| 尖尾濱鷸                                      | Sharp-tailed Sandpiper                        | Calidris acuminata                            | STSA                          | CAAC         | SPTS         | Scolopacidae      |
+| 小黑背鷗                                      | Lesser Black-backed Gull                      | Larus fuscus                                  |                               | LAFU         | LBBG         | Laridae           |
+| 小鸊鷉                                        | Little Grebe                                  | Tachybaptus ruficollis                        | DABC,LIGR                     | TARU         |              | Podicipedidae     |
+| 小鷸                                          | Jack Snipe                                    | Lymnocryptes minimus                          |                               | LYMI         | JASN         | Scolopacidae      |
+| 小鷗                                          | Little Gull                                   | Hydrocoloeus minutus                          |                               | HYMI         | LIGU         | Laridae           |
+| 小鶯                                          | Brownish-flanked Bush Warbler                 | Horornis fortipes                             | BFBW                          | HOFO         |              | Scotocercidae     |
+| 小鵪鶉                                        | Blue-breasted Quail                           | Synoicus chinensis                            | KIQU,ABQU,BBQU                | SYCH         |              | Phasianidae       |
+| 小鵐                                          | Little Bunting                                | Emberiza pusilla                              |                               | EMPU         | LIBU         | Emberizidae       |
+| 小鳳頭燕鷗                                    | Lesser Crested Tern                           | Thalasseus bengalensis                        | LCTE                          | THBE         |              | Laridae           |
+| 小青足鷸                                      | Marsh Sandpiper                               | Tringa stagnatilis                            |                               | TRST         | MASA         | Scolopacidae      |
+| 小雲雀                                        | Oriental Skylark                              | Alauda gulgula                                | ORSK                          | ALGU         |              | Alaudidae         |
+| 小雨燕                                        | House Swift                                   | Apus nipalensis                               | HOSW                          | APNI         |              | Apodidae          |
+| 小辮鴴                                        | Northern Lapwing                              | Vanellus vanellus                             |                               | VAVA         | NOLA         | Charadriidae      |
+| 小蝗鶯                                        | Pallas's Grasshopper Warbler                  | Helopsaltes certhiola                         | PAGW                          | HECE         | PGWA         | Locustellidae     |
+| 小翼鶇                                        | Taiwan Shortwing                              | Brachypteryx goodfellowi                      | TASH                          | BRGO         |              | Muscicapidae      |
+| 小綠鳩                                        | Black-chinned Fruit-Dove                      | Ptilinopus leclancheri                        | BCFD                          | PTLE         |              | Columbidae        |
+| 小秧雞                                        | Baillon's Crake                               | Zapornia pusilla                              | BACR,MACR                     | ZAPU         |              | Rallidae          |
+| 小白鷺                                        | Little Egret                                  | Egretta garzetta                              | LEWR                          | EGGA         | LIEG         | Ardeidae          |
+| 小白額雁                                      | Lesser White-fronted Goose                    | Anser erythropus                              |                               | ANER         | LWFG         | Anatidae          |
+| 小環頸鴴                                      | Little Ringed Plover                          | Thinornis dubius                              |                               | THDU         | LRPL         | Charadriidae      |
+| 小燕鷗                                        | Little Tern                                   | Sternula albifrons                            |                               | STAL         | LITE         | Laridae           |
+| 小灰山椒鳥                                    | Brown-rumped Minivet                          | Pericrocotus cantonensis                      | BRMI,SWMI                     | PECA         |              | Campephagidae     |
+| 小濱鷸                                        | Little Stint                                  | Calidris minuta                               |                               | CAMI         | LIST         | Scolopacidae      |
+| 小水鴨                                        | Green-winged Teal                             | Anas crecca                                   | EUTE,CWTE,EWTE                | ANCR         | GWTE         | Anatidae          |
+| 小椋鳥                                        | Chestnut-cheeked Starling                     | Agropsar philippensis                         | CCST                          | AGPH         |              | Sturnidae         |
+| 小桑鳲                                        | Yellow-billed Grosbeak                        | Eophona migratoria                            | YBGR,CHGR                     | EOMI         |              | Fringillidae      |
+| 小杜鵑                                        | Lesser Cuckoo                                 | Cuculus poliocephalus                         | LECU                          | CUPO         |              | Cuculidae         |
+| 小杓鷸                                        | Little Curlew                                 | Numenius minutus                              | LIWH                          | NUMI         | LICU         | Scolopacidae      |
+| 小斑背潛鴨                                    | Lesser Scaup                                  | Aythya affinis                                |                               | AYAF         | LESC         | Anatidae          |
+| 小彎嘴                                        | Taiwan Scimitar-Babbler                       | Pomatorhinus musicus                          | TSBA,TASB                     | POMU         |              | Timaliidae        |
+| 小天鵝                                        | Tundra Swan                                   | Cygnus columbianus                            | BESW                          | CYCO         | TUSW         | Anatidae          |
+| 小嘴烏鴉                                      | Carrion Crow                                  | Corvus corone                                 | CACR                          | COCO         |              | Corvidae          |
+| 小啄木                                        | Gray-capped Pygmy Woodpecker                  | Yungipicus canicapillus                       | GCWO,GCPW                     | YUCA         |              | Picidae           |
+| 小卷尾                                        | Bronzed Drongo                                | Dicrurus aeneus                               | BRDR                          | DIAE         |              | Dicruridae        |
+| 小剪尾                                        | Little Forktail                               | Enicurus scouleri                             | LIFO                          | ENSC         |              | Muscicapidae      |
+| 寶興歌鶇                                      | Chinese Thrush                                | Turdus mupinensis                             | CHTH                          | TUMU         |              | Turdidae          |
+| 寬嘴鷸                                        | Broad-billed Sandpiper                        | Calidris falcinellus                          | BBSA                          | CAFA         | BBIS         | Scolopacidae      |
+| 寬嘴鶲                                        | Asian Brown Flycatcher                        | Muscicapa dauurica                            |                               | MUDA         | ABFL         | Muscicapidae      |
+| 寒林豆雁                                      | Taiga Bean-Goose                              | Anser fabalis                                 | BEGO,TBGO                     | ANFA         | TABG         | Anatidae          |
+| 家麻雀                                        | House Sparrow                                 | Passer domesticus                             |                               | PADO         | HOSP         | Passeridae        |
+| 家燕                                          | Barn Swallow                                  | Hirundo rustica                               | BASW                          | HIRU         | BARS         | Hirundinidae      |
+| 家烏鴉                                        | House Crow                                    | Corvus splendens                              | HOCR                          | COSP         |              | Corvidae          |
+| 家八哥                                        | Common Myna                                   | Acridotheres tristis                          |                               | ACTR         | COMY         | Sturnidae         |
+| 孤田鷸                                        | Solitary Snipe                                | Gallinago solitaria                           |                               | GASO         | SOSN         | Scolopacidae      |
+| 太陽鸚鵡                                      | Sun Parakeet                                  | Aratinga solstitialis                         | SUPA                          | ARSO         |              | Psittacidae       |
+| 太平洋金斑鴴                                  | Pacific Golden-Plover                         | Pluvialis fulva                               | PGPL                          | PLFU         | PAGP         | Charadriidae      |
+| 大麻鷺                                        | Eurasian Bittern                              | Botaurus stellaris                            | EUBI,GRBI                     | BOST         |              | Ardeidae          |
+| 大鵟                                          | Upland Buzzard                                | Buteo hemilasius                              | UPBU                          | BUHE         |              | Accipitridae      |
+| 大陸畫眉 x 臺灣畫眉(雜交)                     | Chinese x Taiwan Hwamei (hybrid)              | Garrulax canorus x taewanus                   | HWAM,TAHW,CHHW                | GACA,GATA    |              | Leiothrichidae    |
+| 大陸畫眉                                      | Chinese Hwamei                                | Garrulax canorus                              | CHHW                          | GACA         | HWAM         | Leiothrichidae    |
+| 大赤啄木                                      | White-backed Woodpecker                       | Dendrocopos leucotos                          | WBWO                          | DELE         |              | Picidae           |
+| 大花鷚                                        | Richard's Pipit                               | Anthus richardi                               | RIPI                          | ANRI         |              | Motacillidae      |
+| 大紅鸛                                        | Greater Flamingo                              | Phoenicopterus roseus                         | GRFL                          | PHRO         |              | Phoenicopteridae  |
+| 大白鷺                                        | Great Egret                                   | Ardea alba                                    | WHHE,GWEG                     | ARAL         | GREG         | Ardeidae          |
+| 大濱鷸                                        | Great Knot                                    | Calidris tenuirostris                         |                               | CATE         | GRKN         | Scolopacidae      |
+| 大水薙鳥                                      | Streaked Shearwater                           | Calonectris leucomelas                        | STSH                          | CALE         | STRS         | Procellariidae    |
+| 大杜鵑                                        | Common Cuckoo                                 | Cuculus canorus                               |                               | CUCA         | COCU         | Cuculidae         |
+| 大杓鷸                                        | Eurasian Curlew                               | Numenius arquata                              |                               | NUAR         | EUCU         | Scolopacidae      |
+| 大彎嘴                                        | Black-necklaced Scimitar-Babbler              | Erythrogenys erythrocnemis                    | BNSB                          | ERER         |              | Timaliidae        |
+| 大卷尾                                        | Black Drongo                                  | Dicrurus macrocercus                          | BLDR                          | DIMA         |              | Dicruridae        |
+| 大冠鷲                                        | Crested Serpent-Eagle                         | Spilornis cheela                              | CRSE,CSEA                     | SPCH         |              | Accipitridae      |
+| 大八哥(叢八哥)                                | Great Myna                                    | Acridotheres grandis                          | GRMY                          | ACGR         |              | Sturnidae         |
+| 夜鷺                                          | Black-crowned Night Heron                     | Nycticorax nycticorax                         |                               | NYNY         | BCNH         | Ardeidae          |
+| 塞內加爾鸚鵡                                  | Senegal Parrot                                | Poicephalus senegalus                         | SEPA                          | POSE         |              | Psittacidae       |
+| 埃及雁                                        | Egyptian Goose                                | Alopochen aegyptiaca                          |                               | ALAE         | EGGO         | Anatidae          |
+| 埃及聖䴉                                      | African Sacred Ibis                           | Threskiornis aethiopicus                      | ASIB,SAIB                     | THAE         |              | Threskiornithidae |
+| 地啄木                                        | Eurasian Wryneck                              | Jynx torquilla                                |                               | JYTO         | EUWR         | Picidae           |
+| 圃鵐                                          | Ortolan Bunting                               | Emberiza hortulana                            | ORBU                          | EMHO         |              | Emberizidae       |
+| 四聲杜鵑                                      | Indian Cuckoo                                 | Cuculus micropterus                           | INCU                          | CUMI         |              | Cuculidae         |
+| 噪鵑                                          | Asian Koel                                    | Eudynamys scolopaceus                         | ASKO,WEKO                     | EUSC         |              | Cuculidae         |
+| 嘰喳柳鶯                                      | Common Chiffchaff                             | Phylloscopus collybita                        | COCH                          | PHCO         | CCHI         | Phylloscopidae    |
+| 喜鵲                                          | Oriental Magpie                               | Pica serica                                   | EUMA,ORMA                     | PISE         |              | Corvidae          |
+| 唐秋沙                                        | Scaly-sided Merganser                         | Mergus squamatus                              | SSME                          | MESQ         |              | Anatidae          |
+| 唐白鷺                                        | Chinese Egret                                 | Egretta eulophotes                            |                               | EGEU         | CHEG         | Ardeidae          |
+| 哈氏冠紋柳鶯                                  | Hartert's Leaf Warbler                        | Phylloscopus goodsoni                         | HALW,HLWA                     | PHGO         |              | Phylloscopidae    |
+| 和尚鸚鵡                                      | Monk Parakeet                                 | Myiopsitta monachus                           |                               | MYMO         | MOPA         | Psittacidae       |
+| 呂宋鴨                                        | Philippine Duck                               | Anas luzonica                                 | PHDU                          | ANLU         |              | Anatidae          |
+| 反嘴鷸                                        | Terek Sandpiper                               | Xenus cinereus                                |                               | XECI         | TESA         | Scolopacidae      |
+| 反嘴鴴                                        | Pied Avocet                                   | Recurvirostra avosetta                        | PIAV                          | REAV         |              | Recurvirostridae  |
+| 叉尾鷗                                        | Sabine's Gull                                 | Xema sabini                                   |                               | XESA         | SAGU         | Laridae           |
+| 叉尾雨燕                                      | Pacific Swift                                 | Apus pacificus                                | PASW                          | APPA         | FTSW         | Apodidae          |
+| 叉尾太陽鳥                                    | Fork-tailed Sunbird                           | Aethopyga christinae                          | FTSU                          | AECH         |              | Nectariniidae     |
+| 原鴿                                          | Rock Pigeon                                   | Columba livia                                 | ROPI,RODO                     | COLI         |              | Columbidae        |
+| 厚嘴葦鶯                                      | Thick-billed Warbler                          | Arundinax aedon                               |                               | ARAE         | TBWA         | Acrocephalidae    |
+| 卷羽鵜鶘                                      | Dalmatian Pelican                             | Pelecanus crispus                             | DAPE                          | PECR         |              | Pelecanidae       |
+| 印度鵲椋鳥                                    | Indian Pied Starling                          | Gracupica contra                              | IPMY,IPST,APST                | GRCO         |              | Sturnidae         |
+| 印度池鷺                                      | Indian Pond-Heron                             | Ardeola grayii                                | IPHE,INPH                     | ARGR         |              | Ardeidae          |
+| 南亞夜鷹                                      | Savanna Nightjar                              | Caprimulgus affinis                           | SANI                          | CAAF         |              | Caprimulgidae     |
+| 半蹼鷸                                        | Asian Dowitcher                               | Limnodromus semipalmatus                      | ASDO                          | LISE         |              | Scolopacidae      |
+| 北雀鷹                                        | Eurasian Sparrowhawk                          | Accipiter nisus                               | EUSP                          | ACNI         |              | Accipitridae      |
+| 北蝗鶯                                        | Middendorff's Grasshopper Warbler             | Helopsaltes ochotensis                        | MIGW,MGWA                     | HEOC         | MGRW         | Locustellidae     |
+| 北極鷗                                        | Glaucous Gull                                 | Larus hyperboreus                             |                               | LAHY         | GLGU         | Laridae           |
+| 北椋鳥                                        | Daurian Starling                              | Agropsar sturninus                            | DAST,PBST                     | AGST         |              | Sturnidae         |
+| 北朱雀                                        | Pallas's Rosefinch                            | Carpodacus roseus                             |                               | CARO         | PARO         | Fringillidae      |
+| 北方鷹鵑                                      | Northern Hawk-Cuckoo                          | Hierococcyx hyperythrus                       | NOHC,NHCU                     | HIHY         |              | Cuculidae         |
+| 北方中杜鵑                                    | Oriental Cuckoo                               | Cuculus optatus                               |                               | CUOP         | ORCU         | Cuculidae         |
+| 勘察加柳鶯                                    | Kamchatka Leaf Warbler                        | Phylloscopus examinandus                      | KALW                          | PHEX         | KLWA         | Phylloscopidae    |
+| 劍鴴                                          | Long-billed Plover                            | Thinornis placidus                            | LBPL                          | THPL         |              | Charadriidae      |
+| 凍原豆雁                                      | Tundra Bean-Goose                             | Anser serrirostris                            | BEGO,TBGO                     | ANSE         | TUBG         | Anatidae          |
+| 冠鸊鷉                                        | Great Crested Grebe                           | Podiceps cristatus                            | GCGR                          | POCR         |              | Podicipedidae     |
+| 冠鵐                                          | Crested Bunting                               | Emberiza lathami                              | CRBU                          | EMLA         |              | Emberizidae       |
+| 冠郭公                                        | Chestnut-winged Cuckoo                        | Clamator coromandus                           | CWCU                          | CLCO         |              | Cuculidae         |
+| 冠羽畫眉                                      | Taiwan Yuhina                                 | Yuhina brunneiceps                            | TAYU                          | YUBR         |              | Zosteropidae      |
+| 冠羽柳鶯                                      | Eastern Crowned Warbler                       | Phylloscopus coronatus                        | ECWA                          | PHCO         |              | Phylloscopidae    |
+| 冠海雀                                        | Japanese Murrelet                             | Synthliboramphus wumizusume                   | JAMU                          | SYWU         |              | Alcidae           |
+| 八色鳥                                        | Fairy Pitta                                   | Pitta nympha                                  | FAPI                          | PINY         |              | Pittidae          |
+| 八聲杜鵑                                      | Plaintive Cuckoo                              | Cacomantis merulinus                          | PLCU                          | CAME         |              | Cuculidae         |
+| 八哥(冠八哥)                                  | Crested Myna                                  | Acridotheres cristatellus                     | CRMY                          | ACCR         |              | Sturnidae         |
+| 克島圓尾鸌                                    | Kermadec Petrel                               | Pterodroma neglecta                           |                               | PTNE         | KEPE         | Procellariidae    |
+| 佛法僧                                        | Dollarbird                                    | Eurystomus orientalis                         | DOLL,ORDO                     | EUOR         |              | Coraciidae        |
+| 低地繡眼                                      | Lowland White-eye                             | Zosterops meyeni                              | LWEY,LOWE                     | ZOME         |              | Zosteropidae      |
+| 亞洲輝椋鳥                                    | Asian Glossy Starling                         | Aplonis panayensis                            | AGST                          | APPA         |              | Sturnidae         |
+| 亞洲短趾百靈                                  | Asian Short-toed Lark                         | Alaudala cheleensis                           | ASTL                          | ALCH         |              | Alaudidae         |
+| 亞歷山大鸚鵡                                  | Alexandrine Parakeet                          | Psittacula eupatria                           | ALPA                          | PSEU         |              | Psittaculidae     |
+| 五色鳥                                        | Taiwan Barbet                                 | Psilopogon nuchalis                           | TABA                          | PSNU         |              | Megalaimidae      |
+| 九官鳥                                        | Common Hill Myna                              | Gracula religiosa                             | CHMY                          | GRRE         |              | Sturnidae         |
+| 丹頂鶴                                        | Red-crowned Crane                             | Grus japonensis                               | RCCR                          | GRJA         |              | Gruidae           |
+| 丹氏鸕鷀                                      | Japanese Cormorant                            | Phalacrocorax capillatus                      | JACO                          | PHCA         |              | Phalacrocoracidae |
+| 丹氏濱鷸                                      | Temminck's Stint                              | Calidris temminckii                           |                               | CATE         | TEST         | Scolopacidae      |
+| 中賊鷗                                        | Pomarine Jaeger                               | Stercorarius pomarinus                        | POSK                          | STPO         | POJA         | Stercorariidae    |
+| 中華藍仙鶲                                    | Chinese Blue Flycatcher                       | Cyornis glaucicomans                          | CHBF,CBFL                     | CYGL         |              | Muscicapidae      |
+| 中白鷺                                        | Medium Egret                                  | Ardea intermedia                              | INEG                          | ARIN         | MEEG         | Ardeidae          |
+| 中杓鷸                                        | Whimbrel                                      | Numenius phaeopus                             | EUWH                          | NUPH         | WHIM         | Scolopacidae      |
+| 中地鷸                                        | Swinhoe's Snipe                               | Gallinago megala                              | SWSN                          | GAME         |              | Scolopacidae      |
+| 中國黑鶇                                      | Chinese Blackbird                             | Turdus mandarinus                             | CHBL                          | TUMA         |              | Turdidae          |
+| 三趾鷗                                        | Black-legged Kittiwake                        | Rissa tridactyla                              |                               | RITR         | BLKI         | Laridae           |
+| 三趾濱鷸                                      | Sanderling                                    | Calidris alba                                 |                               | CAAL         | SAND         | Scolopacidae      |
+| Zebra Waxbill                                 | Zebra Waxbill                                 | Amandava subflava                             | ZEWA,OBWA                     | AMSU         |              | Estrildidae       |
+| Zebra Finch                                   | Zebra Finch                                   | Taeniopygia guttata                           | SZFI,TZFI,ZEFI                | TAGU         |              | Estrildidae       |
+| Yellow-cheeked Tit                            | Yellow-cheeked Tit                            | Machlolophus spilonotus                       | YCTI                          | MASP         |              | Paridae           |
+| White-browed Meadowlark                       | White-browed Meadowlark                       | Leistes superciliaris                         | WBBL,WBME                     | LESU         |              | Icteridae         |
+| Trumpeter Hornbill                            | Trumpeter Hornbill                            | Bycanistes bucinator                          | TRHO                          | BYBU         |              | Bucerotidae       |
+| Southern Red Bishop                           | Southern Red Bishop                           | Euplectes orix                                | SRBI                          | EUOR         |              | Ploceidae         |
+| Solomons Corella                              | Solomons Corella                              | Cacatua ducorpsii                             | DUCO,SOCO                     | CADU         |              | Cacatuidae        |
+| Silver-eared Mesia                            | Silver-eared Mesia                            | Leiothrix argentauris                         | SEME                          | LEAR         |              | Leiothrichidae    |
+| Rufous-bellied Woodpecker                     | Rufous-bellied Woodpecker                     | Dendrocopos hyperythrus                       | RBWO                          | DEHY         |              | Picidae           |
+| Red-winged Laughingthrush                     | Red-winged Laughingthrush                     | Trochalopteron formosum                       | RWLA                          | TRFO         |              | Leiothrichidae    |
+| Red Avadavat                                  | Red Avadavat                                  | Amandava amandava                             |                               | AMAM         | REAV         | Estrildidae       |
+| Lemon-breasted Seedeater                      | Lemon-breasted Seedeater                      | Crithagra citrinipectus                       | LBSE,LBCA                     | CRCI         |              | Fringillidae      |
+| Laughing Kookaburra                           | Laughing Kookaburra                           | Dacelo novaeguineae                           | LAKO                          | DANO         |              | Alcedinidae       |
+| Golden-backed Weaver                          | Golden-backed Weaver                          | Ploceus jacksoni                              | GBWE                          | PLJA         |              | Ploceidae         |
+| Eurasian Eagle-Owl                            | Eurasian Eagle-Owl                            | Bubo bubo                                     | EEOW,EUEO                     | BUBU         |              | Strigidae         |
+| Domestic goose sp. x Canada Goose (hybrid)    | Domestic goose sp. x Canada Goose (hybrid)    | Anser sp. (Domestic type) x Branta canadensis | CANG,CAGO,DGSP                | BRCA         |              | Anatidae          |
+| Chestnut-backed Thrush                        | Chestnut-backed Thrush                        | Geokichla dohertyi                            | CBTH                          | GEDO         |              | Turdidae          |
+| Broad-tailed Paradise-Whydah                  | Broad-tailed Paradise-Whydah                  | Vidua obtusa                                  | BTPW                          | VIOB         |              | Viduidae          |
+| Blue-winged Teal x Northern Shoveler (hybrid) | Blue-winged Teal x Northern Shoveler (hybrid) | Spatula discors x clypeata                    | NSHO,BWTE,NOSH                | SPDI,SPCL    |              | Anatidae          |
+| Blue-winged Leafbird                          | Blue-winged Leafbird                          | Chloropsis moluccensis                        | BWLE                          | CHMO         |              | Chloropseidae     |
+| Black-winged Myna                             | Black-winged Myna                             | Acridotheres melanopterus                     | BWST,BWMY                     | ACME         |              | Sturnidae         |
